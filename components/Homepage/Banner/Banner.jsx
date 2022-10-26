@@ -1,0 +1,26 @@
+import Image from 'next/image';
+import React from 'react';
+
+const Banner = () => {
+    return (
+        <header className='relative bg-[#FFFDFA]'>
+            <div className="bg-[url('/images/banner/bg.png')] min-h-[886px] bg-no-repeat  bg-right">
+                <div className='max-w-[1296px] grid grid-cols-12 mx-auto pt-[120px] md:pt-[217px]'>
+                    <div className='col-span-12 md:col-span-7 mx-2 xl:mx-0'>
+                        <h3 className='text-[32px] font-extrabold text-[#FF5349]'>Digital Marketing</h3>
+                        <h1 className='text-5xl md:text-[76px] font-bold leading-tight text-[#222] my-[30px]'>Grow Your Business With <span className='text-[#FF5349]'>Us.</span> </h1>
+                        <p className='text-2xl text-[#222222] mb-10'>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Convallis mattis dui eget vestibulum id et.
+                        </p>
+                        <button className='text-white text-lg px-6 shadow-lg shadow-[#ff524987] py-3 rounded-lg bg-gradient-to-r from-[#FF9300] to-[#FF5349]'>Get Started Now</button>
+                    </div>
+                </div>
+                <div className='absolute -bottom-2 left-0'>
+                    <Image src='/images/banner/shape.png' height={306} width={406} alt="banner shape" />
+                </div>
+            </div>
+        </header>
+    );
+};
+
+export default Banner;
