@@ -21,7 +21,7 @@ const Blog = () => {
         </div>
         <div className="flex flex-col gap-6 flex-wrap md:flex-row">
             {
-                blogs.map((blog) => (
+                blogs.slice(0,3).map((blog) => (
                     <div key={blog.id} className='bg-white p-4 md:w-[416px] rounded-md shadow-lg'>
                         <Image src={blog.images[0]} width={385} height={253} alt="blog img" />
                        <div className="p-[15px]">

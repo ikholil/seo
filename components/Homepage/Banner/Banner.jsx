@@ -3,7 +3,7 @@ import React from 'react';
 
 const Banner = () => {
     return (
-        <header className='relative bg-[#FFFDFA]'>
+        <header className='relative bg-[#FFFDFA] -z-10'>
             <div className="bg-[url('/images/banner/bg.png')] min-h-[886px] bg-no-repeat  bg-right">
                 <div className='max-w-[1296px] grid grid-cols-12 mx-auto pt-[120px] md:pt-[217px]'>
                     <div className='col-span-12 md:col-span-7 mx-2 xl:mx-0'>

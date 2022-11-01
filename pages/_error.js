@@ -1,9 +1,13 @@
-import React from 'react';
+import Banner from '../components/Error/Banner';
+import Error from '../components/Error/Error';
+import Footer from '../components/Footer/Footer';
 
 const _error = () => {
     return (
         <div>
-            <h1>Sorry page not found. Insert correct route</h1>
+            <Banner />
+            <Error />
+            <Footer />
         </div>
     );
 };

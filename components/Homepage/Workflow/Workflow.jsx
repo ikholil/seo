@@ -4,7 +4,7 @@ import { workflow } from "../../../data/workflow";
 
 const Workflow = () => {
   return (
-    <div className="bg-[url('/images/workflow/bg.png')]">
+    <div className="bg-[url('/images/workflow/bg.png')] bg-white">
       <div className="max-w-[1296px] mx-auto py-[120px]">
         <div className="flex justify-center">
           <div className="max-w-[640px] text-center">

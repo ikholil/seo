@@ -3,7 +3,7 @@ import React from "react";
 
 const Banner = () => {
   return (
-    <div className="pt-[100px]">
+    <div className="pt-[80px] bg-white md:pt-[100px]">
       <Head>
         <title>Services</title>
       </Head>

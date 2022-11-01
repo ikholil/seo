@@ -18,7 +18,7 @@ const Footer = () => {
             </p>
             <div className="flex justify-between pl-2 md:pl-5 pr-1 md:pr-3 py-1 md:py-2 rounded-full bg-white md:w-[357px]">
               <input
-                className=" rounded-full focus:outline-none text-black"
+                className=" rounded-full bg-white focus:outline-none text-black"
                 type="text"
                 placeholder="Email Address..."
               />

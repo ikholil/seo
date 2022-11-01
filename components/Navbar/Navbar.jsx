@@ -22,10 +22,13 @@ const Header = () => {
   };
   useEffect(() => {
     window.addEventListener("scroll", changeNavColor);
+    document.addEventListener("mouseup", function(){
+      setDropdown(false)
+    })
   }, []);
   return (
     <nav
-      className={`w-full fixed z-50  px-1 xl:px-0 navbar py-4 xl:py-[19.5px] ${
+      className={`w-full fixed z-50 text-[#222] py-5 md:py-0 px-1 xl:px-0 navbar ${
         navColor ? "bg-white shadow-lg" : "bg-transparent"
       }`}
     >
@@ -43,14 +46,14 @@ const Header = () => {
               : "hidden"
           }`}
         >
-          <ul className="flex items-start px-4 md:px-0 md:items-center flex-col md:p-4 mt-4 bg-body rounded-lg md:flex-row lg:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:gap-5">
+          <ul className="flex items-start mx-3 text- md:mx-0  md:px-0 md:items-center flex-col mt-4 bg-body rounded-lg md:flex-row lg:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:gap-5">
             {[
               ["/", "HOME"],
               ["/service", "SERVICE"],
               ["/blog", "BLOG"],
               ["/contact", "CONTACT"],
             ].map(([url, title]) => (
-              <li key={title} onClick={() => setOpen(false)}>
+              <li className="md:py-[35px]" key={title} onClick={() => setOpen(false)}>
                 <Link href={url}>
                   <a
                     className="block  text-lg text-x py-2 pr-4 md:pl-3  rounded md:bg-transparent hover:text-primary  md:p-0 "
@@ -62,21 +65,21 @@ const Header = () => {
               </li>
             ))}
 
-            <li>
+            <li className="dropdown-button md:py-[35px]">
               <a
                 onClick={() => setDropdown(!dropdown)}
-                className=" flex items-center gap-2 relative cursor-pointer  text-lg text-x py-2 pr-4 md:pl-3  rounded md:hover:bg-transparent md:border-0 hover:text-primary md:p-0 "
+                className=" flex  items-center gap-2 relative cursor-pointer  text-lg text-x  pr-4 md:pl-3  rounded md:hover:bg-transparent md:border-0 hover:text-primary md:p-0 "
               >
                 PAGES <BsChevronDown />{" "}
               </a>
               <div className="relative">
-                {dropdown && (
-                  <div className="absolute bg-white w-40 md:top-[36px]  flex flex-col  text-lg">
+                
+                  <div className="absolute bg-white w-40 md:top-[35px] dropdown  text-lg">
                     {[
-                      ["/speakers", "Speakers"],
-                      ["/price", "Price"],
-                      ["/gallery", "Gallery"],
-                      ["/contact", "Contact Us"],
+                      ["/seo", "SEO"],
+                      ["/smm", "SMM"],
+                      ["/about", "ABOUT"],
+                      ["/portfolio", "PORTFOLIO"],
                     ].map(([url, title]) => (
                       <Link key={title} href={url}>
                         <a
@@ -88,14 +91,14 @@ const Header = () => {
                       </Link>
                     ))}
                   </div>
-                )}
+                
               </div>
             </li>
           </ul>
         </div>
         <div className="hidden lg:flex items-center gap-5">
           <a
-            className="text-lg font-bold text-[#222222]"
+            className="text-lg font-semibold text-[#222222]"
             href="tel:+1 (212) 243-7969"
           >
             +1 (212) 243-7969

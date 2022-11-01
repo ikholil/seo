@@ -19,7 +19,7 @@ const Testimonial = () => {
   };
   console.log(currentTab)
   return (
-    <div className="bg-[url('/images/testimonial/bg.png')] bg-left-bottom bg-no-repeat">
+    <div className="bg-[url('/images/testimonial/bg.png')] bg-white bg-left-bottom bg-no-repeat">
       <div className="max-w-[1296px] mx-auto pt-[120px] pb-[193px]">
         <div className="flex justify-center">
           <div className="max-w-[640px] text-center">

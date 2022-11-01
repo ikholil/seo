@@ -7,6 +7,7 @@ html,
 body {
   padding: 0;
   margin: 0;
+
   font-family: 'Poppins', sans-serif;
 }
 
@@ -31,3 +32,21 @@ a {
 .feature-box:hover{
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.4);
 }
+.dropdown-button:hover .dropdown{
+  display: flex;
+}
+.dropdown{
+  display: flex;
+  display: none;
+  flex-direction: column;
+}
+
+.showcase:hover .overlay{
+  opacity: 20;
+}
+.overlay{
+  opacity: 0;
+  transition: all;
+  transition-duration: 500ms;
+}
+

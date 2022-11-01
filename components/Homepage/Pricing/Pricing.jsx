@@ -4,7 +4,7 @@ import Image from "next/image";
 priceplan
 const Pricing = () => {
   return (
-    <div className="bg-[url('/images/pricing/map-bg.png')] bg-bottom bg-no-repeat h-full">
+    <div className="bg-[url('/images/pricing/map-bg.png')] bg-white bg-bottom bg-no-repeat h-full">
       <div className="max-w-[1296px] mx-auto pt-[65px] pb-[105px]">
         <div className="flex justify-center">
           <div className="max-w-[640px] text-center">
@@ -39,7 +39,7 @@ const Pricing = () => {
                                 }
                             </ul>
                             <div className="flex justify-center pt-[40px] pb-2">
-                                <button className={`px-8 py-3 border rounded-md border-black ${id == 2 && 'bg-[#FF5A42] text-white border-[#FF5A42] shadow-lg shadow-[#ff5b425e]'}`}>Select Plan</button>
+                                <button className={`px-8 py-3 border text-[#222] rounded-md border-black ${id == 2 && 'bg-[#FF5A42] text-white border-[#FF5A42] shadow-lg shadow-[#ff5b425e]'}`}>Select Plan</button>
                             </div>
                         </div>
                     </div>
