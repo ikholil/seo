@@ -8,8 +8,8 @@ const GrowTraffic = () => {
 
   return (
 
-    <div className=" -z-10 relative">
-      <div className="z-20   md:-mt-20  max-w-[1077px] mx-auto">
+    <div className=" -z-10 bg-white relative">
+      <div className="z-20   md:-translate-y-1/2  max-w-[1077px] mx-auto">
         <div className="flex gap-5 mx-2 xl:mx-0 md:gap-0 flex-col md:flex-row flex-wrap  bg-white justify-around my-5 md:my-0 rounded-none md:rounded-lg shadow-lg py-5 z-10 ">
           {bannerStates.map((item, index) => (
             <div className="flex flex-col items-center" key={item.title}>

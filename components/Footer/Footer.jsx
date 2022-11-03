@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <footer className="bg-[url('/images/footer/bg-shape.png')] relative bg-no-repeat bg-right-bottom bg-[#07112D] min-h-[795px]">
       <div className="max-w-[1296px] mx-auto">
-        <div className="bg-[#1A4DBE] md:w-[1296px] mt-5 rounded-lg mx-2 absolute md:mx-0 md:-mt-44 p-5 md:p-[60px] bg-[url('/images/footer/bg.png')] bg-no-repeat bg-right mb-20">
+        <div className="bg-[#1A4DBE] xl:w-[1296px] mt-5 rounded-lg mx-2 absolute md:mx-auto md:-mt-44 p-3 sm:p-5 md:p-[60px] md:bg-[url('/images/footer/bg.png')] bg-no-repeat bg-right mb-20">
           <div className="text-white ">
             <h1 className="text-3xl md:text-[43px] font-bold mb-[42px]">
               Start Growing Your Business{" "}
@@ -18,7 +18,7 @@ const Footer = () => {
             </p>
             <div className="flex justify-between pl-2 md:pl-5 pr-1 md:pr-3 py-1 md:py-2 rounded-full bg-white md:w-[357px]">
               <input
-                className=" rounded-full bg-white focus:outline-none text-black"
+                className="w-auto rounded-full bg-white focus:outline-none text-black"
                 type="text"
                 placeholder="Email Address..."
               />

@@ -7,7 +7,7 @@ const _error = () => {
         <div>
             <Banner />
             <Error />
-            <Footer />
+          
         </div>
     );
 };

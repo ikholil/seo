@@ -1,0 +1,38 @@
+import React from "react";
+import { marketingProcess } from "../../data/marketingProcess";
+
+const MarketingProcess = () => {
+  return (
+    <div className="bg-[#F9F9F9] bg-[url('/images/smm/process-bg.png')] bg-no-repeat bg-right-bottom">
+      <div className="max-w-[1296px] mx-auto pb-[120px]">
+        <div className="flex justify-center">
+          <div className="max-w-[640px] pt-[120px] text-center mx-3 mb-[60px] lg:mx-0">
+            <h3 className="text-[32px] font-bold text-[#FF5349]">Process</h3>
+            <h1 className="text-4xl md:text-[57px] font-bold leading-tight text-[#222] my-[30px]">
+              Marketing Process
+            </h1>
+            <p className="text-lg  text-[#222]">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit sed mattis pulvinar gravida parturient nunc.
+            </p>
+          </div>
+        </div>
+        <div className="flex mx-3 gap-5 md:gap-10 flex-wrap  md:justify-center">
+            {
+                marketingProcess.map(({id, title, color}) => (
+                    <div className="flex gap-5 items-center" key={id}>
+                        <span className={`h-10 w-10 rounded-full bg-[${color}] ${id == 4 && 'bg-[#7879F1]'} ${id == 5 && 'bg-[#F178B6]'}`}></span> 
+                        <h4 className="text-2xl text-[#222]">{title}</h4>
+                    </div>
+                ))
+            }
+        </div>
+        <div className="mt-[60px] flex justify-center">
+
+        <button className={`px-8 py-3 border rounded-md font-semibold  bg-[#FF5A42] text-white border-[#FF5A42] shadow-lg shadow-[#ff5b425e]`}>Get Started Now</button>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default MarketingProcess;
