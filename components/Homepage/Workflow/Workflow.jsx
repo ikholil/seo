@@ -5,14 +5,14 @@ import { workflow } from "../../../data/workflow";
 const Workflow = () => {
   return (
     <div className="bg-[url('/images/workflow/bg.png')] bg-white">
-      <div className="max-w-[1296px] mx-auto py-[120px]">
+      <div className="max-w-[1296px] mx-auto pt-[110px] pb-[120px]">
         <div className="flex justify-center">
           <div className="max-w-[640px] text-center">
             <h3 className="text-[32px] font-bold text-[#FF5349]">Workflow</h3>
-            <h1 className="text-4xl md:text-[57px] font-extrabold leading-tight text-[#222] my-[30px]">
+            <h2 className="text-4xl md:text-[57px] font-bold leading-tight text-[#222] mb-[24px] mt-[10px]">
               Our Working <span className="text-[#FF5349]">Process</span>
-            </h1>
-            <p className="text-lg mb-[60px] text-[#222]">
+            </h2>
+            <p className="text-lg mb-10 md:mb-[57px] text-[#222]">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             </p>
           </div>

@@ -4,16 +4,16 @@ const clients = ['/images/clients/1.png', '/images/clients/2.png','/images/clien
 const Clients = () => {
   return (
     <div className="bg-[#F9F9F9]">
-      <div className="max-w-[1296px] mx-auto pb-[240px] pt-[120px]">
+      <div className="max-w-[1296px] mx-auto pb-[265px] pt-[115px]">
         <div className="flex justify-center">
           <div className="max-w-[640px] text-center">
-            <h3 className="text-2xl font-bold text-[#FF5349]">
+            <h3 className="text-2xl font-semibold text-[#FF5349]">
               clients’s love
             </h3>
-            <h1 className="text-4xl md:text-[43px] font-extrabold leading-tight text-[#222] my-[30px]">
+            <h2 className="text-4xl md:text-[43px] font-bold leading-tight text-[#222] mt-4 mb-3">
               Our Trusted <span className="text-[#FF5349]">{"Client's"}</span>
-            </h1>
-            <p className="text-lg mb-[60px] text-[#222]">
+            </h2>
+            <p className="text-lg mb-10 text-[#222]">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             </p>
           </div>

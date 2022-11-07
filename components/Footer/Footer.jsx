@@ -9,9 +9,9 @@ const Footer = () => {
       <div className="max-w-[1296px] mx-auto">
         <div className="bg-[#1A4DBE] xl:w-[1296px] mt-5 rounded-lg mx-2 absolute md:mx-auto md:-mt-44 p-3 sm:p-5 md:p-[60px] md:bg-[url('/images/footer/bg.png')] bg-no-repeat bg-right mb-20">
           <div className="text-white ">
-            <h1 className="text-3xl md:text-[43px] font-bold mb-[42px]">
+            <h2 className="text-3xl md:text-[43px] font-bold mb-[42px]">
               Start Growing Your Business{" "}
-            </h1>
+            </h2>
             <p className="mb-[52px]">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nibh
               eleifend malesuada quisque lectus.{" "}

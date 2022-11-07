@@ -6,12 +6,12 @@ import { blogs } from "../../data/blog";
 const AllBlog = () => {
   return (
     <div className="bg-white bg-[url('/images/blog/bg.png')] bg-contain bg-no-repeat bg-right-bottom">
-      <div className="max-w-[1296px] mx-auto pt-[75px] md:pb-[285px]">
+      <div className="max-w-[1296px] mx-auto pt-[82px] md:pb-[296px]">
         <div className="mx-3 md:mx-0">
           <div className="max-w-[640px] ">
-            <h1 className="text-4xl md:text-[57px] font-extrabold leading-tight text-[#222] my-[25px]">
+            <h2 className="text-4xl md:text-[57px] font-bold leading-tight text-[#222] my-[25px]">
               Blog Post
-            </h1>
+            </h2>
             <p className="text-lg mb-[55px] text-[#222]">
               With our integrated CRM, project management, collaboration and
               invoicing capabilities, you can manage your business in one secure
@@ -33,14 +33,14 @@ const AllBlog = () => {
                     height={253}
                     alt="blog img"
                   />
-                  <div className="p-[15px]">
+                  <div className="px-[15px] pb-2 pt-1">
                     <p className="text-[#222] gap-1 flex items-center">
                       {blog.author} •{blog.date}
                     </p>
-                    <h2 className="font-semibold text-[#222] text-2xl mt-4 mb-[30px]">
+                    <h2 className="font-semibold text-[#222] text-2xl mt-5 mb-3">
                       {blog.title}
                     </h2>
-                    <p className="text-[#222] text-lg mb-[30px]">
+                    <p className="text-[#222] text-lg mb-5">
                       {blog.text.substring(0, 100)}
                     </p>
                     <button className="text-[#FF5349] text-lg">
@@ -52,7 +52,7 @@ const AllBlog = () => {
             </div>
           ))}
         </div>
-        <div className="flex justify-center gap-5 mt-[60px]">
+        <div className="flex justify-center text-[#222] duration-300 gap-5 mt-[60px]">
           <a
             className="px-3 py-1 hover:bg-[#FF5349] hover:text-white w-8 flex justify-center bg-[#D3D3D3]"
             href="#"

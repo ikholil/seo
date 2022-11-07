@@ -2,14 +2,14 @@ import Image from "next/image";
 import SeoImg from "../../public/images/seo/seo.png";
 const Seo = () => {
   return (
-    <div className="bg-[#FFFDFA]">
-      <div className="max-w-[1296px] mx-auto py-20 md:py-[120px] ">
+    <div className="bg-[#FFF]">
+      <div className="max-w-[1296px] mx-auto py-20 md:py-[115px] ">
         <div className="md:grid md:grid-cols-12 items-center md:gap-10">
-          <div className="col-span-12 mx-3 xl:mx-0 flex flex-col mt-5 md:mt-0 gap-7 lg:col-span-5">
-            <h1 className="text-4xl md:text-[57px] font-extrabold leading-tight text-[#222] my-[30px]">
+          <div className="col-span-12 mx-3 xl:mx-0 flex flex-col mt-5 md:mt-0 gap-6 lg:col-span-5">
+            <h2 className="text-4xl md:text-[57px] font-bold leading-tight text-[#222] ">
               Search Engine 
               <span className="text-[#FF5349]"> Optimization</span>
-            </h1>
+            </h2>
             <p className="text-lg  text-[#444]">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Imperdiet
               diam in commodo platea mi. Nec iaculis eget aliquam tellus

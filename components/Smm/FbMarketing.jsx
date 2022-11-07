@@ -6,10 +6,10 @@ const FbMarketing = () => {
       <div className="max-w-[1296px] mx-auto py-20 md:py-[120px] ">
         <div className="flex flex-col-reverse md:flex-row items-center md:gap-10">
           <div className="flex-1 mx-3 ">
-            <h1 className="text-4xl md:text-[57px] font-extrabold leading-tight text-[#222] my-[30px]">
+            <h2 className="text-4xl md:text-[57px] max-w-sm font-bold leading-tight text-[#222] mb-6">
               <span className="text-[#2957BD]"> Facebook </span>
               Marketing
-            </h1>
+            </h2>
 
             <p className="text-lg mb-[60px] text-[#444]">
               When we start a project, we set up the tracking of your ads in

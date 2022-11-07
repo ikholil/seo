@@ -14,10 +14,10 @@ const Smm = () => {
             />
           </div>
           <div className="flex-1 mx-3 ">
-            <h1 className="text-4xl md:text-[57px] font-extrabold leading-tight text-[#222] my-[30px]">
+            <h2 className="text-4xl md:text-[57px] font-bold leading-tight text-[#222] mb-[24px]">
               <span className="text-[#2957BD]"> Social Media </span>
               Marketing {"(SMM)"}
-            </h1>
+            </h2>
             <p className="text-lg  mb-5 text-[#444]">
               Passionate about data and acquisition, we offer campaigns on
               social networks.

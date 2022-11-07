@@ -5,14 +5,14 @@ import { priceplan } from "../../data/priceplan";
 const PricingSeo = () => {
   return (
     <div className="bg-[url('/images/pricing/map-bg.png')] bg-white bg-bottom bg-no-repeat h-full">
-      <div className="max-w-[1296px] mx-auto pt-[65px] pb-16 md:pb-[285px]">
+      <div className="max-w-[1296px] mx-auto pt-[116px] pb-16 md:pb-[297px]">
         <div className="flex justify-center">
           <div className="max-w-[640px] text-center">
-            <h3 className="text-[32px] font-bold text-[#FF5349]">Price</h3>
-            <h1 className="text-4xl md:text-[57px] font-extrabold leading-tight text-[#222] my-[30px]">
+            <h3 className="text-2xl font-semibold text-[#FF5349]">Price</h3>
+            <h2 className="text-4xl md:text-[57px] font-bold leading-tight text-[#222] my-2">
               <span className="text-[#FF5349]">Choose</span> Your Plan
-            </h1>
-            <p className="text-lg mb-[60px] text-[#222]">
+            </h2>
+            <p className="text-lg mb-14 md:first-letter:mb-[57px] text-[#222]">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra
               at eu tortor eget nam scelerisque ut tincidunt.
             </p>

@@ -20,16 +20,16 @@ const Testimonial = () => {
   console.log(currentTab)
   return (
     <div className="bg-[url('/images/testimonial/bg.png')] bg-white bg-left-bottom bg-no-repeat">
-      <div className="max-w-[1296px] mx-auto pt-[120px] pb-[193px]">
+      <div className="max-w-[1296px] mx-auto pt-[70px] md:pt-[110px] pb-[186px]">
         <div className="flex justify-center">
           <div className="max-w-[640px] text-center">
-            <h3 className="text-[32px] font-bold text-[#FF5349]">
+            <h3 className="text-2xl font-semibold text-[#FF5349]">
               Testimonial
             </h3>
-            <h1 className="text-4xl md:text-[57px] font-extrabold leading-tight text-[#222] my-[30px]">
+            <h2 className="text-4xl md:text-[57px] font-bold leading-tight text-[#222] mb-6 mt-[10px]">
               What our <span className="text-[#FF5349]">{"Client's"}</span> Say
-            </h1>
-            <p className="text-lg mb-[60px] text-[#222]">
+            </h2>
+            <p className="text-lg mb-[55px] text-[#222]">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra
               at eu tortor eget nam scelerisque ut tincidunt.
             </p>
@@ -59,7 +59,7 @@ const Testimonial = () => {
                   />
                   {client.id == currentTab && (
                     <div className="text-center hidden md:block relative mb-[120px] text-[#222]">
-                      <h3 className="text-2xl my-3 font-semibold">{client.name}</h3>
+                      <h3 className="text-2xl mt-10 font-semibold">{client.name}</h3>
                       <p className="text-base">{client.designation}</p>
                     </div>
                   )}

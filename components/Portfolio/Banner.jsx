@@ -1,7 +1,7 @@
 import Head from "next/head";
 const Banner = () => {
   return (
-    <div className="pt-[80px] md:pt-[100px]  relative">
+    <div className="pt-[80px] md:pt-[100px] bg-white  relative">
       <Head>
         <title>Portfolio</title>
       </Head>
