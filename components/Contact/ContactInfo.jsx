@@ -34,7 +34,7 @@ const ContactInfo = () => {
         <div className="flex md:gap-8 gap-3">
           <BsTelephone className="shrink-0" size={35} />
           <a
-            href="tel:+1 658 361 253"
+            href="tel:+1658361253"
             className="text-lg   md:text-[32px] font-semibold"
           >
             +1 658 361 253

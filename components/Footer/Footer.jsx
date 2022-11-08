@@ -46,7 +46,7 @@ const Footer = () => {
             </div>
             <div className="flex gap-5">
               <BsTelephone className="shrink-0" size={30} />
-              <a href="tel:+1 658 361 253" className="text-base md:text-lg">
+              <a href="tel:+1658361253" className="text-base md:text-lg">
                 +1 658 361 253
               </a>
             </div>

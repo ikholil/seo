@@ -30,7 +30,7 @@ const BlogDetails = () => {
               {blog?.text.split(".").slice(0, 2).join("")}
             </p>
             <div className="border-l-2 mb-[40px] border-[#F75D54]">
-              <p className="text-2xl font-semibold text-[#222] px-[25px]">
+              <p className="text-lg md:text-2xl font-semibold text-[#222] px-[25px]">
                 {blog?.quote?.text}
               </p>
             </div>

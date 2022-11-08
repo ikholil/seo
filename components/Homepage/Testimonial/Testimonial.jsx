@@ -46,7 +46,7 @@ const Testimonial = () => {
                     ? "border-[12px] mx-4 w-56 h-56"
                     : "w-24 -mx-3 h-24 border-4"
                 } z-10`}
-                disabled={currentTab === `${client.id}`}
+                
                 onClick={() => handleTabClick(client.id)}
               >
                 <Image

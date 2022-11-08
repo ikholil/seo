@@ -99,7 +99,7 @@ const Header = () => {
         <div className="hidden lg:flex items-center gap-5">
           <a
             className="text-lg font-semibold text-[#222222]"
-            href="tel:+1 (212) 243-7969"
+            href="tel:+1(212)2437969"
           >
             +1 (212) 243-7969
           </a>
