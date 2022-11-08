@@ -5,8 +5,8 @@ const About = () => {
   return (
     <div className="bg-white">
       <div className="max-w-[1296px] mx-auto">
-        <div className="flex px-3 md:mx-0 flex-col md:flex-row pt-[120px]">
-          <div className="md:w-1/2 ">
+        <div className="flex px-3 md:mx-0 flex-col md:flex-row pt-[70px] md:pt-[120px]">
+          <div className="md:w-1/2">
             <Image
               src="/images/about/illustration.png"
               height={479}
@@ -19,12 +19,12 @@ const About = () => {
               We Provide Best <span className="text-[#FF5349] ">Digital </span>{" "}
               Marketing Service{" "}
             </h2>
-            <p className="text-lg">
+            <p className="text-base md:text-lg mb-4">
               Passionate about data and acquisition, we offer campaigns on
               social networks.
             </p>{" "}
-            <br />
-            <p className="text-lg">
+          
+            <p className="text-base md:text-lg mb-6 md:mb-0">
               When we start a project, we set up the tracking of your ads in
               order to give you all the KPIs essential to your objectives,
               without loss of information and with reliable monitoring.
@@ -36,7 +36,7 @@ const About = () => {
         <div className="flex flex-col mt-[25px] md:flex-row flex-wrap mx-3 md:mx-0 gap-5">
           {aboutFeatures.map(({ id, title, icon, desc }) => (
             <div
-              className="md:w-[390px] text-[#222] p-[30px] bg-white shadow-lg rounded"
+              className="md:w-[390px] text-[#222] p-4 md:p-[30px] bg-white shadow-lg rounded"
               key={id}
             >
               <div
@@ -48,8 +48,8 @@ const About = () => {
               >
                 <Image src={icon} height={70} width={70} alt="icon" />
               </div>
-              <h3 className="mt-[30px] mb-5 font-semibold text-[32px]">{title}</h3>
-              <p className="text-lg mb-[86px]">{desc}</p>
+              <h3 className="mt-4 md:mt-[30px] mb-3 md:mb-5 font-semibold text-2xl md:text-[32px]">{title}</h3>
+              <p className="text-base md:text-lg md:mb-[86px]">{desc}</p>
             </div>
           ))}
         </div>

@@ -5,19 +5,19 @@ import { blogs } from "../../../data/blog";
 const Blog = () => {
   return (
     <div className="bg-[#F9F9F9] bg-[url('/images/blog/bg.png')] bg-contain bg-no-repeat bg-right-bottom">
-      <div className="max-w-[1296px] mx-auto pt-[115px] pb-16 md:pb-[295px]">
+      <div className="max-w-[1296px] mx-auto pt-[65px] md:pt-[115px] pb-16 md:pb-[295px]">
         <div className="flex justify-center">
           <div className="max-w-[640px] text-center">
             <h3 className="text-2xl font-semibold text-[#FF5349]">Blog</h3>
-            <h2 className="text-4xl md:text-[57px] font-bold leading-tight text-[#222] mt-[20px] mb-2">
+            <h2 className="text-4xl md:text-[57px] font-bold leading-tight text-[#222] mt-4 md:mt-[20px] mb-2">
               Our Latest <span className="text-[#FF5349]">Articles</span>
             </h2>
-            <p className="text-lg mb-[60px] text-[#222]">
+            <p className="text-lg mb-10 md:mb-[60px] text-[#222]">
               Lorem ipsum dolor sit amet.
             </p>
           </div>
         </div>
-        <div className="flex mx-2 flex-col gap-5 flex-wrap md:flex-row">
+        <div className="flex mx-2 flex-col gap-5 justify-center xl:justify-between flex-wrap md:flex-row">
           {blogs.slice(0, 3).map((blog) => (
             <div
               key={blog.id}

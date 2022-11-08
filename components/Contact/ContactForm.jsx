@@ -3,11 +3,11 @@ const ContactForm = () => {
   return (
     <div className="relative">
       <div className="bg-white ">
-        <div className="bg-[url('/images/contact/form-bg.png')] bg-no-repeat opacity-30 min-h-[1170px] w-full absolute top-0 flex items-center justify-center bg-cover"></div>
+        <div className="bg-[url('/images/contact/form-bg.png')] bg-no-repeat opacity-30 h-full w-full absolute top-0 flex items-center justify-center bg-cover"></div>
 
         <div className="  max-w-[1296px] flex justify-center items-center flex-col text-center mx-3 md:mx-auto h-full z-10 relative">
           <div className="max-w-4xl flex flex-col justify-center">
-            <h5 className="text-[#FF5349] text-2xl font-semibold mt-[115px]">
+            <h5 className="text-[#FF5349] text-2xl font-semibold mt-[65px] md:mt-[115px]">
               Contact us
             </h5>
             <h2 className="text-center text-[#222] leading-tight text-4xl pt-2 md:text-[57px] font-bold mb-6">
@@ -71,7 +71,7 @@ const ContactForm = () => {
                     value={values.name}
                     type="text"
                     placeholder="Full Name"
-                    className="p-5 w-full bg-white text-[#5a5a5a] rounded-md  mb-1 focus:outline-none"
+                    className="p-3 md:p-5  w-full bg-white text-[#5a5a5a] rounded-md  mb-1 focus:outline-none"
                   />
                   <span className="text-red-500">
                     {" "}
@@ -84,7 +84,7 @@ const ContactForm = () => {
                     value={values.email}
                     type="text"
                     placeholder="Email"
-                    className="p-5 w-full bg-white text-[#5a5a5a] rounded-md mt-3 mb-1 focus:outline-none"
+                    className="p-3 md:p-5  w-full bg-white text-[#5a5a5a] rounded-md mt-3 mb-1 focus:outline-none"
                   />
                   <span className="text-red-500">
                     {" "}
@@ -97,7 +97,7 @@ const ContactForm = () => {
                     value={values.website}
                     type="text"
                     placeholder="Website"
-                    className="p-5 w-full bg-white text-[#5a5a5a] rounded-md mt-3 mb-1 focus:outline-none"
+                    className="p-3 md:p-5  w-full bg-white text-[#5a5a5a] rounded-md mt-3 mb-1 focus:outline-none"
                   />
                   <span className="text-red-500">
                     {" "}
@@ -110,7 +110,7 @@ const ContactForm = () => {
                     value={values.message}
                     rows="8"
                     placeholder="Type a Message"
-                    className="mb-1 mt-3 p-5 w-full bg-white text-[#5a5a5a] rounded-md focus:outline-none"
+                    className="mb-1 mt-3 p-3 md:p-5  w-full bg-white text-[#5a5a5a] rounded-md focus:outline-none"
                   />
                   <span className="text-red-500">
                     {" "}

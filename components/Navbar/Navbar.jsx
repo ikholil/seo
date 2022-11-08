@@ -28,7 +28,7 @@ const Header = () => {
   }, []);
   return (
     <nav
-      className={`w-full fixed z-50 text-[#222] py-5 md:py-0 px-1 xl:px-0 navbar ${
+      className={`w-full fixed z-50 text-[#222] py-2 md:py-0 px-1 md:px-3 xl:px-0 navbar ${
         navColor ? "bg-white shadow-lg" : "bg-transparent"
       }`}
     >
@@ -42,7 +42,7 @@ const Header = () => {
         <div
           className={` w-screen md:block md:w-auto ${
             open
-              ? "block absolute -left-1  h-[92vh] bg-white z-50 top-14"
+              ? "block absolute -left-1  h-[92vh] bg-white z-50 top-10"
               : "hidden"
           }`}
         >
@@ -53,7 +53,7 @@ const Header = () => {
               ["/blog", "BLOG"],
               ["/contact", "CONTACT"],
             ].map(([url, title]) => (
-              <li className="md:py-[35px]" key={title} onClick={() => setOpen(false)}>
+              <li className=" lg:py-[35px]" key={title} onClick={() => setOpen(false)}>
                 <Link href={url}>
                   <a
                     className="block  text-lg text-x py-2 pr-4 md:pl-3  rounded md:bg-transparent hover:text-primary  md:p-0 "
@@ -65,16 +65,16 @@ const Header = () => {
               </li>
             ))}
 
-            <li className="dropdown-button md:py-[35px]">
+            <li className="dropdown-button cursor-pointer py-4 lg:py-[35px]">
               <a
                 onClick={() => setDropdown(!dropdown)}
-                className=" flex  items-center gap-2 relative cursor-pointer  text-lg text-x  pr-4 md:pl-3  rounded md:hover:bg-transparent md:border-0 hover:text-primary md:p-0 "
+                className=" flex  items-center gap-2 relative text-lg text-x  pr-4 md:pl-3  rounded md:hover:bg-transparent md:border-0 hover:text-primary md:p-0 "
               >
                 PAGES <BsChevronDown />{" "}
               </a>
               <div className="relative">
                 
-                  <div className="absolute bg-white w-40 md:top-[35px] dropdown  text-lg">
+                  <div className="absolute bg-white w-40 md:top-[16px] dropdown  text-lg">
                     {[
                       ["/seo", "SEO"],
                       ["/smm", "SMM"],

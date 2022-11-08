@@ -4,38 +4,38 @@ import React from "react";
 const Service = () => {
   return (
     <div className="bg-white">
-      <div className="max-w-[1296px] mx-auto py-20 md:pt-[110px]">
+      <div className="max-w-[1296px] mx-auto pt-[70px] pb-12 md:pt-[110px]">
         <div className="flex justify-center">
           <div className="max-w-[640px]  text-center mx-3 lg:mx-0">
-            <h3 className="text-[32px] font-bold text-[#FF5349]">
+            <h3 className="text-2xl font-semibold text-[#FF5349]">
               Digital Marketing
             </h3>
-            <h2 className="text-4xl md:text-[57px] font-bold leading-tight text-[#222] mt-[18px] mb-2">
+            <h2 className="text-5xl md:text-[57px] font-bold leading-tight text-[#222] mt-[18px] mb-2">
               Service We Provide
             </h2>
-            <p className="text-lg mb-9 md:mb-[55px] text-[#222]">
+            <p className="text-lg mb-6 md:mb-[55px] text-[#222]">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Convallis
               mattis dui eget vestibulum id et. It’s about ranking
             </p>
           </div>
         </div>
-        <div className="md:grid md:grid-cols-2 md:gap-10 items-center ">
-          <div className="col-span-2 mx-3 xl:mx-0 lg:col-span-1">
-            <h3 className="text-[32px] font-semibold mb-[20px] text-[#222]">
-              Search Engine <br /> Optimization (SEO)
+        <div className="flex flex-col lg:flex-row md:gap-10 items-center ">
+          <div className="flex-1  mx-3 xl:mx-0 ">
+            <h3 className="text-2xl max-w-md leading-tight md:text-[32px] font-semibold mb-4 md:mb-[20px] text-[#222]">
+              Search Engine  Optimization (SEO)
             </h3>
-            <p className="text-lg text-[#222] mb-9">
+            <p className="text-base md:text-lg text-[#222] mb-9">
               At Session Media we build technically sound and creative SEO
               strategies which lift your brand to dominate the organic search
               results for the most relevant and profitable terms.For you, that
               means more visibility and qualified leads at the lowest possible
               cost.
             </p>
-            <button className="text-white text-lg px-6 shadow-lg shadow-[#ff524987] py-3 rounded-lg bg-gradient-to-r from-[#FF9300] to-[#FF5349]">
+            <button className="text-white text-lg px-4 py-2 md:px-6 shadow-lg shadow-[#ff524987] md:py-3 rounded-lg bg-gradient-to-r from-[#FF9300] to-[#FF5349]">
               Read More
             </button>
           </div>
-          <div className="col-span-2 lg:col-span-1 2xl:-mr-36 mx-3 xl:mx-0">
+          <div className="flex-1 2xl:-mr-36 mx-3 xl:mx-0">
             <Image
               src="/images/service/seo.png"
               width={1000}
@@ -43,8 +43,10 @@ const Service = () => {
               alt="solution bg image"
             />
           </div>
-          {/* Service no 2 */}
-          <div className="col-span-2 lg:col-span-1 mx-3 order-1 lg:order-[0] lg:or xl:mx-0">
+        </div>
+        {/* Service no 2 */}
+        <div className="flex flex-col-reverse lg:flex-row md:gap-10 items-center ">
+          <div className="flex-1 mx-3 lg:or xl:mx-0">
             <Image
               src="/images/service/smm.png"
               width={700}
@@ -52,18 +54,18 @@ const Service = () => {
               alt="solution bg image"
             />
           </div>
-          <div className="col-span-2 mx-3 xl:mx-0 lg:col-span-1 ">
-            <h3 className="text-[32px] font-semibold mb-[20px] text-[#222]">
+          <div className="flex-1 mx-3 xl:mx-0  ">
+            <h3 className="text-2xl md:text-[32px] font-semibold mb-[20px] text-[#222]">
               Social Media <br /> Marketing (SMM)
             </h3>
-            <p className="text-lg text-[#222] mb-9">
+            <p className="text-base md:text-lg text-[#222] mb-9">
               Passionate about data and acquisition, we offer campaigns on
               social networks. May i the most take When we start a project, we
               set up the tracking of your ads in order to give you all the KPIs
               essential to your objectives, without loss of information and with
               reliable monitoring.
             </p>
-            <button className="text-white text-lg px-6 shadow-lg shadow-[#ff524987] py-3 rounded-lg bg-gradient-to-r from-[#FF9300] to-[#FF5349]">
+            <button className="text-white text-lg px-4 py-2 md:px-6 shadow-lg shadow-[#ff524987] md:py-3 rounded-lg bg-gradient-to-r from-[#FF9300] to-[#FF5349]">
               Read More
             </button>
           </div>

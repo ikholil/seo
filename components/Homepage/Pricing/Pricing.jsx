@@ -5,7 +5,7 @@ priceplan;
 const Pricing = () => {
   return (
     <div className="bg-[url('/images/pricing/map-bg.png')] bg-white bg-bottom bg-no-repeat h-full">
-      <div className="max-w-[1296px] mx-auto pt-[115px] pb-[120px]">
+      <div className="max-w-[1296px] mx-auto pt-16 md:pt-[115px] pb-[70px] md:pb-[120px]">
         <div className="flex justify-center">
           <div className="max-w-[640px] text-center">
             <h3 className="text-2xl font-semibold text-[#FF5349]">Price</h3>
@@ -18,13 +18,13 @@ const Pricing = () => {
             </p>
           </div>
         </div>
-        <div className="flex flex-col flex-wrap md:flex-row gap-6">
+        <div className="flex justify-center flex-col flex-wrap md:flex-row gap-6">
           {priceplan.map(({ id, title, price, bg, features }) => (
             <div
               className="md:w-[416px] mx-3 lg:mx-0 shadow-lg rounded-b-lg relative"
               key={id}
             >
-              <div className="absolute top-0 right-0">
+              <div className="absolute w-20 md:w-32 top-0 right-0">
                 <Image src={bg} width={140} height={120} alt="bg" />
               </div>
               <div
@@ -50,7 +50,7 @@ const Pricing = () => {
                 <ul>
                   {features.map((item, i) => (
                     <li
-                      className="flex gap-5 border-b text-lg text-[#222] py-4 items-center"
+                      className="flex gap-5 border-b text-lg text-[#222] py-2 md:py-4 items-center"
                       key={i}
                     >
                       <CgCheckO color="#FF9300" /> {item}

@@ -3,7 +3,7 @@ import seoWorkImg from "../../public/images/seo/seo-work.png";
 const SeoWork = () => {
   return (
     <div className="bg-[#FFF]">
-      <div className="max-w-[1296px] mx-auto py-14 md:py-[120px] ">
+      <div className="max-w-[1296px] mx-auto pt-14 pb-16 md:py-[120px] ">
         <div className="md:grid md:grid-cols-12 items-center ">
           <div className="col-span-12 lg:col-span-6  mx-3 xl:mx-0">
             <Image src={seoWorkImg} width={515} height={440} alt="seo work" />
@@ -13,7 +13,7 @@ const SeoWork = () => {
               Work With The Best SEO
               <span className="text-[#2957BD]"> Agency </span>
             </h2>
-            <p className="text-lg  text-[#444]">
+            <p className="text-base md:text-lg  text-[#444]">
               SEO is no longer a method of link-building. Some of the deciding
               factors for a website to rank higher on search engines are
               architecturally sound coding, faster loading speed of the sites,

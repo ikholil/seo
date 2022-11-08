@@ -5,14 +5,14 @@ import { priceplan } from "../../data/priceplan";
 const PricingSeo = () => {
   return (
     <div className="bg-[url('/images/pricing/map-bg.png')] bg-white bg-bottom bg-no-repeat h-full">
-      <div className="max-w-[1296px] mx-auto pt-[116px] pb-16 md:pb-[297px]">
+      <div className="max-w-[1296px] mx-auto pt-[65px] md:pt-[116px] pb-[70px] md:pb-[297px]">
         <div className="flex justify-center">
           <div className="max-w-[640px] text-center">
             <h3 className="text-2xl font-semibold text-[#FF5349]">Price</h3>
             <h2 className="text-4xl md:text-[57px] font-bold leading-tight text-[#222] my-2">
               <span className="text-[#FF5349]">Choose</span> Your Plan
             </h2>
-            <p className="text-lg mb-14 md:first-letter:mb-[57px] text-[#222]">
+            <p className="mx-3 lg:mx-0 text-base md:text-lg mb-7 md:mb-14 md:first-letter:mb-[57px] text-[#222]">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra
               at eu tortor eget nam scelerisque ut tincidunt.
             </p>
@@ -24,7 +24,7 @@ const PricingSeo = () => {
               className="md:w-[416px] mx-3 lg:mx-0 shadow-lg rounded-b-lg relative"
               key={id}
             >
-              <div className="absolute top-0 right-0">
+              <div className="absolute w-20 md:w-32 top-0 right-0">
                 <Image src={bg} width={140} height={120} alt="bg" />
               </div>
               <div
@@ -50,7 +50,7 @@ const PricingSeo = () => {
                 <ul>
                   {features.map((item, i) => (
                     <li
-                      className="flex gap-5 border-b text-lg text-[#222] py-4 items-center"
+                      className="flex gap-5 border-b text-lg text-[#222] py-2 md:py-4 items-center"
                       key={i}
                     >
                       <CgCheckO color="#FF9300" /> {item}

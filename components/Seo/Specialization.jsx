@@ -4,20 +4,20 @@ import { specialization } from "../../data/specilization";
 const Specialization = () => {
   return (
     <div className="bg-[#FFFDFA]">
-      <div className="max-w-[1296px] mx-auto py-20 md:pt-[125px] md:pb-[120px]">
+      <div className="max-w-[1296px] mx-auto pt-16 pb-[70px] md:pt-[125px] md:pb-[120px]">
         <div className="flex justify-center">
           <div className="text-center max-w">
-            <h2 className="font-bold text-3xl md:text-[57px] text-[#222] mb-[40px]">
+            <h2 className="font-bold text-3xl md:text-[57px] text-[#222] mb-6 md:mb-[40px]">
               Areas of Specialization
             </h2>
-            <p className="max-w-[590px] text-lg text-[#222] mb-10 md:mb-[53px]">
+            <p className="max-w-[590px] text-lg text-[#222] mb-8 md:mb-[53px]">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facilisis
               in commodo a mi sed.
             </p>
           </div>
         </div>
 
-        <div className="grid grid-cols-12 gap-5">
+        <div className="grid grid-cols-12 gap-5 mx-2 lg:mx-0">
           {specialization.map(({ id, title, desc, icon }) => (
             <div
               className="col-span-12 sm:col-span-6 md:col-span-4 hover:bg-[#FF5349] cursor-pointer hover:text-white  lg:col-span-3 text-[#222] bg-white transition-colors duration-300 rounded-[10px] shadow-[0px_4px_23px_rgba(184,184,184,0.25)] hover:shadow-[0px_7px_23px_rgba(255,83,73,0.35)] p-4 md:p-[30px] specialization"
