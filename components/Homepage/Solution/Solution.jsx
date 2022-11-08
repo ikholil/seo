@@ -11,7 +11,7 @@ const Solution = () => {
             <h3 className="text-2xl font-semibold text-[#FF5349]">
               Marketing Solution
             </h3>
-            <h2 className="text-5xl md:text-[57px] font-bold leading-tight text-[#222] mt-[13px] mb-[10px]">
+            <h2 className="text-4xl mx-2 lg:mx-0 md:text-[57px] font-bold leading-tight text-[#222] mt-[13px] mb-[10px]">
               We Solve Better Digital{" "}
               <span className="text-[#FF5349]">Marketing Solution</span>
             </h2>

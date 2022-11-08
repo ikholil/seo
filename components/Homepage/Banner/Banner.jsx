@@ -12,10 +12,10 @@ const Banner = () => {
                         <p className='text-lg md:text-2xl text-[#222222] mb-6 md:mb-8'>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Convallis mattis dui eget vestibulum id et.
                         </p>
-                        <button className='text-white text-lg px-6 shadow-lg shadow-[#ff524987] py-3 rounded-lg bg-gradient-to-r from-[#FF9300] to-[#FF5349]'>Get Started Now</button>
+                        <button className='text-white text-lg font-semibold px-6 shadow-lg shadow-[#ff524987] py-4 rounded-md bg-gradient-to-r from-[#FF6E2C] to-[#FF5646]'>Get Started Now</button>
                     </div>
                 </div>
-                <div className='absolute -bottom-2 left-0'>
+                <div className='hidden md:block absolute -bottom-2 left-0'>
                     <Image src='/images/banner/shape.png' height={306} width={406} alt="banner shape" />
                 </div>
             </div>

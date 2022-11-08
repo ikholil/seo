@@ -11,7 +11,7 @@ const Clients = () => {
     <div className="bg-[#F9F9F9]">
       <div className="max-w-[1296px] mx-auto pb-[70px] md:pb-[265px] pt-[70px] md:pt-[115px]">
         <div className="flex justify-center">
-          <div className="max-w-[640px] text-center">
+          <div className="max-w-[640px] text-center mx-2 lg:mx-0">
             <h3 className="text-2xl font-semibold text-[#FF5349]">
               clients’s love
             </h3>

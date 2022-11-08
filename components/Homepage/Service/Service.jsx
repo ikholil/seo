@@ -10,7 +10,7 @@ const Service = () => {
             <h3 className="text-2xl font-semibold text-[#FF5349]">
               Digital Marketing
             </h3>
-            <h2 className="text-5xl md:text-[57px] font-bold leading-tight text-[#222] mt-[18px] mb-2">
+            <h2 className="text-4xl md:text-[57px] font-bold leading-tight text-[#222] mt-[18px] mb-2">
               Service We Provide
             </h2>
             <p className="text-lg mb-6 md:mb-[55px] text-[#222]">
@@ -31,9 +31,7 @@ const Service = () => {
               means more visibility and qualified leads at the lowest possible
               cost.
             </p>
-            <button className="text-white text-lg px-4 py-2 md:px-6 shadow-lg shadow-[#ff524987] md:py-3 rounded-lg bg-gradient-to-r from-[#FF9300] to-[#FF5349]">
-              Read More
-            </button>
+            <button className='text-white text-base  px-6 shadow-lg shadow-[#ff524987] py-3 rounded-md bg-gradient-to-r from-[#FF6E2C] to-[#FF5646]'>Read More</button>
           </div>
           <div className="flex-1 2xl:-mr-36 mx-3 xl:mx-0">
             <Image
@@ -49,8 +47,8 @@ const Service = () => {
           <div className="flex-1 mx-3 lg:or xl:mx-0">
             <Image
               src="/images/service/smm.png"
-              width={700}
-              height={650}
+              width={512}
+              height={474}
               alt="solution bg image"
             />
           </div>
@@ -65,9 +63,7 @@ const Service = () => {
               essential to your objectives, without loss of information and with
               reliable monitoring.
             </p>
-            <button className="text-white text-lg px-4 py-2 md:px-6 shadow-lg shadow-[#ff524987] md:py-3 rounded-lg bg-gradient-to-r from-[#FF9300] to-[#FF5349]">
-              Read More
-            </button>
+            <button className='text-white text-base px-6 shadow-lg shadow-[#ff524987] py-3 rounded-md bg-gradient-to-r from-[#FF6E2C] to-[#FF5646]'>Read More</button>
           </div>
         </div>
       </div>

@@ -33,7 +33,7 @@ const About = () => {
             </p>
           </div>
         </div>
-        <div className="flex flex-col mt-[25px] md:flex-row flex-wrap mx-3 md:mx-0 gap-5">
+        <div className="flex flex-col mt-[25px] md:flex-row flex-wrap mx-3 md:mx-0 gap-5 pb-[70px] md:pb-[120px]">
           {aboutFeatures.map(({ id, title, icon, desc }) => (
             <div
               className="md:w-[390px] text-[#222] p-4 md:p-[30px] bg-white shadow-lg rounded"
@@ -49,7 +49,7 @@ const About = () => {
                 <Image src={icon} height={70} width={70} alt="icon" />
               </div>
               <h3 className="mt-4 md:mt-[30px] mb-3 md:mb-5 font-semibold text-2xl md:text-[32px]">{title}</h3>
-              <p className="text-base md:text-lg md:mb-[86px]">{desc}</p>
+              <p className="text-base md:text-lg">{desc}</p>
             </div>
           ))}
         </div>

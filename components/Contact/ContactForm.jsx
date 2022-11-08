@@ -116,8 +116,8 @@ const ContactForm = () => {
                     {" "}
                     {errors.message && touched.message && errors.message}
                   </span>
-                  <div className="flex justify-center mt-[50px]  mb-10 md:mb-[120px]">
-                    <button type="submit" className="text-white text-lg px-8 shadow-lg shadow-[#ff524987] py-4 rounded-md bg-gradient-to-r from-[#FF9300] to-[#FF5349]">
+                  <div className="flex justify-center mt-8 md:mt-[50px]  mb-[70px] md:mb-[120px]">
+                    <button type="submit" className="text-white text-lg px-6 py-3 md:px-8 shadow-lg shadow-[#ff524987] md:py-4 rounded-md bg-gradient-to-r from-[#FF9300] to-[#FF5349]">
                       Send Message
                     </button>
                   </div>

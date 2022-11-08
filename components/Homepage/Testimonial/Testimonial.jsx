@@ -20,7 +20,7 @@ const Testimonial = () => {
   return (
     <div className="bg-[url('/images/testimonial/bg.png')] bg-white bg-left-bottom bg-no-repeat">
       <div className="max-w-[1296px] mx-auto pt-[65px] md:pt-[110px] pb-[70px] md:pb-[186px]">
-        <div className="flex justify-center">
+        <div className="flex justify-center mx-2 lg:mx-0">
           <div className="max-w-[640px] text-center">
             <h3 className="text-2xl font-semibold text-[#FF5349]">
               Testimonial

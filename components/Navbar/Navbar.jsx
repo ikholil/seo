@@ -35,7 +35,7 @@ const Header = () => {
       <div className="max-w-[1296px]  relative z-40 mx-auto flex flex-wrap justify-between items-center">
         <Link href="/">
           <a className="flex items-center pl-2 md:pl-0">
-            <Image src="/logo.png" height={36} width={102} alt="Logo" />
+            <Image src="/logo.png" height={36} width={122} alt="Logo" />
           </a>
         </Link>
 
@@ -74,7 +74,7 @@ const Header = () => {
               </a>
               <div className="relative">
                 
-                  <div className="absolute bg-white w-40 md:top-[16px] dropdown  text-lg">
+                  <div className="absolute bg-white w-40 top-4 md:top-[35px] dropdown  text-lg">
                     {[
                       ["/seo", "SEO"],
                       ["/smm", "SMM"],
