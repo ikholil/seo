@@ -103,9 +103,9 @@ const Header = () => {
           >
             +1 (212) 243-7969
           </a>
-          <div className="bg-[#FF5349] p-2 shadow-xl shadow-[#ff52496c] rounded-lg">
+          <button className="bg-[#FF5349] p-2 shadow-xl shadow-[#ff52496c] rounded-lg">
             <FiSearch size={30} className=" text-white" />
-          </div>
+          </button>
         </div>
         <button
           onClick={() => setOpen(!open)}

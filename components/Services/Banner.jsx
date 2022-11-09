@@ -1,6 +1,4 @@
 import Head from "next/head";
-import React from "react";
-
 const Banner = () => {
   return (
     <div className="pt-[60px] bg-white md:pt-[100px]">

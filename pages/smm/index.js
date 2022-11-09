@@ -1,4 +1,3 @@
-import React from 'react';
 import PricingSeo from '../../components/Seo/PricingSeo';
 import Banner from '../../components/Smm/Banner';
 import FbMarketing from '../../components/Smm/FbMarketing';

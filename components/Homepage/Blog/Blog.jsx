@@ -1,5 +1,5 @@
 import Image from "next/image";
-import React from "react";
+import Link from "next/link";
 import { blogs } from "../../../data/blog";
 
 const Blog = () => {
@@ -8,7 +8,7 @@ const Blog = () => {
       <div className="max-w-[1296px] mx-auto pt-[65px] md:pt-[115px] pb-16 md:pb-[295px]">
         <div className="flex justify-center">
           <div className="max-w-[640px] text-center">
-            <h3 className="text-2xl font-semibold text-[#FF5349]">Blog</h3>
+            <h5 className="text-2xl font-semibold text-[#FF5349]">Blog</h5>
             <h2 className="text-4xl md:text-[57px] font-bold leading-tight text-[#222] mt-4 md:mt-[20px] mb-2">
               Our Latest <span className="text-[#FF5349]">Articles</span>
             </h2>
@@ -28,18 +28,21 @@ const Blog = () => {
                 width={385}
                 height={253}
                 alt="blog img"
+                className="zoom"
               />
               <div className="p-[15px]">
                 <p className="text-[#222] mt-1 gap-1 flex items-center">
                   {blog.author} •{blog.date}
                 </p>
-                <h2 className="font-semibold text-[#222] text-2xl mt-1 mb-[22px]">
+                <h5 className="font-semibold text-[#222] text-2xl mt-1 mb-[22px]">
                   {blog.title}
-                </h2>
+                </h5>
                 <p className="text-[#222] text-lg mb-[20px]">
                   {blog.text.substring(0, 100)}
                 </p>
-                <button className="text-[#1A4DBE] text-lg">Read More</button>
+                <Link href={`/blog/${blog.id}`}>
+                  <a className="text-[#1A4DBE] text-lg">Read More</a>
+                </Link>
               </div>
             </div>
           ))}

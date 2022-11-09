@@ -48,7 +48,7 @@ const About = () => {
               >
                 <Image src={icon} height={70} width={70} alt="icon" />
               </div>
-              <h3 className="mt-4 md:mt-[30px] mb-3 md:mb-5 font-semibold text-2xl md:text-[32px]">{title}</h3>
+              <h4 className="mt-4 md:mt-[30px] mb-3 md:mb-5 font-semibold text-2xl md:text-[32px]">{title}</h4>
               <p className="text-base md:text-lg">{desc}</p>
             </div>
           ))}

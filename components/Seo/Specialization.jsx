@@ -1,6 +1,4 @@
-import React from "react";
 import { specialization } from "../../data/specilization";
-
 const Specialization = () => {
   return (
     <div className="bg-[#FFFDFA]">
@@ -32,7 +30,7 @@ const Specialization = () => {
               >
                 {icon}
               </span>
-              <h3 className="text-2xl font-semibold mt-6 mb-2">{title}</h3>
+              <h5 className="text-2xl font-semibold mt-6 mb-2">{title}</h5>
               <p className="text-base md:text-lg">{desc}</p>
             </div>
           ))}

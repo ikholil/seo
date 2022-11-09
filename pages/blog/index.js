@@ -1,17 +1,13 @@
-import React from 'react';
-import Banner from '../../components/Blog/Banner';
-import Blog from '../../components/Blog/Blog';
-import Footer from '../../components/Footer/Footer';
-
+import Banner from "../../components/Blog/Banner";
+import Blog from "../../components/Blog/Blog";
 
 const blog = () => {
-    return (
-        <div>
-            <Banner />
-            <Blog />
-            
-        </div>
-    );
+  return (
+    <>
+      <Banner />
+      <Blog />
+    </>
+  );
 };
 
 export default blog;

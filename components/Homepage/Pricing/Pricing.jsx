@@ -8,7 +8,7 @@ const Pricing = () => {
       <div className="max-w-[1296px] mx-auto pt-16 md:pt-[115px] pb-[70px] md:pb-[120px]">
         <div className="flex justify-center">
           <div className="max-w-[640px] text-center">
-            <h3 className="text-2xl font-semibold text-[#FF5349]">Price</h3>
+            <h5 className="text-2xl font-semibold text-[#FF5349]">Price</h5>
             <h2 className="text-4xl md:text-[57px] font-bold leading-tight text-[#222] my-2">
               <span className="text-[#FF5349]">Choose</span> Your Plan
             </h2>
@@ -32,9 +32,9 @@ const Pricing = () => {
                   id == 1 && "bg-[#1A4DBE]"
                 } ${id == 2 && "bg-[#FF5349]"} ${id == 3 && "bg-[#1A4DBE]"} `}
               >
-                <h3 className="text-white text-2xl -mb-[6px]  font-semibold">
+                <h5 className="text-white text-2xl -mb-[6px]  font-semibold">
                   {title}
-                </h3>
+                </h5>
                 <h2
                   className={`${id == 1 && "text-[#FF9300]"} ${
                     id == 3 && "text-[#FF9300]"
@@ -58,11 +58,8 @@ const Pricing = () => {
                   ))}
                 </ul>
                 <div className="flex justify-center pt-[40px] pb-2">
-                  <button
-                    className={`px-8 py-3 border text-[#222] rounded-md border-black ${
-                      id == 2 &&
-                      "bg-[#FF5A42] text-white border-[#FF5A42] shadow-lg shadow-[#ff5b425e]"
-                    }`}
+                <button
+                    className={`px-8 py-3 border text-[#222] rounded-md border-black hover:bg-[#FF5A42] hover:text-white hover:border-[#FF5A42] hover:shadow-lg hover:shadow-[#ff5b425e] duration-300`}
                   >
                     Select Plan
                   </button>

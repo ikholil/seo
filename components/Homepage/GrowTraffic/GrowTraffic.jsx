@@ -25,9 +25,9 @@ const GrowTraffic = () => {
     
       <div className="max-w-[1296px] mx-3 xl:mx-auto flex flex-col md:flex-row mt-[70px] md:mt-[30px] pb-10 md:pb-[60px]">
         <div className="max-w-[640px]">
-          <h3 className=" text-2xl  font-semibold text-[#FF5349]">
+          <h5 className=" text-2xl  font-semibold text-[#FF5349]">
             Organic Traffic
-          </h3>
+          </h5>
           <h2 className="text-4xl md:text-[57px] font-bold leading-tight text-[#222] mt-3 mb-2">
             Grow Your Organic <span className="text-[#FF5349]">Website </span>
             Traffic{" "}

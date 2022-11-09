@@ -4,11 +4,11 @@ import Footer from '../components/Footer/Footer';
 
 const _error = () => {
     return (
-        <div>
+        <>
             <Banner />
             <Error />
           
-        </div>
+        </>
     );
 };
 

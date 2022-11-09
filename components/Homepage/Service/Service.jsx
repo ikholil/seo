@@ -1,5 +1,5 @@
 import Image from "next/image";
-import React from "react";
+import Link from "next/link";
 
 const Service = () => {
   return (
@@ -7,9 +7,9 @@ const Service = () => {
       <div className="max-w-[1296px] mx-auto pt-[70px] pb-12 md:pt-[110px]">
         <div className="flex justify-center">
           <div className="max-w-[640px]  text-center mx-3 lg:mx-0">
-            <h3 className="text-2xl font-semibold text-[#FF5349]">
+            <h5 className="text-2xl font-semibold text-[#FF5349]">
               Digital Marketing
-            </h3>
+            </h5>
             <h2 className="text-4xl md:text-[57px] font-bold leading-tight text-[#222] mt-[18px] mb-2">
               Service We Provide
             </h2>
@@ -21,9 +21,9 @@ const Service = () => {
         </div>
         <div className="flex flex-col lg:flex-row md:gap-10 items-center ">
           <div className="flex-1  mx-3 xl:mx-0 ">
-            <h3 className="text-2xl max-w-md leading-tight md:text-[32px] font-semibold mb-4 md:mb-[20px] text-[#222]">
-              Search Engine  Optimization (SEO)
-            </h3>
+            <h4 className="text-2xl max-w-md leading-tight md:text-[32px] font-semibold mb-4 md:mb-[20px] text-[#222]">
+              Search Engine Optimization (SEO)
+            </h4>
             <p className="text-base md:text-lg text-[#222] mb-9">
               At Session Media we build technically sound and creative SEO
               strategies which lift your brand to dominate the organic search
@@ -31,7 +31,11 @@ const Service = () => {
               means more visibility and qualified leads at the lowest possible
               cost.
             </p>
-            <button className='text-white text-base  px-6 shadow-lg shadow-[#ff524987] py-3 rounded-md bg-gradient-to-r from-[#FF6E2C] to-[#FF5646]'>Read More</button>
+            <Link href="/seo">
+              <a className="text-white text-base  px-6 shadow-lg shadow-[#ff524987] py-3 rounded-md bg-gradient-to-r from-[#FF6E2C] to-[#FF5646]">
+                Read More
+              </a>
+            </Link>
           </div>
           <div className="flex-1 2xl:-mr-36 mx-3 xl:mx-0">
             <Image
@@ -53,9 +57,9 @@ const Service = () => {
             />
           </div>
           <div className="flex-1 mx-3 xl:mx-0  ">
-            <h3 className="text-2xl md:text-[32px] font-semibold mb-[20px] text-[#222]">
+            <h4 className="text-2xl md:text-[32px] font-semibold mb-[20px] text-[#222]">
               Social Media <br /> Marketing (SMM)
-            </h3>
+            </h4>
             <p className="text-base md:text-lg text-[#222] mb-9">
               Passionate about data and acquisition, we offer campaigns on
               social networks. May i the most take When we start a project, we
@@ -63,7 +67,11 @@ const Service = () => {
               essential to your objectives, without loss of information and with
               reliable monitoring.
             </p>
-            <button className='text-white text-base px-6 shadow-lg shadow-[#ff524987] py-3 rounded-md bg-gradient-to-r from-[#FF6E2C] to-[#FF5646]'>Read More</button>
+            <Link href="/smm">
+              <a className="text-white text-base px-6 shadow-lg shadow-[#ff524987] py-3 rounded-md bg-gradient-to-r from-[#FF6E2C] to-[#FF5646]">
+                Read More
+              </a>
+            </Link>
           </div>
         </div>
       </div>

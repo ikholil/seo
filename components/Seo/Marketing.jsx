@@ -1,5 +1,4 @@
 import Image from "next/image";
-import React from "react";
 import MarketingImg from "../../public/images/seo/ms-img.png";
 const Marketing = () => {
   return (

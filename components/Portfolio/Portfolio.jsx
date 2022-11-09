@@ -1,8 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
-import { portfolio } from "../../data/portfolio";
 import { VscEye } from "react-icons/vsc";
+import { portfolio } from "../../data/portfolio";
 const Portfolio = () => {
   return (
     <div className="bg-white">

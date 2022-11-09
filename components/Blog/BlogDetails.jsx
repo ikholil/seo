@@ -1,6 +1,5 @@
 import Image from "next/image";
 import { useRouter } from "next/router";
-import React from "react";
 import { FiSearch } from "react-icons/fi";
 import { blogs } from "../../data/blog";
 import { HiOutlineChevronRight } from "react-icons/hi";

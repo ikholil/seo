@@ -1,16 +1,13 @@
-import React from 'react';
-import Footer from '../../components/Footer/Footer';
-import AllService from '../../components/Services/AllService';
-import Banner from '../../components/Services/Banner';
+import AllService from "../../components/Services/AllService";
+import Banner from "../../components/Services/Banner";
 
 const services = () => {
-    return (
-        <div>
-            <Banner />
-            <AllService />
-          
-        </div>
-    );
+  return (
+    <>
+      <Banner />
+      <AllService />
+    </>
+  );
 };
 
 export default services;

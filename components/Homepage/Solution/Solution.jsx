@@ -1,5 +1,4 @@
 import Image from "next/image";
-import React from "react";
 import { solution } from "../../../data/solution";
 // import bg from '../../../public/images/solution'
 const Solution = () => {
@@ -7,16 +6,16 @@ const Solution = () => {
     <div className="bg-[#FFFDFA]">
       <div className="max-w-[1296px] mx-auto pt-[60px] pb-16 md:pt-[110px] md:pb-[120px] ">
         <div className="flex justify-center">
-          <div className="max-w-[640px] text-center">
-            <h3 className="text-2xl font-semibold text-[#FF5349]">
+          <div className="max-w-3xl text-center">
+            <h5 className="text-2xl font-semibold text-[#FF5349]">
               Marketing Solution
-            </h3>
+            </h5>
             <h2 className="text-4xl mx-2 lg:mx-0 md:text-[57px] font-bold leading-tight text-[#222] mt-[13px] mb-[10px]">
-              We Solve Better Digital{" "}
-              <span className="text-[#FF5349]">Marketing Solution</span>
+              We Solve Better {" "}
+              <span className="text-[#FF5349]">Digital Marketing </span>Solution
             </h2>
             <p className="text-lg mb-10 md:mb-[60px] text-[#222]">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Convallis
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Convallis <br />
               mattis dui eget vestibulum id et. It’s about ranking
             </p>
           </div>

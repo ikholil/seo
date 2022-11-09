@@ -1,6 +1,5 @@
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
 import { blogs } from "../../data/blog";
 
 const AllBlog = () => {
@@ -31,21 +30,22 @@ const AllBlog = () => {
                     src={blog.images[0]}
                     width={385}
                     height={253}
+                    className="zoom"
                     alt="blog img"
                   />
                   <div className="md:px-[15px] pb-1 md:pb-2 pt-1">
                     <p className="text-[#222] gap-1 flex items-center">
                       {blog.author} •{blog.date}
                     </p>
-                    <h2 className="font-semibold text-[#222] text-2xl mt-2 md:mt-5 mb-3">
+                    <h5 className="font-semibold text-[#222] text-2xl mt-2 md:mt-5 mb-3">
                       {blog.title}
-                    </h2>
+                    </h5>
                     <p className="text-[#222] text-lg mb-3 md:mb-5">
                       {blog.text.substring(0, 100)}
                     </p>
-                    <button className="text-[#FF5349] text-lg">
+                    <a className="text-[#FF5349] text-lg">
                       Read More
-                    </button>
+                    </a>
                   </div>
                 </div>
               </Link>

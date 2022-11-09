@@ -1,18 +1,15 @@
-import React from 'react';
-import Banner from '../../components/Contact/Banner';
-import ContactForm from '../../components/Contact/ContactForm';
-import ContactInfo from '../../components/Contact/ContactInfo';
-import Footer from '../../components/Footer/Footer';
+import Banner from "../../components/Contact/Banner";
+import ContactForm from "../../components/Contact/ContactForm";
+import ContactInfo from "../../components/Contact/ContactInfo";
 
 const contact = () => {
-    return (
-        <div>
-            <Banner />
-            <ContactForm />
-            <ContactInfo />
-          
-        </div>
-    );
+  return (
+    <>
+      <Banner />
+      <ContactForm />
+      <ContactInfo />
+    </>
+  );
 };
 
 export default contact;

@@ -22,9 +22,9 @@ const Testimonial = () => {
       <div className="max-w-[1296px] mx-auto pt-[65px] md:pt-[110px] pb-[70px] md:pb-[186px]">
         <div className="flex justify-center mx-2 lg:mx-0">
           <div className="max-w-[640px] text-center">
-            <h3 className="text-2xl font-semibold text-[#FF5349]">
+            <h5 className="text-2xl font-semibold text-[#FF5349]">
               Testimonial
-            </h3>
+            </h5>
             <h2 className="text-4xl md:text-[57px] font-bold leading-tight text-[#222] mb-6 mt-[10px]">
               What our <span className="text-[#FF5349]">{"Client's"}</span> Say
             </h2>
@@ -58,9 +58,9 @@ const Testimonial = () => {
                 />
                 {client.id == currentTab && (
                   <div className="text-center hidden md:block relative mb-[120px] text-[#222]">
-                    <h3 className="text-2xl mt-10 font-semibold">
+                    <h5 className="text-2xl mt-10 font-semibold">
                       {client.name}
-                    </h3>
+                    </h5>
                     <p className="text-base">{client.designation}</p>
                   </div>
                 )}

@@ -1,4 +1,3 @@
-import React from "react";
 import { CgFacebook } from "react-icons/cg";
 import { AiOutlineInstagram } from "react-icons/ai";
 import { BsTwitter } from "react-icons/bs";

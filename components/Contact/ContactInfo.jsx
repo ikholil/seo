@@ -1,5 +1,4 @@
 import Image from "next/image";
-import React from "react";
 import { BsTelephone } from "react-icons/bs";
 import { HiOutlineMail } from "react-icons/hi";
 import { SlLocationPin } from "react-icons/sl";

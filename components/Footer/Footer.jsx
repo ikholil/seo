@@ -1,17 +1,17 @@
 import Image from "next/image";
 import { HiArrowNarrowRight, HiOutlineMail } from "react-icons/hi";
-import { BsTelephone } from "react-icons/bs";
+import { FiPhone } from "react-icons/fi";
 import { SlLocationPin } from "react-icons/sl";
 import Social from "../Others/Social";
 import Link from "next/link";
 const Footer = () => {
   return (
     <footer className="bg-[url('/images/footer/bg-shape.png')] relative bg-no-repeat bg-right-bottom bg-[#07112D] min-h-[795px]">
-      <div className="max-w-[1296px] mx-auto">
-        <div className="bg-[#1A4DBE] rounded-[10px] py-6 px-3 mx-2 lg:mx-0 mt-[70px] lg:mt-0 lg:-translate-y-1/2 lg:p-[60px] md:bg-[url('/images/footer/bg.png')] bg-no-repeat bg-right">
-          <h2 className="text-white text-3xl font-bold md:text-[43px] mb-4 md:mb-12">
+      <div className="max-w-[1296px] mx-auto pt-[30px] lg:pt-0">
+        <div className="bg-[#1A4DBE] rounded-[10px] py-6 px-3 mx-2 lg:mx-0  mt-[70px] lg:mt-0 lg:-translate-y-1/2 lg:p-[60px] md:bg-[url('/images/footer/bg.png')] bg-no-repeat bg-right">
+          <h3 className="text-white text-3xl font-bold md:text-[43px] mb-4 md:mb-12">
             Start Growing Your Business{" "}
-          </h2>
+          </h3>
           <p className="text-base text-white mb-4 md:mb-[52px]">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nibh
             eleifend malesuada quisque lectus.
@@ -22,14 +22,14 @@ const Footer = () => {
               type="email"
               placeholder="Email Address"
             />
-            <div className="p-1 md:p-2 rounded-full bg-[#FD5A3A]">
+            <button className="p-1 text-white md:p-2 rounded-full bg-[#FD5A3A]">
               <HiArrowNarrowRight size={30} />
-            </div>
+            </button>
           </div>
         </div>
 
-        <div className="grid grid-cols-12 mx-5 md:mx-0 gap-5 pt-[70px] lg:pt-0 pb-[70px] md:pb-[120px] border-b-2 border-[#636363] text-white">
-          <div className="col-span-12 flex flex-col gap-4 md:gap-7 md:col-span-4">
+        <div className="grid grid-cols-12 mx-5 md:mx-0 gap-5 pt-[70px] mt-0 lg:-mt-[124px] lg:-pt-0 pb-[70px] md:pb-[120px] border-b-2 border-[#636363] text-white">
+          <div className="col-span-12 flex flex-col gap-4 md:col-span-4">
             <div>
               <Image
                 src="/logo-white.png"
@@ -45,7 +45,7 @@ const Footer = () => {
               </a>
             </div>
             <div className="flex gap-5">
-              <BsTelephone className="shrink-0" size={30} />
+              <FiPhone className="shrink-0" size={30} />
               <a href="tel:+1658361253" className="text-base md:text-lg">
                 +1 658 361 253
               </a>
@@ -59,7 +59,7 @@ const Footer = () => {
             </address>
           </div>
           <div className="col-span-12 flex flex-col text-base md:text-lg gap-4 md:col-span-3">
-            <h2 className="text-2xl text-white font-semibold">Overview</h2>
+            <h5 className="text-2xl text-white font-semibold">Overview</h5>
             <div className="flex gap-1 text-[#C0C0C0] flex-col">
               {["Pricing", "Portfolio", "Blog", "Link Building", "Contact"].map(
                 (item) => (
@@ -71,7 +71,7 @@ const Footer = () => {
             </div>
           </div>
           <div className="col-span-12 flex flex-col text-base md:text-lg gap-4 md:col-span-3">
-            <h2 className="text-2xl text-white font-semibold">Services</h2>
+            <h5 className="text-2xl text-white font-semibold">Services</h5>
             <div className="flex gap-1 text-[#C0C0C0] flex-col">
               {[
                 "About",
@@ -88,7 +88,7 @@ const Footer = () => {
             </div>
           </div>
           <div className="col-span-12 flex flex-col text-base md:text-lg gap-4 md:col-span-2">
-            <h2 className="text-2xl text-white font-semibold">Policy</h2>
+            <h5 className="text-2xl text-white font-semibold">Policy</h5>
             <div className="flex gap-1 text-[#C0C0C0] flex-col">
               {[
                 "Privacy Policy",

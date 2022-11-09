@@ -1,5 +1,4 @@
 import Image from "next/image";
-import React from "react";
 import { workflow } from "../../../data/workflow";
 
 const Workflow = () => {
@@ -8,7 +7,7 @@ const Workflow = () => {
       <div className="max-w-[1296px] mx-auto pt-[60px] md:pt-[110px] pb-[70px] md:pb-[120px]">
         <div className="flex justify-center mx-2 lg:mx-0">
           <div className="max-w-[640px] text-center">
-            <h3 className="text-2xl font-semibold text-[#FF5349]">Workflow</h3>
+            <h5 className="text-2xl font-semibold text-[#FF5349]">Workflow</h5>
             <h2 className="text-4xl  md:text-[57px] font-bold leading-tight text-[#222] mb-2 md:mb-[24px] mt-[10px]">
               Our Working <span className="text-[#FF5349]">Process</span>
             </h2>

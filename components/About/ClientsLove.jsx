@@ -12,9 +12,9 @@ const Clients = () => {
       <div className="max-w-[1296px] mx-auto pb-[70px] md:pb-[265px] pt-[70px] md:pt-[115px]">
         <div className="flex justify-center">
           <div className="max-w-[640px] text-center mx-2 lg:mx-0">
-            <h3 className="text-2xl font-semibold text-[#FF5349]">
+            <h5 className="text-2xl font-semibold text-[#FF5349]">
               clients’s love
-            </h3>
+            </h5>
             <h2 className="text-4xl md:text-[43px] font-bold leading-tight text-[#222] mt-2 mb:mt-4 mb-3">
               Our Trusted <span className="text-[#FF5349]">{"Client's"}</span>
             </h2>
