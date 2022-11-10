@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -8,37 +8,35 @@ body {
   padding: 0;
   margin: 0;
   overflow-x: hidden !important;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
-
-@layer components{
-  .zoom{
-      @apply hover:scale-150 transition-all duration-1000
+@layer components {
+  .zoom {
+    @apply hover:scale-150 transition-all duration-1000;
   }
-
 }
 
-
-.dropdown-button:hover .dropdown{
-  display: flex;
-}
-.dropdown{
-  display: flex;
-  display: none;
-  flex-direction: column;
-}
-
-.showcase:hover .overlay{
+.showcase:hover .overlay {
   opacity: 20;
 }
-.overlay{
+.overlay {
   opacity: 0;
   transition: all;
   transition-duration: 500ms;
 }
-.specialization:hover .icon-span{
+.specialization:hover .icon-span {
   background-color: white;
-  color:#FF5349;
+  color: #ff5349;
 }
 
+@media (min-width: 768px) {
+  .dropdown-button:hover .dropdown {
+    display: flex;
+  }
+  .dropdown {
+    display: flex;
+    display: none;
+    flex-direction: column;
+  }
+}

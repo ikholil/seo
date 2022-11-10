@@ -17,14 +17,10 @@ const Header = () => {
     }
   };
   const handleDropdownClick = () => {
-    setDropdown(false);
     setOpen(false);
   };
   useEffect(() => {
     window.addEventListener("scroll", changeNavColor);
-    document.addEventListener("mouseup", function(){
-      setDropdown(false)
-    })
   }, []);
   return (
     <nav
@@ -53,7 +49,11 @@ const Header = () => {
               ["/blog", "BLOG"],
               ["/contact", "CONTACT"],
             ].map(([url, title]) => (
-              <li className=" lg:py-[35px]" key={title} onClick={() => setOpen(false)}>
+              <li
+                className=" lg:py-[35px]"
+                key={title}
+                onClick={() => setOpen(false)}
+              >
                 <Link href={url}>
                   <a
                     className="block  text-lg text-x py-2 pr-4 md:pl-3  rounded md:bg-transparent hover:text-primary  md:p-0 "
@@ -65,33 +65,35 @@ const Header = () => {
               </li>
             ))}
 
-            <li className="dropdown-button cursor-pointer py-4 lg:py-[35px]">
-              <a
-                onClick={() => setDropdown(!dropdown)}
-                className=" flex  items-center gap-2 relative text-lg text-x  pr-4 md:pl-3  rounded md:hover:bg-transparent md:border-0 hover:text-primary md:p-0 "
-              >
+            <li
+              onClick={() => setDropdown(!dropdown)}
+              className="dropdown-button cursor-pointer py-4 lg:py-[35px]"
+            >
+              <a className=" flex  items-center gap-2 relative text-lg text-x  pr-4 md:pl-3  rounded md:hover:bg-transparent md:border-0 hover:text-primary md:p-0 ">
                 PAGES <BsChevronDown />{" "}
               </a>
               <div className="relative">
-                
-                  <div className="absolute bg-white w-40 top-4 md:top-[35px] dropdown  text-lg">
-                    {[
-                      ["/seo", "SEO"],
-                      ["/smm", "SMM"],
-                      ["/about", "ABOUT"],
-                      ["/portfolio", "PORTFOLIO"],
-                    ].map(([url, title]) => (
-                      <Link key={title} href={url}>
-                        <a
-                          onClick={handleDropdownClick}
-                          className="py-2 px-4 select-none hover:bg-orange-600 hover:text-white"
-                        >
-                          {title}
-                        </a>
-                      </Link>
-                    ))}
-                  </div>
-                
+                <div
+                  className={`absolute bg-white w-40 top-4 md:top-[35px] dropdown text-lg ${
+                    dropdown ? "flex flex-col" : "hidden"
+                  }`}
+                >
+                  {[
+                    ["/seo", "SEO"],
+                    ["/smm", "SMM"],
+                    ["/about", "ABOUT"],
+                    ["/portfolio", "PORTFOLIO"],
+                  ].map(([url, title]) => (
+                    <Link key={title} href={url}>
+                      <a
+                        onClick={handleDropdownClick}
+                        className="py-2 px-4 hover:pl-5 duration-200 select-none hover:bg-orange-600 hover:text-white"
+                      >
+                        {title}
+                      </a>
+                    </Link>
+                  ))}
+                </div>
               </div>
             </li>
           </ul>

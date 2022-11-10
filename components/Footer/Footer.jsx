@@ -72,7 +72,7 @@ const Footer = () => {
           </div>
           <div className="col-span-12 flex flex-col text-base md:text-lg gap-4 md:col-span-3">
             <h5 className="text-2xl text-white font-semibold">Services</h5>
-            <div className="flex gap-1 text-[#C0C0C0] flex-col">
+            <div className=" inline-flex gap-1 text-[#C0C0C0] flex-col">
               {[
                 "About",
                 "Social Media Marketing",
