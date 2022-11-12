@@ -32,9 +32,8 @@ const Service = () => {
               means more visibility and qualified leads at the lowest possible
               cost.
             </p>
-            <Link href="/seo">
-              <AnimatedLink name="Read More" />
-            </Link>
+
+            <AnimatedLink link="/seo" name="Read More" />
           </div>
           <div className="flex-1 2xl:-mr-36 mx-3 xl:mx-0 pt-10 md:pt-0">
             <Image
@@ -66,9 +65,8 @@ const Service = () => {
               essential to your objectives, without loss of information and with
               reliable monitoring.
             </p>
-            <Link href="/smm">
-              <AnimatedLink name="Read More" />
-            </Link>
+
+            <AnimatedLink link="/smm" name="Read More" />
           </div>
         </div>
       </div>

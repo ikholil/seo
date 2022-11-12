@@ -39,7 +39,7 @@ const GrowTraffic = () => {
           </p>
         </div>
         <div className="flex md:justify-end md:items-end w-full mt-5 md:mt-0">
-          <AnimatedLink name="Browse More" classes="font-semibold" />
+          <AnimatedLink link="/service" name="Browse More" classes="font-semibold" />
         </div>
       </div>
       <div  className="max-w-[1296px]  mx-3 flex flex-col md:flex-row flex-wrap gap-6 justify-center lg:mx-auto pb-[70px] md:pb-[120px]">

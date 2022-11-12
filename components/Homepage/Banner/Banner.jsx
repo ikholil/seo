@@ -19,9 +19,9 @@ const Banner = () => {
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Convallis
               mattis dui eget vestibulum id et.
             </p>
-            <Link href="/service">
-              <AnimatedLink name="Get Started Now" classes="font-semibold" />
-            </Link>
+            
+              <AnimatedLink link="/service" name="Get Started Now" classes="font-semibold" />
+            
            
           </div>
         </div>
