@@ -5,20 +5,20 @@ import { blogs } from "../../data/blog";
 const AllBlog = () => {
   return (
     <div className="bg-white bg-[url('/images/blog/bg.png')] bg-contain bg-no-repeat bg-right-bottom">
-      <div className="max-w-[1296px] mx-auto pt-9 md:pt-[82px] pb-[70px] md:pb-[296px]">
-        <div className="mx-3 md:mx-0">
-          <div className="max-w-[640px] ">
+      <div className="max-w-[1296px] mx-auto pt-9 md:pt-[82px] pb-[70px] lg:pb-[296px]">
+        <div className="mx-3 xl:mx-0">
+          <div className="xl:max-w-[640px] text-center xl:text-start mx-3 lg:mx-0 ">
             <h2 className="text-4xl md:text-[57px] font-bold leading-tight text-[#222] my-[25px]">
               Blog Post
             </h2>
-            <p className="text-lg mb-9 md:mb-[55px] text-[#222]">
+            <p className="text-lg mb-9 md:mb-[55px] md:mx-20 xl:mx-0 text-[#222]">
               With our integrated CRM, project management, collaboration and
               invoicing capabilities, you can manage your business in one secure
               platform.
             </p>
           </div>
         </div>
-        <div className="flex mx-3 lg:mx-0 flex-col gap-6 flex-wrap md:flex-row">
+        <div className="flex mx-3 lg:mx-0 justify-center flex-col gap-6 flex-wrap md:flex-row">
           {blogs.map((blog) => (
             <div
               key={blog.id}
@@ -40,10 +40,10 @@ const AllBlog = () => {
                     <h5 className="font-semibold text-[#222] text-2xl mt-2 md:mt-5 mb-3">
                       {blog.title}
                     </h5>
-                    <p className="text-[#222] text-lg mb-3 md:mb-5">
+                    <p className="text-[#222] text-base md:text-lg mb-3 md:mb-5">
                       {blog.text.substring(0, 100)}
                     </p>
-                    <a className="text-[#FF5349] text-lg">Read More</a>
+                    <a className="text-[#FF5349] text-base md:text-lg">Read More</a>
                   </div>
                 </div>
               </Link>

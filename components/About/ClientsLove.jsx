@@ -1,12 +1,27 @@
 import Image from "next/image";
+import Slider from "react-slick/lib/slider";
 
 const clients = [
   "/images/clients/1.png",
   "/images/clients/2.png",
   "/images/clients/3.png",
   "/images/clients/4.png",
+  "/images/clients/1.png",
+  "/images/clients/2.png",
+  "/images/clients/3.png",
+  "/images/clients/4.png"
 ];
 const Clients = () => {
+  const settings = {
+    dots: false,
+    arrows: false,
+    infinite: true,
+    speed: 1000,
+    cssEase: "linear",
+    autoplay:true,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+  };
   return (
     <div className="bg-[#F9F9F9]">
       <div className="max-w-[1296px] mx-auto pb-[70px] md:pb-[265px] pt-[70px] md:pt-[115px]">
@@ -23,15 +38,14 @@ const Clients = () => {
             </p>
           </div>
         </div>
-        <div className="flex flex-col gap-3 md:gap-4 md:flex-row justify-between items-center flex-wrap">
-          {clients.map((client, index) => (
-            <div
-              className="px-6 py-1 border rounded-md md:px-11 md:py-6"
-              key={index}
-            >
-              <Image src={client} height={50} width={218} alt="client images" />
-            </div>
-          ))}
+        <div>
+          <Slider {...settings}>
+            {clients.map((item, index) => (
+               <div className="text-center" key={index}>
+               <Image src={item} height={50} width={218} alt="client images" />
+             </div>
+            ))}
+          </Slider>
         </div>
       </div>
     </div>

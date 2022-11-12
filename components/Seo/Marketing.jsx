@@ -5,8 +5,8 @@ const Marketing = () => {
     <div className="bg-[#FFFDFA] bg-[url('/images/seo/ms-bg.png')] bg-no-repeat bg-left-top">
       <div className="bg-[url('/images/seo/ms-bg2.png')] bg-no-repeat bg-right-bottom">
         <div className="max-w-[1296px] mx-auto py-12 md:pt-[107px] md:pb-[80px]">
-          <div className="md:grid md:grid-cols-12 items-center md:gap-32">
-            <div className="col-span-12 mx-3 xl:mx-0  mt-5 md:mt-0  lg:col-span-6 mb-10 md:mb-0">
+          <div className="flex flex-col md:flex-row">
+            <div className="md:w-1/2 mx-3 xl:mx-0 mt-5 md:mt-0 mb-10 md:mb-0">
               <h2 className="text-4xl md:text-[57px] font-bold leading-tight text-[#222] mb-6">
                 <span className="text-[#FF5349]">Marketing </span> <br />
                 Strategy
@@ -19,7 +19,7 @@ const Marketing = () => {
                 iaculis eget aliquam tellus ullamcorper at. Urna,
               </p>
             </div>
-            <div className="col-span-12 lg:col-span-5 2xl:-mr-48 mx-3 xl:mx-0">
+            <div className="md:w-1/2 2xl:-mr-48 mx-3 xl:mx-0">
               <Image
                 src={MarketingImg}
                 width={416}

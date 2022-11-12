@@ -12,8 +12,8 @@ const Header = () => {
   const [navColor, setNavColor] = useState(false);
   const [dropdown, setDropdown] = useState(false);
   const [searchModal, setSearchModal] = useState(false);
-  const [searchTerm, setSearchTerm]= useState('')
-  const router = useRouter()
+  const [searchTerm, setSearchTerm] = useState("");
+  const router = useRouter();
   const changeNavColor = () => {
     if (window.scrollY >= 90) {
       setNavColor(true);
@@ -27,17 +27,17 @@ const Header = () => {
   useEffect(() => {
     window.addEventListener("scroll", changeNavColor);
   }, []);
-  const handleSubmit = (e)=>{
-    e.preventDefault()
-    console.log(searchTerm)
-  }
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log(searchTerm);
+  };
   return (
     <nav
       className={`w-full fixed z-20 text-[#222] py-2 md:py-0 px-1 md:px-3 xl:px-0 navbar ${
         navColor ? "bg-white shadow-lg" : "bg-transparent"
       }`}
     >
-      <div className="max-w-[1296px]  relative z-10 mx-auto flex flex-wrap justify-between items-center">
+      <div className="max-w-[1296px]  relative z-10 mx-auto flex flex-wrap justify-between md:justify-around xl:justify-between items-center">
         <Link href="/">
           <a className="flex items-center pl-2 md:pl-0">
             <Image src="/logo.png" height={36} width={122} alt="Logo" />
@@ -59,7 +59,9 @@ const Header = () => {
               ["/contact", "CONTACT"],
             ].map(([url, title]) => (
               <li
-                className={`lg:py-[35px] ${router.pathname == url && 'text-[#FF5349]'} hover:text-[#FF5349] duration-200`}
+                className={`lg:py-[35px] ${
+                  router.pathname == url && "text-[#FF5349]"
+                } hover:text-[#FF5349] duration-200`}
                 key={title}
                 onClick={() => setOpen(false)}
               >
@@ -76,14 +78,14 @@ const Header = () => {
 
             <li
               onClick={() => setDropdown(!dropdown)}
-              className="dropdown-button cursor-pointer py-4 lg:py-[35px]"
+              className="dropdown-button cursor-pointer py-2 md:py-4 lg:py-[35px]"
             >
               <a className=" flex  items-center gap-2 relative text-lg text-x  pr-4 md:pl-3  rounded md:hover:bg-transparent md:border-0 hover:text-primary md:p-0 ">
                 PAGES <BsChevronDown />{" "}
               </a>
               <div className="relative">
                 <div
-                  className={`absolute bg-white w-40 top-4 md:top-[35px] dropdown text-lg ${
+                  className={`absolute bg-white w-40 top-4 lg:top-[35px] dropdown text-lg ${
                     dropdown ? "flex flex-col" : "hidden"
                   }`}
                 >
@@ -133,29 +135,31 @@ const Header = () => {
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            exit={{opacity:0}}
-            className="p-10 w-full absolute top-[98px]  bg-white duration-500 rounded-lg shadow-lg"
+            exit={{ opacity: 0 }}
+            className="p-10 right-0 absolute top-[98px]  bg-white duration-500 rounded-lg shadow-lg"
           >
             <h3 className="text-center text-3xl font-semibold mb-5">
               Search anything
             </h3>
-            <form onSubmit={handleSubmit} className="flex  justify-center gap-4">
+            <form
+              onSubmit={handleSubmit}
+              className="flex  justify-center gap-4"
+            >
               <input
-                className="w-full px-2 py-3 focus:outline-none border bg-gray-100 rounded-md"
+                className="md:w-[400px] px-2 py-3 focus:outline-none border bg-gray-100 rounded-md"
                 placeholder="Write something and hit enter to search..."
                 type="text"
-                onChange={(e)=>setSearchTerm(e.target.value)}
+                onChange={(e) => setSearchTerm(e.target.value)}
                 value={searchTerm}
                 required
               />
-              
-                <button
-                  className="bg-[#FF5349] px-6 py-3 rounded-md text-white"
-                  type="submit"
-                >
-                  Search
-                </button>
-              
+
+              <button
+                className="bg-[#FF5349] px-6 py-3 rounded-md text-white"
+                type="submit"
+              >
+                Search
+              </button>
             </form>
             <div
               onClick={() => setSearchModal(!searchModal)}

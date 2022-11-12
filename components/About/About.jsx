@@ -6,7 +6,7 @@ const About = () => {
     <div className="bg-white">
       <div className="max-w-[1296px] mx-auto">
         <div className="flex px-3 md:mx-0 flex-col md:flex-row pt-[70px] md:pt-[120px]">
-          <div className="md:w-1/2">
+          <div className="w-full lg:w-1/2">
             <Image
               src="/images/about/illustration.png"
               height={479}
@@ -14,7 +14,7 @@ const About = () => {
               alt="about image"
             />
           </div>
-          <div className="md:w-1/2 text-[#222] ">
+          <div className="w-full lg:w-1/2 text-[#222] ">
             <h2 className="leading-tight font-bold text-3xl md:text-[57px] mb-2">
               We Provide Best <span className="text-[#FF5349] ">Digital </span>{" "}
               Marketing Service{" "}
@@ -24,7 +24,7 @@ const About = () => {
               social networks.
             </p>{" "}
           
-            <p className="text-base md:text-lg mb-6 md:mb-0">
+            <p className="text-base md:text-lg mb-3 md:mb-0">
               When we start a project, we set up the tracking of your ads in
               order to give you all the KPIs essential to your objectives,
               without loss of information and with reliable monitoring.
@@ -33,10 +33,10 @@ const About = () => {
             </p>
           </div>
         </div>
-        <div className="flex flex-col mt-[25px] md:flex-row flex-wrap mx-3 md:mx-0 gap-5 pb-[70px] md:pb-[120px]">
+        <div className="flex flex-col justify-center mt-[25px] md:flex-row flex-wrap mx-3 md:mx-0 gap-5 pb-[70px] md:pb-[120px]">
           {aboutFeatures.map(({ id, title, icon, desc }) => (
             <div
-              className="md:w-[390px] text-[#222] p-4 md:p-[30px] bg-white shadow-lg rounded"
+              className="w-[280px] md:w-[390px] mx-auto text-[#222] p-4 md:p-[30px] bg-white shadow-lg rounded"
               key={id}
             >
               <div

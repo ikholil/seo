@@ -5,7 +5,7 @@ import AnimatedLink from "../../Others/AnimatedLink";
 const Service = () => {
   return (
     <div className="bg-white">
-      <div className="max-w-[1296px] mx-auto pt-[70px] pb-12 md:pt-[110px]">
+      <div className="max-w-[1296px] mx-auto pt-[65px] pb-12 md:pt-[110px]">
         <div className="flex justify-center">
           <div className="max-w-[640px]  text-center mx-3 lg:mx-0">
             <h5 className="text-2xl font-semibold text-[#FF5349]">

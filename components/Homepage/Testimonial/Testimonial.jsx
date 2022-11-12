@@ -1,25 +1,20 @@
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
-import { testimonials } from "../../../data/testimonials";
 import Image from "next/image";
-import { useState } from "react";
 import { IoIosStar } from "react-icons/io";
+import Slider from "react-slick";
+import { testimonials } from "../../../data/testimonials";
 const Testimonial = () => {
   const settings = {
-    centerMode: true,
+    dots: false,
+    arrows: false,
     infinite: true,
-    centerPadding: "60px",
-    slidesToShow: 3,
     speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
   };
-  const [currentTab, setCurrentTab] = useState("3");
 
-  const handleTabClick = (id) => {
-    setCurrentTab(id);
-  };
   return (
     <div className="bg-[url('/images/testimonial/bg.png')] bg-white bg-left-bottom bg-no-repeat">
-      <div className="max-w-[1296px] mx-auto pt-[65px] md:pt-[110px] pb-[70px] md:pb-[186px]">
+      <div className="max-w-[1296px] mx-auto pt-[65px] md:pt-[110px] pb-[70px] md:pb-[120px]">
         <div className="flex justify-center mx-2 lg:mx-0">
           <div className="max-w-[640px] text-center">
             <h5 className="text-2xl font-semibold text-[#FF5349]">
@@ -34,58 +29,39 @@ const Testimonial = () => {
             </p>
           </div>
         </div>
+        <div className="flex justify-center">
+          <div className="mx-2 lg:mx-0 w-[290px] bg-white sm:w-[550px] lg:w-[850px] shadow-lg rounded-xl">
+            <Slider {...settings}>
+              {testimonials.map((item) => (
+                <div
+                  className="p-4 sm:p-6 lg:p-20 text-center text-[#222] flex justify-center items-center flex-col rounded-[10px]"
+                  key={item.id}
+                >
+                  <div className="flex justify-center mb-5">
+                    <Image
+                      src={item.img}
+                      height={200}
+                      width={200}
+                      className="rounded-full"
+                      alt="Clients img "
+                    />
+                  </div>
 
-        <div className="flex flex-col items-center lg:flex-row">
-          <div className="flex flex-col md:flex-row w-1/2 justify-center items-center">
-            {testimonials.map((client, i) => (
-              <div
-                key={i}
-                id={client.id}
-                className={`cursor-pointer rounded-full border-[#E9EFFE] shadow-xl ${
-                  currentTab == client.id
-                    ? "border-[12px] mx-4 w-56 h-56"
-                    : "w-24 -mx-3 h-24 border-4"
-                } z-10`}
-                
-                onClick={() => handleTabClick(client.id)}
-              >
-                <Image
-                  src={client.img}
-                  className={` rounded-full`}
-                  height={400}
-                  width={400}
-                  alt="client image"
-                />
-                {client.id == currentTab && (
-                  <div className="text-center hidden md:block relative mb-[120px] text-[#222]">
-                    <h5 className="text-2xl mt-10 font-semibold">
-                      {client.name}
-                    </h5>
-                    <p className="text-base">{client.designation}</p>
+                  <h5 className="text-2xl font-semibold">{item.name}</h5>
+                  <p className="text-base md:text-lg mb-2">
+                    {item.designation}
+                  </p>
+                  <p className="text-base md:text-lg ">{item.review}</p>
+                  <div className="flex gap-1 justify-center mt-5">
+                    <IoIosStar color="#FFCA22" size={30} />
+                    <IoIosStar color="#FFCA22" size={30} />
+                    <IoIosStar color="#FFCA22" size={30} />
+                    <IoIosStar color="#FFCA22" size={30} />
+                    <IoIosStar color="#FFCA22" size={30} />
                   </div>
-                )}
-              </div>
-            ))}
-          </div>
-          <div className="mt-5 md:mt-0 md:w-1/2">
-            {testimonials.map((item, i) => (
-              <div key={i}>
-                {currentTab == item.id && (
-                  <div className="p-[30px] bg-white shadow-lg rounded-md mx-2 md:mx-0">
-                    <div className="flex mb-[25px] gap-1 text-[#FFCA22]">
-                      <IoIosStar size={30} />
-                      <IoIosStar size={30} />
-                      <IoIosStar size={30} />
-                      <IoIosStar size={30} />
-                      <IoIosStar size={30} />
-                    </div>
-                    <p className="text-[#222] text-base md:text-lg">
-                      {item.review}
-                    </p>
-                  </div>
-                )}
-              </div>
-            ))}
+                </div>
+              ))}
+            </Slider>
           </div>
         </div>
       </div>

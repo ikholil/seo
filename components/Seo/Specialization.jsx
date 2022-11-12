@@ -3,7 +3,7 @@ const Specialization = () => {
   return (
     <div className="bg-[#FFFDFA]">
       <div className="max-w-[1296px] mx-auto pt-16 pb-[70px] md:pt-[125px] md:pb-[120px]">
-        <div className="flex justify-center">
+        <div className="flex justify-center mx-2 md:mx-0">
           <div className="text-center max-w">
             <h2 className="font-bold text-3xl md:text-[57px] text-[#222] mb-6 md:mb-[40px]">
               Areas of Specialization
@@ -15,10 +15,10 @@ const Specialization = () => {
           </div>
         </div>
 
-        <div className="grid grid-cols-12 gap-5 mx-2 lg:mx-0">
+        <div className="flex flex-wrap flex-col justify-center md:flex-row gap-5 mx-2 lg:mx-0 ">
           {specialization.map(({ id, title, desc, icon }) => (
             <div
-              className="col-span-12 sm:col-span-6 md:col-span-4 hover:bg-[#FF5349] cursor-pointer hover:text-white  lg:col-span-3 text-[#222] bg-white transition-colors duration-300 rounded-[10px] shadow-[0px_4px_23px_rgba(184,184,184,0.25)] hover:shadow-[0px_7px_23px_rgba(255,83,73,0.35)] p-4 md:p-[30px] specialization"
+              className="w-[280px] mx-auto md:mx-3 sm:w-[306px] hover:bg-[#FF5349] hover:text-white text-[#222] bg-white transition-colors duration-300 rounded-[10px] shadow-[0px_4px_23px_rgba(184,184,184,0.25)] hover:shadow-[0px_7px_23px_rgba(255,83,73,0.35)] p-4 md:p-[30px] specialization"
               key={id}
             >
               <span

@@ -16,7 +16,8 @@
     "react-countup": "^6.3.2",
     "react-dom": "18.2.0",
     "react-icons": "^4.6.0",
-    "swiper": "^8.4.4"
+    "react-slick": "^0.29.0",
+    "slick-carousel": "^1.8.1"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.12",

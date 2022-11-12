@@ -6,9 +6,9 @@ import Social from "../Others/Social";
 import Link from "next/link";
 const Footer = () => {
   return (
-    <footer className="bg-[url('/images/footer/bg-shape.png')] relative bg-no-repeat bg-right-bottom bg-[#07112D] min-h-[795px]">
+    <footer className="bg-[url('/images/footer/bg-shape.png')] relative bg-no-repeat bg-right-bottom bg-[#07112D]">
       <div className="max-w-[1296px] mx-auto pt-[30px] lg:pt-0">
-        <div className="bg-[#1A4DBE] rounded-[10px] py-6 px-3 mx-2 lg:mx-0  mt-[40px] lg:mt-0 lg:-translate-y-1/2 lg:p-[60px] md:bg-[url('/images/footer/bg.png')] bg-no-repeat bg-right">
+        <div className="bg-[#1A4DBE] rounded-[10px] py-6 px-3 mx-2 xl:mx-0  mt-[40px] lg:mt-0 lg:-translate-y-1/2 lg:p-[60px] md:bg-[url('/images/footer/bg.png')] bg-no-repeat bg-right">
           <h3 className="text-white text-3xl font-bold md:text-[43px] mb-4 md:mb-12">
             Start Growing Your Business{" "}
           </h3>
@@ -29,8 +29,8 @@ const Footer = () => {
           </form>
         </div>
 
-        <div className="grid grid-cols-12 mx-5 xl:mx-0 gap-5 pt-[70px] mt-0 lg:-mt-[124px] lg:-pt-0 pb-[70px] md:pb-[120px] border-b-2 border-[#636363] text-white">
-          <div className="col-span-12 flex flex-col gap-4 md:col-span-4">
+        <div className="grid grid-cols-12 mx-5 xl:mx-0 gap-5 pt-[70px] mt-0 lg:-mt-[124px] lg:-pt-0 pb-[66px] md:pb-[120px] border-b-2 border-[#636363] text-white">
+          <div className="col-span-12 flex flex-col gap-4 md:col-span-6 lg:col-span-4">
             <div>
               <Image
                 src="/logo-white.png"
@@ -59,7 +59,7 @@ const Footer = () => {
               </p>
             </address>
           </div>
-          <div className="col-span-12 flex flex-col text-base md:text-lg gap-4 md:col-span-3">
+          <div className="col-span-12 flex flex-col text-base md:text-lg gap-4 md:col-span-6 lg:col-span-3">
             <h5 className="text-2xl text-white font-semibold">Overview</h5>
             <div className="flex gap-1 text-[#C0C0C0] flex-col">
               {["Pricing", "Portfolio", "Blog", "Link Building", "Contact"].map(
@@ -71,7 +71,7 @@ const Footer = () => {
               )}
             </div>
           </div>
-          <div className="col-span-12 flex flex-col text-base md:text-lg gap-4 md:col-span-3">
+          <div className="col-span-12 flex flex-col text-base md:text-lg gap-4 md:col-span-6 lg:col-span-3">
             <h5 className="text-2xl text-white font-semibold">Services</h5>
             <div className=" inline-flex gap-1 text-[#C0C0C0] flex-col">
               {[
@@ -88,7 +88,7 @@ const Footer = () => {
               ))}
             </div>
           </div>
-          <div className="col-span-12 flex flex-col text-base md:text-lg gap-4 md:col-span-2">
+          <div className="col-span-12 flex flex-col text-base md:text-lg gap-4 md:col-span-6 lg:col-span-2">
             <h5 className="text-2xl text-white font-semibold">Policy</h5>
             <div className="flex gap-1 text-[#C0C0C0] flex-col">
               {[
@@ -107,7 +107,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="flex flex-col md:flex-row gap-5 justify-between items-center py-5">
+        <div className="flex flex-col md:flex-row gap-5 justify-between items-center py-5 mx-3">
           <p className="text-[#B4B4B4]">
             © 2022 Veltio Inc. All Rights Reserved.
           </p>

@@ -10,7 +10,7 @@ const GrowTraffic = () => {
   return (
 
     <div className="bg-white  relative">
-      <div className="md:-translate-y-1/2 px-1 max-w-[1077px] mx-auto">
+      <div className="lg:-translate-y-1/2 px-1 max-w-[1077px] mx-auto">
         <div className="flex gap-5 mx-2 xl:mx-0 md:gap-0 flex-wrap  bg-white justify-around  md:my-0 rounded-none md:rounded-lg shadow-lg pt-[26px] pb-10  ">
           {bannerStates.map((item, index) => (
             <div className="flex flex-col items-center" key={item.title}>
@@ -48,15 +48,15 @@ const GrowTraffic = () => {
                     <div className={`md:w-[414px] text-[#222] p-5 md:pt-[30px] md:px-[30px] md:pb-[26px] duration-300 hover:shadow-xl  relative rounded-lg ${feature.id == 1 && 'bg-[#FFEEED]'} ${feature.id == 2 && 'bg-[#E9EEF9]'} ${feature.id == 3 && 'bg-[#FFF5E6]'} `} key={feature.id}>
                         <Image src={feature.icon} height={88} width={88} alt="icon" />
                         <h4 className="text-[#222] font-bold text-[32px] mt-2 md:mt-[14px] mb-[10px]">{feature.title}</h4>
-                        <p className="text-[#222] text-lg">{feature.desc}</p>
-                        <div className="absolute -bottom-2 right-0 -z-10">
+                        <p className="text-[#222] text-lg relative z-10">{feature.desc}</p>
+                        <div className="absolute -bottom-2 right-0 z-0">
                             <Image src={feature.bg} height={110} width={140} alt="bg icon"/>
                         </div>
                     </div>
                 ))
             }
       </div>
-      <div className="absolute top-44 right-0">
+      <div className="absolute hidden lg:block top-44 right-0">
         <Image
           src="/images/grow/circle.png"
           height={306}

@@ -18,10 +18,10 @@ const Team = () => {
             </p>
           </div>
         </div>
-        <div className="flex flex-col mx-3 md:mx-0 flex-wrap md:flex-row gap-x-6 gap-y-36">
+        <div className="flex justify-center flex-col mx-3 md:mx-0 flex-wrap md:flex-row gap-x-6 gap-y-28 lg:gap-y-36">
           {team.map((member) => (
             <div
-              className="w-[280px] flex flex-col justify-center md:w-[306px] shadow-xl cursor-pointer text-[#222] text-center md:px-14 bg-white rounded-lg"
+              className="w-[280px] mx-auto md:mx-2 lg:mx-0 flex flex-col justify-center md:w-[306px] shadow-xl text-[#222] text-center md:px-14 bg-white rounded-lg"
               key={member.id}
             >
               <div className="-mt-20 mx-auto w-48 h-48 duration-500 hover:rounded-full border-4 rounded-full border-transparent hover:border-4 hover:border-[#FF5349]">

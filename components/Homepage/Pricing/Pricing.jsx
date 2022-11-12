@@ -6,7 +6,7 @@ const Pricing = () => {
   return (
     <div className="bg-[url('/images/pricing/map-bg.png')] bg-white bg-bottom bg-no-repeat h-full">
       <div className="max-w-[1296px] mx-auto pt-16 md:pt-[115px] pb-[70px] md:pb-[120px]">
-        <div className="flex justify-center">
+        <div className="flex justify-center mx-2 xl:mx-0">
           <div className="max-w-[640px] text-center">
             <h5 className="text-2xl font-semibold text-[#FF5349]">Price</h5>
             <h2 className="text-4xl md:text-[57px] font-bold leading-tight text-[#222] my-2">
@@ -21,7 +21,7 @@ const Pricing = () => {
         <div className="flex justify-center flex-col flex-wrap md:flex-row gap-6">
           {priceplan.map(({ id, title, price, bg, features }) => (
             <div
-              className="md:w-[416px] mx-3 lg:mx-0 shadow-lg rounded-b-lg relative"
+              className="max-w-[416px] sm:w-[416px] mx-3 sm:mx-auto lg:mx-0 shadow-lg rounded-b-lg relative"
               key={id}
             >
               <div className="absolute w-20 md:w-32 top-0 right-0">

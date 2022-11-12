@@ -7,15 +7,15 @@ const Banner = () => {
       <Head>
         <title>SMM</title>
       </Head>
-      <div className="bg-[#1A4DBE]  bg-[url('/images/smm/bg-shape.png')] bg-no-repeat bg-left-top md:bg-[length:450px_400px]">
-        <div className=" z-10 relative max-w-[1296px] mx-3 xl:mx-0 flex justify-between">
+      <div className="bg-[#1A4DBE]  lbg-[url('/images/smm/bg-shape.png')] bg-no-repeat bg-left-top md:bg-[length:450px_400px]">
+        <div className=" z-10 relative max-w-[1296px] mx-3 xl:mx-auto flex justify-between">
          <div className="py-16 lg:py-[138px]">
          <h1 className="text-white font-bold text-5xl md:text-[76px] mb-2 md:mb-4">
             SMM
           </h1>
           <p className="text-lg text-white">Home → Service → SMM </p>
          </div>
-         <div className="hidden md:block">
+         <div className="hidden lg:block">
             <Image src={FbMarketing} alt="banner img" />
          </div>
         </div>

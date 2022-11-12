@@ -5,7 +5,7 @@ import { services } from "../../data/service";
 const AllService = () => {
   return (
     <div className="bg-white">
-      <div className="max-w-[1296px]  mx-auto pt-[70px] md:pt-[120px] pb-[70px] md:pb-[297px] flex flex-col md:flex-row flex-wrap gap-6">
+      <div className="max-w-[1296px] justify-center mx-auto pt-[70px] md:pt-[120px] pb-[70px] md:pb-[297px] flex flex-col md:flex-row flex-wrap gap-6">
         {services.map(({ id, title, desc, img, url }) => (
           <div
             className="md:w-[413px] mx-3 md:mx-0 text-[#222] shadow-lg rounded-md"

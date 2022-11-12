@@ -18,7 +18,7 @@ const PricingSeo = () => {
             </p>
           </div>
         </div>
-        <div className="flex flex-col flex-wrap md:flex-row gap-6">
+        <div className="flex flex-col justify-center flex-wrap md:flex-row gap-6">
           {priceplan.map(({ id, title, price, bg, features }) => (
             <div
               className="md:w-[416px] mx-3 lg:mx-0 shadow-lg rounded-b-lg relative"
