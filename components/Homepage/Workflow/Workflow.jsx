@@ -20,7 +20,7 @@ const Workflow = () => {
           {workflow.map(({ id, title, img }) => (
             <div
               key={id}
-              className="hover:bg-white hover:shadow-lg cursor-pointer items-center w-[306px] p-6 md:py-14 flex flex-col md:px-20 rounded-md"
+              className="bg-white shadow-lg cursor-pointer items-center w-[300px] p-6 md:py-14 flex flex-col md:px-20 rounded-md"
             >
               <Image src={img} width={135} height={135} alt="workflow icon" />
               <h5 className="text-2xl font-semibold text-[#222] mt-7">

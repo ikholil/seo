@@ -1,4 +1,5 @@
 import { marketingProcess } from "../../data/marketingProcess";
+import AnimatedLink from "../Others/AnimatedLInk";
 
 const MarketingProcess = () => {
   return (
@@ -31,11 +32,7 @@ const MarketingProcess = () => {
           ))}
         </div>
         <div className="mt-10 md:mt-[60px] flex justify-center">
-          <button
-            className={`px-8 py-3 border rounded-md font-semibold  bg-[#FF5A42] text-white border-[#FF5A42] shadow-lg shadow-[#ff5b425e]`}
-          >
-            Get Started Now
-          </button>
+          <AnimatedLink name="Get Started Now" />
         </div>
       </div>
     </div>

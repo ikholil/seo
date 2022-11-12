@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import { bannerStates } from "../../../data/bannerstate";
 import Image from "next/image";
 import { features } from "../../../data/featurs";
+import AnimatedLink from "../../Others/AnimatedLink";
 
 const GrowTraffic = () => {
 
@@ -23,7 +24,7 @@ const GrowTraffic = () => {
         </div>
       </div>
     
-      <div className="max-w-[1296px] mx-3 xl:mx-auto flex flex-col md:flex-row mt-[70px] md:mt-[30px] pb-10 md:pb-[60px]">
+      <div className="max-w-[1296px] mx-3 xl:mx-auto flex flex-col lg:flex-row mt-[70px] md:mt-[30px] pb-10 md:pb-[60px]">
         <div className="max-w-[640px]">
           <h5 className=" text-2xl  font-semibold text-[#FF5349]">
             Organic Traffic
@@ -38,13 +39,13 @@ const GrowTraffic = () => {
           </p>
         </div>
         <div className="flex md:justify-end md:items-end w-full mt-5 md:mt-0">
-        <button className='text-white text-lg font-semibold px-10 shadow-lg shadow-[#ff524987] py-4 rounded-md bg-gradient-to-r from-[#FF6E2C] to-[#FF5646]'>Browse More</button>
+          <AnimatedLink name="Browse More" classes="font-semibold" />
         </div>
       </div>
       <div  className="max-w-[1296px]  mx-3 flex flex-col md:flex-row flex-wrap gap-6 justify-center lg:mx-auto pb-[70px] md:pb-[120px]">
             {
                 features.map((feature) => (
-                    <div className={`md:w-[414px] text-[#222] p-5 md:pt-[30px] md:px-[30px] md:pb-[26px] duration-300 cursor-pointer hover:shadow-xl  relative rounded-lg ${feature.id == 1 && 'bg-[#FFEEED]'} ${feature.id == 2 && 'bg-[#E9EEF9]'} ${feature.id == 3 && 'bg-[#FFF5E6]'} `} key={feature.id}>
+                    <div className={`md:w-[414px] text-[#222] p-5 md:pt-[30px] md:px-[30px] md:pb-[26px] duration-300 hover:shadow-xl  relative rounded-lg ${feature.id == 1 && 'bg-[#FFEEED]'} ${feature.id == 2 && 'bg-[#E9EEF9]'} ${feature.id == 3 && 'bg-[#FFF5E6]'} `} key={feature.id}>
                         <Image src={feature.icon} height={88} width={88} alt="icon" />
                         <h4 className="text-[#222] font-bold text-[32px] mt-2 md:mt-[14px] mb-[10px]">{feature.title}</h4>
                         <p className="text-[#222] text-lg">{feature.desc}</p>

@@ -21,10 +21,10 @@ const Team = () => {
         <div className="flex flex-col mx-3 md:mx-0 flex-wrap md:flex-row gap-x-6 gap-y-36">
           {team.map((member) => (
             <div
-              className="md:w-[306px] shadow-xl cursor-pointer text-[#222] text-center px-14 bg-white rounded-lg"
+              className="w-[280px] flex flex-col justify-center md:w-[306px] shadow-xl cursor-pointer text-[#222] text-center md:px-14 bg-white rounded-lg"
               key={member.id}
             >
-              <div className="-mt-20 w-48 h-48 duration-500 hover:rounded-full border-4 rounded-full border-transparent hover:border-4 hover:border-[#FF5349]">
+              <div className="-mt-20 mx-auto w-48 h-48 duration-500 hover:rounded-full border-4 rounded-full border-transparent hover:border-4 hover:border-[#FF5349]">
                 <Image
                   className="rounded-full "
                   src={member.img}
@@ -38,7 +38,7 @@ const Team = () => {
               </h5>
               <p className="text-lg mb-6 md:mb-9">{member.title}</p>
               <div className="mb-10 md:mb-[60px]">
-                <Social class="text-[#3D3D3D]" size="35" />
+                <Social classes="text-[#3D3D3D]" size="35" />
               </div>
             </div>
           ))}

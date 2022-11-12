@@ -43,9 +43,7 @@ const AllBlog = () => {
                     <p className="text-[#222] text-lg mb-3 md:mb-5">
                       {blog.text.substring(0, 100)}
                     </p>
-                    <a className="text-[#FF5349] text-lg">
-                      Read More
-                    </a>
+                    <a className="text-[#FF5349] text-lg">Read More</a>
                   </div>
                 </div>
               </Link>
@@ -53,24 +51,13 @@ const AllBlog = () => {
           ))}
         </div>
         <div className="flex justify-center text-[#222] duration-300 gap-5 mt-10 md:mt-[60px]">
-          <a
-            className="px-3 py-1 hover:bg-[#FF5349] hover:text-white w-8 flex justify-center bg-[#D3D3D3]"
-            href="#"
-          >
-            1
-          </a>
-          <a
-            className="px-3 py-1 hover:bg-[#FF5349] hover:text-white w-8 flex justify-center bg-[#D3D3D3]"
-            href="#"
-          >
-            2
-          </a>
-          <a
-            className="px-3 py-1 hover:bg-[#FF5349] hover:text-white w-8 flex justify-center bg-[#D3D3D3]"
-            href="#"
-          >
-            {">"}
-          </a>
+          {["1", "2", ">"].map((item) => (
+            <Link href="#" key={item}>
+              <a className="px-3 py-1 hover:bg-[#FF5349] duration-300 hover:text-white w-8 flex justify-center bg-[#D3D3D3]">
+                {item}
+              </a>
+            </Link>
+          ))}
         </div>
       </div>
     </div>

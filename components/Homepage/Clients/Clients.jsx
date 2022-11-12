@@ -1,6 +1,11 @@
 import Image from "next/image";
 
-const clients = ['/images/clients/1.png', '/images/clients/2.png','/images/clients/3.png','/images/clients/4.png', ]
+const clients = [
+  "/images/clients/1.png",
+  "/images/clients/2.png",
+  "/images/clients/3.png",
+  "/images/clients/4.png",
+];
 const Clients = () => {
   return (
     <div className="bg-[#F9F9F9]">
@@ -19,13 +24,11 @@ const Clients = () => {
           </div>
         </div>
         <div className="flex flex-col gap-5 mx-2 lg:mx-0  md:flex-row justify-between items-center flex-wrap">
-            {
-                clients.map((client, index) => (
-                    <div className="px-11 rounded-md border  pt-3 cursor-pointer" key={index}>
-                        <Image src={client} height={50} width={218} alt="client images" />
-                    </div>
-                ))
-            }
+          {clients.map((client, index) => (
+            <div className="px-11 rounded-md border pt-3" key={index}>
+              <Image src={client} height={50} width={218} alt="client images" />
+            </div>
+          ))}
         </div>
       </div>
     </div>

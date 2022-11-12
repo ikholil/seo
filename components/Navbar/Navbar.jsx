@@ -4,11 +4,16 @@ import React, { useEffect, useState } from "react";
 import { BsChevronDown } from "react-icons/bs";
 import { FiSearch } from "react-icons/fi";
 import { HiMenu } from "react-icons/hi";
-
+import { VscClose } from "react-icons/vsc";
+import { motion } from "framer-motion";
+import { useRouter } from "next/router";
 const Header = () => {
   const [open, setOpen] = useState(false);
   const [navColor, setNavColor] = useState(false);
   const [dropdown, setDropdown] = useState(false);
+  const [searchModal, setSearchModal] = useState(false);
+  const [searchTerm, setSearchTerm]= useState('')
+  const router = useRouter()
   const changeNavColor = () => {
     if (window.scrollY >= 90) {
       setNavColor(true);
@@ -22,13 +27,17 @@ const Header = () => {
   useEffect(() => {
     window.addEventListener("scroll", changeNavColor);
   }, []);
+  const handleSubmit = (e)=>{
+    e.preventDefault()
+    console.log(searchTerm)
+  }
   return (
     <nav
-      className={`w-full fixed z-50 text-[#222] py-2 md:py-0 px-1 md:px-3 xl:px-0 navbar ${
+      className={`w-full fixed z-20 text-[#222] py-2 md:py-0 px-1 md:px-3 xl:px-0 navbar ${
         navColor ? "bg-white shadow-lg" : "bg-transparent"
       }`}
     >
-      <div className="max-w-[1296px]  relative z-40 mx-auto flex flex-wrap justify-between items-center">
+      <div className="max-w-[1296px]  relative z-10 mx-auto flex flex-wrap justify-between items-center">
         <Link href="/">
           <a className="flex items-center pl-2 md:pl-0">
             <Image src="/logo.png" height={36} width={122} alt="Logo" />
@@ -38,7 +47,7 @@ const Header = () => {
         <div
           className={` w-screen md:block md:w-auto ${
             open
-              ? "block absolute -left-1  h-[92vh] bg-white z-50 top-10"
+              ? "block absolute -left-1  h-[92vh] bg-white z-20 top-10"
               : "hidden"
           }`}
         >
@@ -50,7 +59,7 @@ const Header = () => {
               ["/contact", "CONTACT"],
             ].map(([url, title]) => (
               <li
-                className=" lg:py-[35px]"
+                className={`lg:py-[35px] ${router.pathname == url && 'text-[#FF5349]'} hover:text-[#FF5349] duration-200`}
                 key={title}
                 onClick={() => setOpen(false)}
               >
@@ -105,7 +114,10 @@ const Header = () => {
           >
             +1 (212) 243-7969
           </a>
-          <button className="bg-[#FF5349] p-2 shadow-xl shadow-[#ff52496c] rounded-lg">
+          <button
+            onClick={() => setSearchModal(!searchModal)}
+            className="bg-[#FF5349] duration-300 p-2 hover:shadow-xl hover:shadow-[#ff52496c] rounded-lg"
+          >
             <FiSearch size={30} className=" text-white" />
           </button>
         </div>
@@ -116,6 +128,43 @@ const Header = () => {
         >
           <HiMenu className="text-[#FF5349]" size={40} />
         </button>
+        {/* Modal for search */}
+        {searchModal && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{opacity:0}}
+            className="p-10 w-full absolute top-[98px]  bg-white duration-500 rounded-lg shadow-lg"
+          >
+            <h3 className="text-center text-3xl font-semibold mb-5">
+              Search anything
+            </h3>
+            <form onSubmit={handleSubmit} className="flex  justify-center gap-4">
+              <input
+                className="w-full px-2 py-3 focus:outline-none border bg-gray-100 rounded-md"
+                placeholder="Write something and hit enter to search..."
+                type="text"
+                onChange={(e)=>setSearchTerm(e.target.value)}
+                value={searchTerm}
+                required
+              />
+              
+                <button
+                  className="bg-[#FF5349] px-6 py-3 rounded-md text-white"
+                  type="submit"
+                >
+                  Search
+                </button>
+              
+            </form>
+            <div
+              onClick={() => setSearchModal(!searchModal)}
+              className="absolute top-3 right-3 cursor-pointer"
+            >
+              <VscClose size={40} />
+            </div>
+          </motion.div>
+        )}
       </div>
     </nav>
   );

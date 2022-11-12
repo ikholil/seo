@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import AnimatedLink from "../../Others/AnimatedLink";
 
 const Service = () => {
   return (
@@ -32,12 +33,10 @@ const Service = () => {
               cost.
             </p>
             <Link href="/seo">
-              <a className="text-white text-base  px-6 shadow-lg shadow-[#ff524987] py-3 rounded-md bg-gradient-to-r from-[#FF6E2C] to-[#FF5646]">
-                Read More
-              </a>
+              <AnimatedLink name="Read More" />
             </Link>
           </div>
-          <div className="flex-1 2xl:-mr-36 mx-3 xl:mx-0">
+          <div className="flex-1 2xl:-mr-36 mx-3 xl:mx-0 pt-10 md:pt-0">
             <Image
               src="/images/service/seo.png"
               width={1000}
@@ -68,9 +67,7 @@ const Service = () => {
               reliable monitoring.
             </p>
             <Link href="/smm">
-              <a className="text-white text-base px-6 shadow-lg shadow-[#ff524987] py-3 rounded-md bg-gradient-to-r from-[#FF6E2C] to-[#FF5646]">
-                Read More
-              </a>
+              <AnimatedLink name="Read More" />
             </Link>
           </div>
         </div>

@@ -8,7 +8,7 @@ const Footer = () => {
   return (
     <footer className="bg-[url('/images/footer/bg-shape.png')] relative bg-no-repeat bg-right-bottom bg-[#07112D] min-h-[795px]">
       <div className="max-w-[1296px] mx-auto pt-[30px] lg:pt-0">
-        <div className="bg-[#1A4DBE] rounded-[10px] py-6 px-3 mx-2 lg:mx-0  mt-[70px] lg:mt-0 lg:-translate-y-1/2 lg:p-[60px] md:bg-[url('/images/footer/bg.png')] bg-no-repeat bg-right">
+        <div className="bg-[#1A4DBE] rounded-[10px] py-6 px-3 mx-2 lg:mx-0  mt-[40px] lg:mt-0 lg:-translate-y-1/2 lg:p-[60px] md:bg-[url('/images/footer/bg.png')] bg-no-repeat bg-right">
           <h3 className="text-white text-3xl font-bold md:text-[43px] mb-4 md:mb-12">
             Start Growing Your Business{" "}
           </h3>
@@ -16,19 +16,20 @@ const Footer = () => {
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nibh
             eleifend malesuada quisque lectus.
           </p>
-          <div className="flex md:gap-8 md:px-4 px-3 py-2 justify-between bg-white max-w-xs rounded-full">
+          <form className="flex md:gap-8 md:px-4 px-3 py-2 justify-between bg-white max-w-xs rounded-full">
             <input
               className="bg-white focus:outline-none text-black"
               type="email"
               placeholder="Email Address"
+              required
             />
-            <button className="p-1 text-white md:p-2 rounded-full bg-[#FD5A3A]">
+            <button type="submit" className="p-1 text-white md:p-2 rounded-full bg-[#FD5A3A] duration-300 hover:shadow-lg hover:shadow-[#ff52497a]">
               <HiArrowNarrowRight size={30} />
             </button>
-          </div>
+          </form>
         </div>
 
-        <div className="grid grid-cols-12 mx-5 md:mx-0 gap-5 pt-[70px] mt-0 lg:-mt-[124px] lg:-pt-0 pb-[70px] md:pb-[120px] border-b-2 border-[#636363] text-white">
+        <div className="grid grid-cols-12 mx-5 xl:mx-0 gap-5 pt-[70px] mt-0 lg:-mt-[124px] lg:-pt-0 pb-[70px] md:pb-[120px] border-b-2 border-[#636363] text-white">
           <div className="col-span-12 flex flex-col gap-4 md:col-span-4">
             <div>
               <Image
@@ -64,7 +65,7 @@ const Footer = () => {
               {["Pricing", "Portfolio", "Blog", "Link Building", "Contact"].map(
                 (item) => (
                   <Link href={`/${item}`} key={item}>
-                    <a>{item}</a>
+                    <a className="hover:pl-1 duration-200">{item}</a>
                   </Link>
                 )
               )}
@@ -82,7 +83,7 @@ const Footer = () => {
                 "Off-Page SEO",
               ].map((item) => (
                 <Link href={`/${item}`} key={item}>
-                  <a>{item}</a>
+                  <a className="hover:pl-1 duration-200">{item}</a>
                 </Link>
               ))}
             </div>
@@ -99,7 +100,7 @@ const Footer = () => {
                 "Refferral Policy",
               ].map((item) => (
                 <Link href={`/${item}`} key={item}>
-                  <a>{item}</a>
+                  <a className="hover:pl-1 duration-200">{item}</a>
                 </Link>
               ))}
             </div>
@@ -111,7 +112,7 @@ const Footer = () => {
             © 2022 Veltio Inc. All Rights Reserved.
           </p>
           <div>
-            <Social class="text-white" size={35} />
+            <Social classes="text-white" size={35} />
           </div>
         </div>
       </div>

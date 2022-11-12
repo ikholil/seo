@@ -73,7 +73,7 @@ const ContactForm = () => {
                     placeholder="Full Name"
                     className="p-3 md:p-5  w-full bg-white text-[#5a5a5a] rounded-md  mb-1 focus:outline-none"
                   />
-                  <span className="text-red-500">
+                  <span className="text-red-500 text-sm">
                     {" "}
                     {errors.name && touched.name && errors.name}
                   </span>
@@ -82,11 +82,11 @@ const ContactForm = () => {
                     onChange={handleChange}
                     onBlur={handleBlur}
                     value={values.email}
-                    type="text"
+                    type="email"
                     placeholder="Email"
                     className="p-3 md:p-5  w-full bg-white text-[#5a5a5a] rounded-md mt-3 mb-1 focus:outline-none"
                   />
-                  <span className="text-red-500">
+                  <span className="text-red-500 text-sm">
                     {" "}
                     {errors.email && touched.email && errors.email}
                   </span>
@@ -99,7 +99,7 @@ const ContactForm = () => {
                     placeholder="Website"
                     className="p-3 md:p-5  w-full bg-white text-[#5a5a5a] rounded-md mt-3 mb-1 focus:outline-none"
                   />
-                  <span className="text-red-500">
+                  <span className="text-red-500 text-sm">
                     {" "}
                     {errors.website && touched.website && errors.website}
                   </span>
@@ -110,15 +110,20 @@ const ContactForm = () => {
                     value={values.message}
                     rows="8"
                     placeholder="Type a Message"
-                    className="mb-1 mt-3 p-3 md:p-5  w-full bg-white text-[#5a5a5a] rounded-md focus:outline-none"
+                    className="mt-3 p-3 md:p-5  w-full bg-white text-[#5a5a5a] rounded-md focus:outline-none"
                   />
-                  <span className="text-red-500">
+                  <span className="text-red-500 text-sm">
                     {" "}
                     {errors.message && touched.message && errors.message}
                   </span>
                   <div className="flex justify-center mt-8 md:mt-[50px]  mb-[70px] md:mb-[120px]">
-                    <button type="submit" className="text-white text-lg px-6 py-3 md:px-8 shadow-lg shadow-[#ff524987] md:py-4 rounded-md bg-gradient-to-r from-[#FF9300] to-[#FF5349]">
-                      Send Message
+                    <button type="submit"
+                      className={`px-6 relative z-10 py-3 cursor-pointer  rounded-[5px] shadow-lg shadow-[#ff6f2c65] hover:shadow-none group overflow-hidden text-lg bg-[#FF6E2C] text-white inline-block font-semibold`}
+                    >
+                      <span className="absolute top-0 left-0 flex w-full h-0 mb-0 transition-all duration-500 ease-out transform translate-y-0 bg-white group-hover:h-full opacity-90"></span>
+                      <span className="relative group-hover:text-[#222] duration-500">
+                        Send Message
+                      </span>
                     </button>
                   </div>
                 </form>
