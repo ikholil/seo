@@ -1,7 +1,7 @@
 import { Formik } from "formik";
 const ContactForm = () => {
   return (
-    <div className="relative">
+    <section className="relative">
       <div className="bg-white ">
         <div className="bg-[url('/images/contact/form-bg.png')] bg-no-repeat opacity-30 h-full w-full absolute top-0 flex items-center justify-center bg-cover"></div>
 
@@ -130,7 +130,7 @@ const ContactForm = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

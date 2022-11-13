@@ -4,7 +4,7 @@ import { services } from "../../data/service";
 
 const AllService = () => {
   return (
-    <div className="bg-white">
+    <section className="bg-white">
       <div className="max-w-[1296px] justify-center mx-auto pt-[70px] md:pt-[120px] pb-[70px] lg:pb-[277px] flex flex-col md:flex-row flex-wrap gap-6">
         {services.map(({ id, title, desc, img, url }) => (
           <div
@@ -30,7 +30,7 @@ const AllService = () => {
           </div>        
         ))}
       </div>
-    </div>
+    </section>
   );
 };
 

@@ -4,7 +4,7 @@ import Social from "../Others/Social";
 
 const Team = () => {
   return (
-    <div className="bg-[#F9F9F9]">
+    <section className="bg-[#F9F9F9]">
       <div className="max-w-[1296px] mx-auto pt-[65px] md:pt-[115px] pb-[70px] md:pb-[120px]">
         <div className="flex justify-center">
           <div className="max-w-[700px]  text-center mx-3 mb-28 md:mb-[136px] lg:mx-0">
@@ -44,7 +44,7 @@ const Team = () => {
           ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

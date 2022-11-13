@@ -2,7 +2,7 @@ import Image from "next/image";
 import MarketingImg from "../../public/images/seo/ms-img.png";
 const Marketing = () => {
   return (
-    <div className="bg-[#FFFDFA] bg-[url('/images/seo/ms-bg.png')] bg-no-repeat bg-left-top">
+    <section className="bg-[#FFFDFA] bg-[url('/images/seo/ms-bg.png')] bg-no-repeat bg-left-top">
       <div className="bg-[url('/images/seo/ms-bg2.png')] bg-no-repeat bg-right-bottom">
         <div className="max-w-[1296px] mx-auto py-12 md:pt-[107px] md:pb-[80px]">
           <div className="flex flex-col md:flex-row mx-3 xl:mx-0">
@@ -30,7 +30,7 @@ const Marketing = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

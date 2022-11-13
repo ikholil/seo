@@ -4,7 +4,7 @@ import { blogs } from "../../../data/blog";
 
 const Blog = () => {
   return (
-    <div className="bg-[#F9F9F9] bg-[url('/images/blog/bg.png')] bg-contain bg-no-repeat bg-right-bottom">
+    <section className="bg-[#F9F9F9] bg-[url('/images/blog/bg.png')] bg-contain bg-no-repeat bg-right-bottom">
       <div className="max-w-[1296px] mx-auto pt-[65px] md:pt-[115px] pb-16 md:pb-[277px]">
         <div className="flex justify-center">
           <div className="max-w-[640px] text-center">
@@ -48,7 +48,7 @@ const Blog = () => {
           ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

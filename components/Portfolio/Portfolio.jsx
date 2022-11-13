@@ -4,7 +4,7 @@ import { VscEye } from "react-icons/vsc";
 import { portfolio } from "../../data/portfolio";
 const Portfolio = () => {
   return (
-    <div className="bg-white">
+    <section className="bg-white">
       <div className="max-w-[1296px] mx-auto">
         <div className="text-center w-full flex justify-center">
           <div className="max-w-4xl flex flex-col justify-center">
@@ -46,7 +46,7 @@ const Portfolio = () => {
           ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

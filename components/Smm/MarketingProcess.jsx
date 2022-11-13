@@ -2,7 +2,7 @@ import Link from "next/link";
 import { marketingProcess } from "../../data/marketingProcess";
 const MarketingProcess = () => {
   return (
-    <div className="bg-[#F9F9F9] bg-[url('/images/smm/process-bg.png')] bg-no-repeat bg-right-bottom">
+    <section className="bg-[#F9F9F9] bg-[url('/images/smm/process-bg.png')] bg-no-repeat bg-right-bottom">
       <div className="max-w-[1296px] mx-auto pb-[70px] md:pb-[120px]">
         <div className="flex justify-center">
           <div className="max-w-[640px] pt-14 md:pt-[115px] text-center mx-3 mb-10 md:mb-[57px] lg:mx-0">
@@ -43,7 +43,7 @@ const MarketingProcess = () => {
           </Link>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

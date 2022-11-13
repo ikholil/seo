@@ -13,7 +13,7 @@ const Testimonial = () => {
   };
 
   return (
-    <div className="bg-[url('/images/testimonial/bg.png')] bg-white bg-left-bottom bg-no-repeat">
+    <section className="bg-[url('/images/testimonial/bg.png')] bg-white bg-left-bottom bg-no-repeat">
       <div className="max-w-[1296px] mx-auto pt-[65px] md:pt-[115px] pb-[70px] md:pb-[120px]">
         <div className="flex justify-center mx-2 lg:mx-0">
           <div className="max-w-[640px] text-center">
@@ -65,7 +65,7 @@ const Testimonial = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

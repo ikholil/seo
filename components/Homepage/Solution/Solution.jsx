@@ -2,7 +2,7 @@ import Image from "next/image";
 import { solution } from "../../../data/solution";
 const Solution = () => {
   return (
-    <div className="bg-[#FFFDFA]">
+    <section className="bg-[#FFFDFA]">
       <div className="max-w-[1296px] mx-auto pt-[60px] pb-[70px] md:pt-[112px] md:pb-[120px] ">
         <div className="flex justify-center mx-2 lg:mx-0 mb-10 md:mb-[60px]">
           <div className="max-w-3xl text-center">
@@ -55,7 +55,7 @@ const Solution = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

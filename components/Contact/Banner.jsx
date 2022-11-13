@@ -5,7 +5,7 @@ const Banner = () => {
       <Head>
         <title>Contact Us</title>
       </Head>
-      <div className="bg-[#1A4DBE]">
+      <section className="bg-[#1A4DBE]">
         <div className="bg-[url('/images/contact/banner-bg.png')] bg-[length:300px_200px] md:bg-[length:650px_400px] md:block xl:right-80 absolute  w-full  bg-no-repeat bg-right-bottom min-h-[435px]"></div>
         <div className="py-16 lg:py-[138px] z-10 relative max-w-[1296px] mx-3 xl:mx-auto">
           <h1 className="text-white font-bold text-5xl md:text-[76px] mb-2 md:mb-4">
@@ -13,7 +13,7 @@ const Banner = () => {
           </h1>
           <p className="text-lg text-white">Home → Contact us</p>
         </div>
-      </div>
+      </section>
     </div>
   );
 };

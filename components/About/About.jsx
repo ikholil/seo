@@ -3,7 +3,7 @@ import { aboutFeatures } from "../../data/about_feature";
 
 const About = () => {
   return (
-    <div className="bg-white">
+    <section className="bg-white">
       <div className="max-w-[1296px] mx-auto">
         <div className="flex px-3 md:mx-0 flex-col md:flex-row pt-[70px] md:pt-[120px]">
           <div className="w-full lg:w-1/2">
@@ -54,7 +54,7 @@ const About = () => {
           ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

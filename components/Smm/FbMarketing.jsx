@@ -2,7 +2,7 @@ import Image from "next/image";
 import FbImg from "../../public/images/smm/fb-marketing.png";
 const FbMarketing = () => {
   return (
-    <div className="bg-white">
+    <section className="bg-white">
       <div className="max-w-[1296px] mx-auto py-[70px] md:pb-[115px] md:pt-[120px]">
         <div className="flex flex-col-reverse md:flex-row items-center md:gap-10">
           <div className="flex-1 mx-3 ">
@@ -29,7 +29,7 @@ const FbMarketing = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

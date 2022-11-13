@@ -4,7 +4,7 @@ import { SlLocationPin } from "react-icons/sl";
 
 const ContactInfo = () => {
   return (
-    <div className="flex flex-col -my-1 lg:flex-row bg-[#F9F9F9] justify-between ">
+    <section className="flex flex-col -my-1 lg:flex-row bg-[#F9F9F9] justify-between ">
       <div className="lg:w-1/2 mx-2 lg:mx-0">
        
         <iframe
@@ -41,7 +41,7 @@ const ContactInfo = () => {
           </p>
         </address>
       </div>
-    </div>
+    </section>
   );
 };
 

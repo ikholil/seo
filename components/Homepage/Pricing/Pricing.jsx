@@ -4,7 +4,7 @@ import Image from "next/image";
 priceplan;
 const Pricing = () => {
   return (
-    <div className="bg-[url('/images/pricing/map-bg.png')] bg-white bg-bottom bg-no-repeat h-full">
+    <section className="bg-[url('/images/pricing/map-bg.png')] bg-white bg-bottom bg-no-repeat h-full">
       <div className="max-w-[1296px] mx-auto pt-16 md:pt-[115px] pb-[70px] md:pb-[120px]">
         <div className="flex justify-center mx-2 xl:mx-0">
           <div className="max-w-[640px] text-center">
@@ -69,7 +69,7 @@ const Pricing = () => {
           ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

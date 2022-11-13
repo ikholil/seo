@@ -47,7 +47,7 @@ const Clients = () => {
     ],
   };
   return (
-    <div className="bg-[#F9F9F9]">
+    <section className="bg-[#F9F9F9]">
       <div className="max-w-[1296px] mx-auto pt-16 md:pt-[115px] pb-[70px] md:pb-[111px]">
         <div className="flex mx-2 xl:mx-0 justify-center">
           <div className="max-w-[640px] text-center">
@@ -79,7 +79,7 @@ const Clients = () => {
           </Slider>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

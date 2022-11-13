@@ -2,7 +2,7 @@ import Image from "next/image";
 import SmmImg from '../../public/images/smm/smm.png'
 const Smm = () => {
   return (
-    <div className="bg-[#FFFDFA]">
+    <section className="bg-[#FFFDFA]">
       <div className="max-w-[1296px] mx-auto pt-[70px] md:pt-[120px] md:pb-[114px] ">
         <div className="flex flex-col md:flex-row items-center md:gap-10">
         <div className="flex-1  2xl:-ml-16 mx-3 xl:mx-0 mb-8 md:mb-0">
@@ -34,7 +34,7 @@ const Smm = () => {
           
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

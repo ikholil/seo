@@ -8,7 +8,7 @@ const BlogDetails = () => {
   const blog = blogs.find((item) => item.id == query.id);
 
   return (
-    <div className="bg-white">
+    <section className="bg-white">
       <div className="max-w-[1296px] mx-auto grid grid-cols-12">
         <div className="mt-[30px] md:mt-[120px] md:mb-[251px] mx-3 lg:mx-0 col-span-12 md:col-span-9">
           <Image
@@ -93,7 +93,7 @@ const BlogDetails = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

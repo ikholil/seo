@@ -2,7 +2,7 @@ import Image from "next/image";
 import SeoImg from "../../public/images/seo/seo.png";
 const Seo = () => {
   return (
-    <div className="bg-[#FFF]">
+    <section className="bg-[#FFF]">
       <div className="max-w-[1296px] mx-auto py-12 md:py-[115px] ">
         <div className="md:grid md:grid-cols-12 items-center md:gap-10">
           <div className="col-span-12 mx-3 xl:mx-0  lg:col-span-5">
@@ -33,7 +33,7 @@ const Seo = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

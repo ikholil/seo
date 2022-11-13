@@ -1,7 +1,7 @@
 import { specialization } from "../../data/specilization";
 const Specialization = () => {
   return (
-    <div className="bg-[#FFFDFA]">
+    <section className="bg-[#FFFDFA]">
       <div className="max-w-[1296px] mx-auto pt-16 pb-[70px] md:pt-[125px] md:pb-[120px]">
         <div className="flex justify-center mx-2 md:mx-0">
           <div className="text-center max-w">
@@ -36,7 +36,7 @@ const Specialization = () => {
           ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

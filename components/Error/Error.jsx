@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const Error = () => {
   return (
-    <div className="bg-white">
+    <section className="bg-white">
       <div className="max-w-[1296px] mx-auto text-center">
         <Image
           src="/images/error/404.png"
@@ -30,7 +30,7 @@ const Error = () => {
           </Link>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

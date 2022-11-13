@@ -4,7 +4,7 @@ import { priceplan } from "../../data/priceplan";
 
 const PricingSeo = () => {
   return (
-    <div className="bg-[url('/images/pricing/map-bg.png')] bg-white bg-bottom bg-no-repeat h-full">
+    <section className="bg-[url('/images/pricing/map-bg.png')] bg-white bg-bottom bg-no-repeat h-full">
       <div className="max-w-[1296px] mx-auto pt-[65px] md:pt-[116px] pb-[70px] lg:pb-[297px]">
         <div className="flex justify-center">
           <div className="max-w-[640px] text-center">
@@ -69,7 +69,7 @@ const PricingSeo = () => {
           ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
