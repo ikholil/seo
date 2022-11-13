@@ -133,9 +133,9 @@ const Header = () => {
         {/* Modal for search */}
         {searchModal && (
           <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
+            initial={{ scale: 0.8 }}
+            animate={{ scale: 1 }}
+            transition={{ease:'linear', duration:.1}}
             className="p-10 right-0 absolute top-[98px]  bg-white duration-500 rounded-lg shadow-lg"
           >
             <h3 className="text-center text-3xl font-semibold mb-5">
@@ -155,7 +155,7 @@ const Header = () => {
               />
 
               <button
-                className="bg-[#FF5349] px-6 py-3 rounded-md text-white"
+                className="bg-[#FF5349] px-6 py-3 rounded-md text-white hover:shadow-xl hover:shadow-[#ff52496c] duration-300"
                 type="submit"
               >
                 Search

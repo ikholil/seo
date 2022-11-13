@@ -37,7 +37,7 @@ const AllBlog = () => {
                     <p className="text-[#222] gap-1 flex items-center">
                       {blog.author} •{blog.date}
                     </p>
-                    <h5 className="font-semibold text-[#222] text-2xl mt-2 md:mt-5 mb-3">
+                    <h5 className="font-semibold text-[#222] text-2xl mt-2 md:mt-4 mb-3">
                       {blog.title}
                     </h5>
                     <p className="text-[#222] text-base md:text-lg mb-3 md:mb-5">

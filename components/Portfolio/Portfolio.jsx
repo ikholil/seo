@@ -20,10 +20,10 @@ const Portfolio = () => {
             </p>
           </div>
         </div>
-        <div className="flex gap-y-4 md:gap-y-8 mx-2 xl:mx-0 justify-center gap-x-4  pb-16 md:pb-[288px] flex-wrap">
+        <div className="flex gap-y-4 md:gap-y-8 mx-2 xl:mx-0 justify-center gap-x-4  pb-16 lg:pb-[288px] flex-wrap">
           {portfolio.map(({ id, img, url }) => (
             <div
-              className="w-[300px] md:w-[630px] showcase rounded-md cursor-pointer relative"
+              className="w-[300px] md:w-[330px] lg:w-[400px] xl:w-[630px] showcase rounded-md cursor-pointer relative"
               key={id}
             >
               <Image

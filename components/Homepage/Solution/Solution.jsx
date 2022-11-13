@@ -5,7 +5,7 @@ const Solution = () => {
   return (
     <div className="bg-[#FFFDFA]">
       <div className="max-w-[1296px] mx-auto pt-[60px] pb-16 md:pt-[110px] md:pb-[120px] ">
-        <div className="flex justify-center">
+        <div className="flex justify-center mx-2 lg:mx-0">
           <div className="max-w-3xl text-center">
             <h5 className="text-2xl font-semibold text-[#FF5349]">
               Marketing Solution
@@ -29,7 +29,7 @@ const Solution = () => {
               alt="solution bg image"
             />
           </div>
-          <div className="col-span-12 mx-3 xl:mx-0 flex flex-col mt-5 md:mt-0 gap-7 lg:col-span-6">
+          <div className="col-span-12 mx-3 xl:mx-0 flex flex-col mt-5 md:mt-0 gap-6 lg:col-span-6">
             {solution.map(({ id, desc, icon, title }) => (
               <div
                 className={`p-4 md:px-[30px] pt-[30px] pb-[28px] flex flex-col lg:flex-row gap-4 md:gap-[30px] rounded-lg ${

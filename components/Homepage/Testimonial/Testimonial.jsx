@@ -23,7 +23,7 @@ const Testimonial = () => {
             <h2 className="text-4xl md:text-[57px] font-bold leading-tight text-[#222] mb-6 mt-[10px]">
               What our <span className="text-[#FF5349]">{"Client's"}</span> Say
             </h2>
-            <p className="text-base md:text-lg mb-[55px] text-[#222]">
+            <p className="text-base md:text-lg mb-9 md:mb-[55px] text-[#222]">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra
               at eu tortor eget nam scelerisque ut tincidunt.
             </p>
