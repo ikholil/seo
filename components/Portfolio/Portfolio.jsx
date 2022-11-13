@@ -14,13 +14,13 @@ const Portfolio = () => {
             <h2 className="text-center text-[#222] leading-tight text-4xl pt-[10px] md:text-[57px] font-bold mb-2">
               Showcase Our <span className="text-[#FF5349]">Works</span>
             </h2>
-            <p className="text-[#444] mx-2 md:mx-0 text-base md:text-lg md:px-40  text-center mb-8 md:mb-[120px]">
+            <p className="text-[#444] mx-2 md:mx-0 text-base md:text-lg md:px-40  text-center mb-8 md:mb-[60px]">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra
               at eu tortor eget nam scelerisque ut tincidunt.
             </p>
           </div>
         </div>
-        <div className="flex gap-y-4 md:gap-y-8 mx-2 xl:mx-0 justify-center gap-x-4  pb-16 lg:pb-[288px] flex-wrap">
+        <div className="flex gap-y-4 md:gap-y-8 mx-2 xl:mx-0 justify-center gap-x-4  pb-16 lg:pb-[268px] flex-wrap">
           {portfolio.map(({ id, img, url }) => (
             <div
               className="w-[300px] md:w-[330px] lg:w-[400px] xl:w-[630px] showcase rounded-md cursor-pointer relative"

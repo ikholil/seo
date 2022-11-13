@@ -3,8 +3,8 @@ import { workflow } from "../../../data/workflow";
 
 const Workflow = () => {
   return (
-    <div className="bg-[url('/images/workflow/bg.png')] bg-white">
-      <div className="max-w-[1296px] mx-auto pt-[60px] md:pt-[110px] pb-[70px] md:pb-[120px]">
+    <section className="bg-[url('/images/workflow/bg.png')] bg-white">
+      <div className="max-w-[1296px] mx-auto pt-[60px] md:pt-[115px] pb-[70px] md:pb-[120px]">
         <div className="flex justify-center mx-2 lg:mx-0">
           <div className="max-w-[640px] text-center">
             <h5 className="text-2xl font-semibold text-[#FF5349]">Workflow</h5>
@@ -20,7 +20,7 @@ const Workflow = () => {
           {workflow.map(({ id, title, img }) => (
             <div
               key={id}
-              className="bg-white shadow-lg cursor-pointer items-center w-[280px] md:w-[306px] p-6 md:py-14 flex flex-col md:px-20 rounded-md"
+              className="bg-white shadow-[0px_4px_24px_rgba(188,188,188,0.25)] cursor-pointer items-center w-[280px] md:w-[306px] p-6 md:py-14 flex flex-col md:px-20 rounded-md"
             >
               <Image src={img} width={135} height={135} alt="workflow icon" />
               <h5 className="text-2xl font-semibold text-[#222] mt-7">
@@ -30,7 +30,7 @@ const Workflow = () => {
           ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

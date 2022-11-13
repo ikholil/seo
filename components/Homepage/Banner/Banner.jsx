@@ -6,18 +6,18 @@ const Banner = () => {
   return (
     <header className="relative bg-[#FFFDFA] ">
       <div className="xl:bg-[url('/images/banner/bg.png')] bg-no-repeat bg-right-top">
-        <div className="max-w-[1296px] mx-auto pt-32 lg:pt-[220px] flex">
+        <div className="max-w-[1296px] mx-auto pt-32 xl:-mb-[73px] lg:pt-[215px] flex">
           <motion.div
             initial={{ scale: 0.8 }}
             animate={{ scale: 1 }}
             transition={{ duration: 0.5 }}
-            className="mx-3 xl:mx-0 mb-20"
+            className="mx-3 xl:mx-0 mb-16 md:mb-20"
           >
             <div className="max-w-[694px]">
-              <h3 className="text-2xl md:text-[32px] font-semibold text-[#FF5349] mb-4">
+              <h3 className="text-2xl md:text-[32px] font-semibold text-[#FF5349] mb-2 md:mb-4">
                 Digital Marketing
               </h3>
-              <h1 className="text-5xl lg:text-[55px] mb-1 xl:text-[76px] font-bold leading-tight text-[#222]">
+              <h1 className="text-5xl lg:text-[55px] md:mb-1 xl:text-[76px] font-bold leading-tight text-[#222]">
                 Grow Your Business With{" "}
                 <span className="text-[#FF5349]">Us.</span>{" "}
               </h1>
@@ -43,7 +43,7 @@ const Banner = () => {
             <Image height={650} width={600} src={BannerImg} alt="banner img" />
           </motion.div>
         </div>
-        <div className="hidden xl:block absolute -bottom-2 left-0">
+        <div className="hidden xl:block xl:bottom-16 absolute -bottom-2 left-0">
           <Image
             src="/images/banner/shape.png"
             height={306}

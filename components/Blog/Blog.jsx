@@ -5,7 +5,7 @@ import { blogs } from "../../data/blog";
 const AllBlog = () => {
   return (
     <div className="bg-white bg-[url('/images/blog/bg.png')] bg-contain bg-no-repeat bg-right-bottom">
-      <div className="max-w-[1296px] mx-auto pt-9 md:pt-[82px] pb-[70px] lg:pb-[296px]">
+      <div className="max-w-[1296px] mx-auto pt-9 md:pt-[82px] pb-[70px] lg:pb-[280px]">
         <div className="mx-3 xl:mx-0">
           <div className="xl:max-w-[640px] text-center xl:text-start mx-3 lg:mx-0 ">
             <h2 className="text-4xl md:text-[57px] font-bold leading-tight text-[#222] my-[25px]">

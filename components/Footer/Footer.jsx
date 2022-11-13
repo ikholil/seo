@@ -29,7 +29,7 @@ const Footer = () => {
           </form>
         </div>
 
-        <div className="grid grid-cols-12 mx-5 xl:mx-0 gap-5 pt-[70px] mt-0 lg:-mt-[124px] lg:-pt-0 pb-[66px] md:pb-[120px] border-b-2 border-[#636363] text-white">
+        <div className="grid grid-cols-12 mx-5 xl:mx-0 gap-5 pt-[70px] md:pt-[85px] mt-0 lg:-mt-[124px] lg:-pt-0 pb-[66px] md:pb-[120px] border-b-2 border-[#636363] text-white">
           <div className="col-span-12 flex flex-col gap-4 md:col-span-6 lg:col-span-4">
             <div>
               <Image

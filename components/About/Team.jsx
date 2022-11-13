@@ -5,11 +5,11 @@ import Social from "../Others/Social";
 const Team = () => {
   return (
     <div className="bg-[#F9F9F9]">
-      <div className="max-w-[1296px] mx-auto pt-[65px] md:pt-[107px] pb-[70px] md:pb-[120px]">
+      <div className="max-w-[1296px] mx-auto pt-[65px] md:pt-[115px] pb-[70px] md:pb-[120px]">
         <div className="flex justify-center">
-          <div className="max-w-[700px]  text-center mx-3 mb-28 md:mb-[140px] lg:mx-0">
+          <div className="max-w-[700px]  text-center mx-3 mb-28 md:mb-[136px] lg:mx-0">
             <h5 className="text-2xl font-semibold text-[#FF5349]">Team</h5>
-            <h2 className="text-4xl md:text-[57px] font-bold leading-tight text-[#222] mt-1 mb-6">
+            <h2 className="text-4xl md:text-[57px] font-bold leading-tight text-[#222] mt-2 mb-6">
               Meet Our Expert <span className="text-[#FF5349]">Team</span>
             </h2>
             <p className="text-base md:text-lg  text-[#222]">
@@ -18,7 +18,7 @@ const Team = () => {
             </p>
           </div>
         </div>
-        <div className="flex justify-center flex-col mx-3 md:mx-0 flex-wrap md:flex-row gap-x-6 gap-y-28 lg:gap-y-36">
+        <div className="flex justify-center flex-col mx-3 md:mx-0 flex-wrap md:flex-row gap-x-6 gap-y-28 lg:gap-y-[138px]">
           {team.map((member) => (
             <div
               className="w-[280px] mx-auto md:mx-2 lg:mx-0 flex flex-col justify-center md:w-[306px] shadow-xl text-[#222] text-center md:px-14 bg-white rounded-lg"

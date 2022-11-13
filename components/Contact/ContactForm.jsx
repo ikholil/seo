@@ -38,9 +38,7 @@ const ContactForm = () => {
                 if (!values.name) {
                   errors.name = "Name is Required";
                 }
-                if (!values.website) {
-                  errors.website = "Website is Required";
-                }
+                
                 if (!values.message) {
                   errors.message = "Message is Required";
                 }

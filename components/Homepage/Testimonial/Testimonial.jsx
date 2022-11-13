@@ -14,13 +14,13 @@ const Testimonial = () => {
 
   return (
     <div className="bg-[url('/images/testimonial/bg.png')] bg-white bg-left-bottom bg-no-repeat">
-      <div className="max-w-[1296px] mx-auto pt-[65px] md:pt-[110px] pb-[70px] md:pb-[120px]">
+      <div className="max-w-[1296px] mx-auto pt-[65px] md:pt-[115px] pb-[70px] md:pb-[120px]">
         <div className="flex justify-center mx-2 lg:mx-0">
           <div className="max-w-[640px] text-center">
             <h5 className="text-2xl font-semibold text-[#FF5349]">
               Testimonial
             </h5>
-            <h2 className="text-4xl md:text-[57px] font-bold leading-tight text-[#222] mb-6 mt-[10px]">
+            <h2 className="text-4xl md:text-[57px] font-bold leading-tight text-[#222] mb-6 mt-[14px]">
               What our <span className="text-[#FF5349]">{"Client's"}</span> Say
             </h2>
             <p className="text-base md:text-lg mb-9 md:mb-[55px] text-[#222]">
@@ -30,11 +30,11 @@ const Testimonial = () => {
           </div>
         </div>
         <div className="flex justify-center">
-          <div className="mx-2 lg:mx-0 w-[290px] bg-white sm:w-[550px] lg:w-[850px] shadow-lg rounded-xl">
+          <div className="mx-2 lg:mx-0 w-[290px] bg-white sm:w-[550px] lg:w-[850px] shadow-[0px_4px_24px_rgba(188,188,188,0.25)] rounded-xl">
             <Slider {...settings}>
               {testimonials.map((item) => (
                 <div
-                  className="p-4 sm:p-6 lg:p-20 text-center text-[#222] flex justify-center items-center flex-col rounded-[10px]"
+                  className="py-6 px-4 lg:px-20 lg:py-10 text-center text-[#222] flex justify-center items-center flex-col rounded-[10px]"
                   key={item.id}
                 >
                   <div className="flex justify-center mb-5">

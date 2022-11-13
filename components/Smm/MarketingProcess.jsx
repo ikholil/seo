@@ -5,8 +5,8 @@ const MarketingProcess = () => {
     <div className="bg-[#F9F9F9] bg-[url('/images/smm/process-bg.png')] bg-no-repeat bg-right-bottom">
       <div className="max-w-[1296px] mx-auto pb-[70px] md:pb-[120px]">
         <div className="flex justify-center">
-          <div className="max-w-[640px] pt-14 md:pt-[106px] text-center mx-3 mb-10 md:mb-[57px] lg:mx-0">
-            <h3 className="text-2xl mb-2 font-semibold text-[#FF5349]">
+          <div className="max-w-[640px] pt-14 md:pt-[115px] text-center mx-3 mb-10 md:mb-[57px] lg:mx-0">
+            <h3 className="text-2xl mb-3 font-semibold text-[#FF5349]">
               Process
             </h3>
             <h2 className="text-4xl md:text-[57px] font-bold leading-tight text-[#222] mb-5">

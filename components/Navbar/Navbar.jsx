@@ -135,12 +135,10 @@ const Header = () => {
           <motion.div
             initial={{ scale: 0.8 }}
             animate={{ scale: 1 }}
-            transition={{ease:'linear', duration:.1}}
+            transition={{ ease: "linear", duration: 0.1 }}
             className="p-10 right-0 absolute top-[98px]  bg-white duration-500 rounded-lg shadow-lg"
           >
-            <h3 className="text-center text-3xl font-semibold mb-5">
-              Search anything
-            </h3>
+            <h3 className="text-center text-3xl font-semibold mb-5">Search</h3>
             <form
               onSubmit={handleSubmit}
               className="flex  justify-center gap-4"

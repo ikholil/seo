@@ -3,10 +3,10 @@ import FbImg from "../../public/images/smm/fb-marketing.png";
 const FbMarketing = () => {
   return (
     <div className="bg-white">
-      <div className="max-w-[1296px] mx-auto py-[70px] md:py-[120px] ">
+      <div className="max-w-[1296px] mx-auto py-[70px] md:pb-[115px] md:pt-[120px]">
         <div className="flex flex-col-reverse md:flex-row items-center md:gap-10">
           <div className="flex-1 mx-3 ">
-            <h2 className="text-4xl md:text-[57px] mt-8  max-w-sm font-bold leading-tight text-[#222] mb-6">
+            <h2 className="text-4xl lg:text-[57px] mt-8  max-w-sm font-bold leading-tight text-[#222] mb-6">
               <span className="text-[#2957BD]"> Facebook </span>
               Marketing
             </h2>

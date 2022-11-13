@@ -12,7 +12,7 @@ const Pricing = () => {
             <h2 className="text-4xl md:text-[57px] font-bold leading-tight text-[#222] my-2">
               <span className="text-[#FF5349]">Choose</span> Your Plan
             </h2>
-            <p className="text-lg mb-10 md:first-letter:mb-[57px] text-[#222]">
+            <p className="text-lg mb-10 md:mb-[57px] text-[#222]">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra
               at eu tortor eget nam scelerisque ut tincidunt.
             </p>
@@ -46,7 +46,7 @@ const Pricing = () => {
                   </span>
                 </h2>
               </div>
-              <div className="pt-[30px] pb-[32px] px-[30px] rounded-b-lg bg-white">
+              <div className="pt-3 md:pt-[18px] pb-5 md:pb-[32px] px-[30px] rounded-b-lg bg-white">
                 <ul>
                   {features.map((item, i) => (
                     <li
@@ -57,8 +57,8 @@ const Pricing = () => {
                     </li>
                   ))}
                 </ul>
-                <div className="flex justify-center pt-[40px] pb-2">
-                <button
+                <div className="flex justify-center pt-7 md:pt-[40px] pb-2">
+                  <button
                     className={`px-8 py-3 border text-[#222] rounded-md border-black hover:bg-[#FF5A42] hover:text-white hover:border-[#FF5A42] hover:shadow-lg hover:shadow-[#ff5b425e] duration-300`}
                   >
                     Select Plan

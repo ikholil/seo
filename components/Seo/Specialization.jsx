@@ -18,7 +18,7 @@ const Specialization = () => {
         <div className="flex flex-wrap flex-col justify-center md:flex-row gap-5 mx-2 lg:mx-0 ">
           {specialization.map(({ id, title, desc, icon }) => (
             <div
-              className="w-[280px] mx-auto md:mx-3 sm:w-[306px] hover:bg-[#FF5349] hover:text-white text-[#222] bg-white transition-colors duration-300 rounded-[10px] shadow-[0px_4px_23px_rgba(184,184,184,0.25)] hover:shadow-[0px_7px_23px_rgba(255,83,73,0.35)] p-4 md:p-[30px] specialization"
+              className="w-[280px] mx-auto md:mx-3 lg:mx-0 sm:w-[306px] hover:bg-[#FF5349] hover:text-white text-[#222] bg-white transition-colors duration-300 rounded-[10px] shadow-[0px_4px_23px_rgba(184,184,184,0.25)] hover:shadow-[0px_7px_23px_rgba(255,83,73,0.35)] p-4 md:p-[25px] specialization"
               key={id}
             >
               <span
