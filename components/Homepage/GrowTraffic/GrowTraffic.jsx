@@ -1,5 +1,4 @@
 import CountUp from "react-countup";
-import React, { useState } from "react";
 import { bannerStates } from "../../../data/bannerstate";
 import Image from "next/image";
 import { features } from "../../../data/featurs";

@@ -1,9 +1,20 @@
+import team1 from '../public/images/about/team1.png'
+import team2 from '../public/images/about/team2.png'
+import team3 from '../public/images/about/team3.png'
+import team4 from '../public/images/about/team4.png'
+import team5 from '../public/images/about/team5.png'
+import team6 from '../public/images/about/team6.png'
+import team7 from '../public/images/about/team7.png'
+import team8 from '../public/images/about/team8.png'
+
+
+
 export const team = [
     {
         id:1, 
         name: 'Joan Patton',
         title:'Web Expert',
-        img:'/images/about/team1.png', 
+        img: team1, 
         links:{
             facebook:'https://facebook.com',
             twitter:'https://twitter.com',
@@ -15,7 +26,7 @@ export const team = [
         id:2, 
         name: 'Marty Tate',
         title:'SEO Expert',
-        img:'/images/about/team2.png', 
+        img: team2, 
         links:{
             facebook:'https://facebook.com',
             twitter:'https://twitter.com',
@@ -27,7 +38,7 @@ export const team = [
         id:3, 
         name: 'Lewis Nelson',
         title:'Digital Marketer',
-        img:'/images/about/team3.png', 
+        img: team3, 
         links:{
             facebook:'https://facebook.com',
             twitter:'https://twitter.com',
@@ -39,7 +50,7 @@ export const team = [
         id:4, 
         name: 'Linda Ortiz',
         title:'Web Expert',
-        img:'/images/about/team4.png', 
+        img: team4, 
         links:{
             facebook:'https://facebook.com',
             twitter:'https://twitter.com',
@@ -51,7 +62,7 @@ export const team = [
         id:5, 
         name: 'Carlton Moody',
         title:'Web Expert',
-        img:'/images/about/team5.png', 
+        img: team5, 
         links:{
             facebook:'https://facebook.com',
             twitter:'https://twitter.com',
@@ -63,7 +74,7 @@ export const team = [
         id:6, 
         name: 'Julian Sparks',
         title:'SMM Expert',
-        img:'/images/about/team6.png', 
+        img: team6, 
         links:{
             facebook:'https://facebook.com',
             twitter:'https://twitter.com',
@@ -75,7 +86,7 @@ export const team = [
         id:7, 
         name: 'Joan Patton',
         title:'Content Writer',
-        img:'/images/about/team7.png', 
+        img :team7, 
         links:{
             facebook:'https://facebook.com',
             twitter:'https://twitter.com',
@@ -87,7 +98,7 @@ export const team = [
         id:8, 
         name: 'Joan Patton',
         title:'Web Expert',
-        img:'/images/about/team8.png', 
+        img: team8, 
         links:{
             facebook:'https://facebook.com',
             twitter:'https://twitter.com',
