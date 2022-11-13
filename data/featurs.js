@@ -1,9 +1,7 @@
 import icon1 from '../public/images/grow/icon1.png'
 import icon2 from '../public/images/grow/icon2.png'
 import icon3 from '../public/images/grow/icon3.png'
-import icon_bg1 from '../public/images/icon-bg1.png'
-import icon_bg2 from '../public/images/icon-bg2.png'
-import icon_bg3 from '../public/images/icon-bg3.png'
+
 
 export const features = [
     {
