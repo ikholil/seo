@@ -9,11 +9,11 @@ const SeoWork = () => {
             <Image src={seoWorkImg} width={515} height={440} alt="seo work" />
           </div>
           <div className="col-span-12 mx-3 xl:mx-0  mt-5 md:mt-0 lg:col-span-6">
-            <h2 className="text-4xl md:text-[57px] font-bold leading-tight text-[#222] my-[20px]">
+            <h2 className="heading-2 my-[20px]">
               Work With The Best SEO
               <span className="text-[#2957BD]"> Agency </span>
             </h2>
-            <p className="text-base md:text-lg  text-[#444]">
+            <p className="paragraph-default text-[#444]">
               SEO is no longer a method of link-building. Some of the deciding
               factors for a website to rank higher on search engines are
               architecturally sound coding, faster loading speed of the sites,

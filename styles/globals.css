@@ -12,6 +12,41 @@ body {
 }
 
 @layer components {
+ /* @TODO: Typography */
+ .paragraph-default {
+    @apply text-[16px] md:text-[18px] leading-[21px] md:leading-[30px] font-normal text-[#222];
+  }
+  .paragraph-large {
+    @apply text-[18px] sm:text-[24px] leading-[24px] sm:leading-[34px] font-normal text-[color:var(--color-secondary)];
+  }
+  .paragraph-small {
+    @apply text-[16px] leading-[21px] font-semibold;
+  }
+  .figure-caption {
+    @apply text-[16px] leading-[22px] font-normal;
+  }
+  .heading-1 {
+    @apply text-[38px] 
+    sm:text-[57px]
+    md:text-[76px] 
+    leading-[49px] 
+    sm:leading-[74px]
+    md:leading-[99px] 
+    font-bold text-white;
+  }
+  .heading-2 {
+    @apply text-[32px] md:text-[57px] leading-[42px] md:leading-[74px] font-bold text-[#222];
+  }
+  .heading-4 {
+    @apply text-[24px] md:text-[32px] leading-[34px] md:leading-[42px] font-semibold text-white;
+  }
+  .heading-5 {
+    @apply text-[18px] sm:text-[24px] leading-[23px] sm:leading-[31px] font-semibold;
+  }
+  .heading-6 {
+    @apply text-[16px] md:text-[18px] leading-[23px] font-semibold;
+  }
+  /* custom classes*/
   .zoom {
     @apply hover:scale-150 transition-all duration-1000;
   }

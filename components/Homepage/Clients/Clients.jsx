@@ -17,7 +17,7 @@ const Clients = () => {
     infinite: true,
     speed: 1000,
     cssEase: "linear",
-    autoplay: false,
+    autoplay: true,
     slidesToShow: 4,
     slidesToScroll: 1,
     responsive: [
@@ -51,13 +51,13 @@ const Clients = () => {
       <div className="max-w-[1296px] mx-auto pt-16 md:pt-[115px] pb-[70px] md:pb-[111px]">
         <div className="flex mx-2 xl:mx-0 justify-center">
           <div className="max-w-[640px] text-center">
-            <h5 className="text-2xl font-semibold text-[#FF5349]">
+            <h5 className="heading-5 text-[#FF5349]">
               clients’s love
             </h5>
-            <h2 className="text-4xl  md:text-[43px] font-bold leading-tight text-[#222] mb-3 mt-2 md:mt-[13px]">
+            <h2 className="heading-2 mb-3 mt-2 md:mt-[13px]">
               Our Trusted <span className="text-[#FF5349]">{"Client's"}</span>
             </h2>
-            <p className="text-lg mb-9 md:mb-[57px] text-[#222]">
+            <p className="paragraph-default mb-9 md:mb-[57px]">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             </p>
           </div>

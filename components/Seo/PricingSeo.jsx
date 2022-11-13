@@ -8,11 +8,11 @@ const PricingSeo = () => {
       <div className="max-w-[1296px] mx-auto pt-[65px] md:pt-[116px] pb-[70px] lg:pb-[297px]">
         <div className="flex justify-center">
           <div className="max-w-[640px] text-center">
-            <h5 className="text-2xl font-semibold text-[#FF5349]">Price</h5>
-            <h2 className="text-4xl mx-3 lg:mx-0 md:text-[57px] font-bold leading-tight text-[#222] my-2">
+            <h5 className="heading-5 text-[#FF5349]">Price</h5>
+            <h2 className="heading-2 mx-3 lg:mx-0  my-2">
               <span className="text-[#FF5349]">Choose</span> Your Plan
             </h2>
-            <p className="mx-3 lg:mx-0 text-base md:text-lg mb-8 md:mb-14 md:first-letter:mb-[57px] text-[#222]">
+            <p className="mx-3 lg:mx-0 paragraph-default mb-8 md:mb-14 md:first-letter:mb-[57px]">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra
               at eu tortor eget nam scelerisque ut tincidunt.
             </p>
@@ -32,7 +32,7 @@ const PricingSeo = () => {
                   id == 1 && "bg-[#1A4DBE]"
                 } ${id == 2 && "bg-[#FF5349]"} ${id == 3 && "bg-[#1A4DBE]"} `}
               >
-                <h5 className="text-white text-2xl -mb-[6px]  font-semibold">
+                <h5 className="text-white heading-5 -mb-[6px]">
                   {title}
                 </h5>
                 <h2

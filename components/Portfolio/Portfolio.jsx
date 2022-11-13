@@ -8,13 +8,13 @@ const Portfolio = () => {
       <div className="max-w-[1296px] mx-auto">
         <div className="text-center w-full flex justify-center">
           <div className="max-w-4xl flex flex-col justify-center">
-            <h5 className="text-[#FF5349]  text-2xl font-semibold pt-[67px] md:pt-[115px]">
+            <h5 className="text-[#FF5349] heading-5 pt-[67px] md:pt-[115px]">
               Portfolio
             </h5>
-            <h2 className="text-center text-[#222] leading-tight text-4xl pt-[10px] md:text-[57px] font-bold mb-2">
+            <h2 className="text-center heading-2 pt-[10px]  mb-2">
               Showcase Our <span className="text-[#FF5349]">Works</span>
             </h2>
-            <p className="text-[#444] mx-2 md:mx-0 text-base md:text-lg md:px-40  text-center mb-8 md:mb-[60px]">
+            <p className="text-[#444] mx-2 md:mx-0 paragraph-default md:px-40  text-center mb-8 md:mb-[60px]">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra
               at eu tortor eget nam scelerisque ut tincidunt.
             </p>

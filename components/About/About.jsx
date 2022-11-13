@@ -19,12 +19,12 @@ const About = () => {
               We Provide Best <span className="text-[#FF5349] ">Digital </span>{" "}
               Marketing Service{" "}
             </h2>
-            <p className="text-base md:text-lg mb-4">
+            <p className="paragraph-default mb-4">
               Passionate about data and acquisition, we offer campaigns on
               social networks.
             </p>{" "}
           
-            <p className="text-base md:text-lg mb-3 md:mb-0">
+            <p className="paragraph-default mb-3 md:mb-0">
               When we start a project, we set up the tracking of your ads in
               order to give you all the KPIs essential to your objectives,
               without loss of information and with reliable monitoring.
@@ -49,7 +49,7 @@ const About = () => {
                 <Image src={icon} height={70} width={70} alt="icon" />
               </div>
               <h4 className="mt-4 md:mt-[30px] mb-3 md:mb-5 font-semibold text-2xl md:text-[32px]">{title}</h4>
-              <p className="text-base md:text-lg">{desc}</p>
+              <p className="paragraph-default">{desc}</p>
             </div>
           ))}
         </div>

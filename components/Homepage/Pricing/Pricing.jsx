@@ -8,11 +8,11 @@ const Pricing = () => {
       <div className="max-w-[1296px] mx-auto pt-16 md:pt-[115px] pb-[70px] md:pb-[120px]">
         <div className="flex justify-center mx-2 xl:mx-0">
           <div className="max-w-[640px] text-center">
-            <h5 className="text-2xl font-semibold text-[#FF5349]">Price</h5>
-            <h2 className="text-4xl md:text-[57px] font-bold leading-tight text-[#222] my-2">
+            <h5 className="heading-5 text-[#FF5349]">Price</h5>
+            <h2 className="heading-2 my-2">
               <span className="text-[#FF5349]">Choose</span> Your Plan
             </h2>
-            <p className="text-lg mb-10 md:mb-[57px] text-[#222]">
+            <p className="paragraph-default mb-10 md:mb-[57px]">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra
               at eu tortor eget nam scelerisque ut tincidunt.
             </p>
@@ -32,10 +32,10 @@ const Pricing = () => {
                   id == 1 && "bg-[#1A4DBE]"
                 } ${id == 2 && "bg-[#FF5349]"} ${id == 3 && "bg-[#1A4DBE]"} `}
               >
-                <h5 className="text-white text-2xl -mb-[6px]  font-semibold">
+                <h5 className="text-white heading-5 -mb-[6px]">
                   {title}
                 </h5>
-                <h2
+                <h3
                   className={`${id == 1 && "text-[#FF9300]"} ${
                     id == 3 && "text-[#FF9300]"
                   } text-[43px] font-bold ${id == 2 && "text-white"}`}
@@ -44,7 +44,7 @@ const Pricing = () => {
                   <span className="text-white text-base font-normal">
                     /month
                   </span>
-                </h2>
+                </h3>
               </div>
               <div className="pt-3 md:pt-[18px] pb-5 md:pb-[32px] px-[30px] rounded-b-lg bg-white">
                 <ul>

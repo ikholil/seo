@@ -14,16 +14,16 @@ const Smm = () => {
             />
           </div>
           <div className="flex-1 mx-3 ">
-            <h2 className="text-4xl lg:text-[57px] font-bold leading-tight text-[#222] mb-[24px]">
+            <h2 className="heading-2 mb-[24px]">
               <span className="text-[#2957BD]"> Social Media </span>
               Marketing {"(SMM)"}
             </h2>
-            <p className="text-lg  mb-5 text-[#444]">
+            <p className="paragraph-default  mb-5 text-[#444]">
               Passionate about data and acquisition, we offer campaigns on
               social networks.
             </p> 
 
-            <p className="text-base md:text-lg mb-[70px] text-[#444]">
+            <p className="paragraph-default mb-[70px] text-[#444]">
               When we start a project, we set up the tracking of your ads in
               order to give you all the KPIs essential to your objectives,
               without loss of information and with reliable monitoring.

@@ -17,11 +17,11 @@ const Banner = () => {
               <h3 className="text-2xl md:text-[32px] font-semibold text-[#FF5349] mb-2 md:mb-4">
                 Digital Marketing
               </h3>
-              <h1 className="text-5xl lg:text-[55px] md:mb-1 xl:text-[76px] font-bold leading-tight text-[#222]">
+              <h1 className="heading-1 md:mb-1 text-[#222]">
                 Grow Your Business With{" "}
                 <span className="text-[#FF5349]">Us.</span>{" "}
               </h1>
-              <p className="text-lg md:text-2xl text-[#222222] mb-6 md:mb-8">
+              <p className="paragraph-large text-[#222222] mb-6 md:mb-8">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 Convallis mattis dui eget vestibulum id et.
               </p>

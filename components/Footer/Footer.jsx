@@ -41,26 +41,26 @@ const Footer = () => {
             </div>
             <div className="flex gap-3 md:gap-5">
               <HiOutlineMail className="shrink-0" size={30} />
-              <a href="mailto:contact.pio@gmail.com" className="text-base md:text-lg">
+              <a href="mailto:contact.pio@gmail.com" className="paragraph-default text-white">
                 contact.pio@gmail.com
               </a>
             </div>
-            <div className="flex gap-5">
+            <div className="flex gap-3 md:gap-5">
               <FiPhone className="shrink-0" size={30} />
-              <a href="tel:+1658361253" className="text-base md:text-lg">
+              <a href="tel:+1658361253" className="paragraph-default text-white">
                 +1 658 361 253
               </a>
             </div>
-            <address className="flex gap-5 not-italic">
+            <address className="flex gap-3 md:gap-5 not-italic">
               <SlLocationPin className="shrink-0" size={30} />
-              <p className="text-base md:text-lg max-w-[264px]">
+              <p className="paragraph-default text-white max-w-[264px]">
                 Ms Alice Smith Apartment 1c 213 Derrick Street Boston, MA 02130
                 USA
               </p>
             </address>
           </div>
-          <div className="col-span-12 flex flex-col text-base md:text-lg gap-4 md:col-span-6 lg:col-span-3">
-            <h5 className="text-2xl text-white font-semibold">Overview</h5>
+          <div className="col-span-12 flex flex-col paragraph-default gap-4 md:col-span-6 lg:col-span-3">
+            <h5 className="heading-5 text-white mt-2 md:mt-0">Overview</h5>
             <div className="flex gap-1 text-[#C0C0C0] flex-col">
               {["Pricing", "Portfolio", "Blog", "Link Building", "Contact"].map(
                 (item) => (
@@ -71,8 +71,8 @@ const Footer = () => {
               )}
             </div>
           </div>
-          <div className="col-span-12 flex flex-col text-base md:text-lg gap-4 md:col-span-6 lg:col-span-3">
-            <h5 className="text-2xl text-white font-semibold">Services</h5>
+          <div className="col-span-12 flex flex-col paragraph-default gap-4 md:col-span-6 lg:col-span-3">
+            <h5 className="heading-5 text-white mt-2 md:mt-0">Services</h5>
             <div className=" inline-flex gap-1 text-[#C0C0C0] flex-col">
               {[
                 "About",
@@ -88,8 +88,8 @@ const Footer = () => {
               ))}
             </div>
           </div>
-          <div className="col-span-12 flex flex-col text-base md:text-lg gap-4 md:col-span-6 lg:col-span-2">
-            <h5 className="text-2xl text-white font-semibold">Policy</h5>
+          <div className="col-span-12 flex flex-col paragraph-default gap-4 md:col-span-6 lg:col-span-2">
+            <h5 className="heading-5 text-white mt-2 md:mt-0">Policy</h5>
             <div className="flex gap-1 text-[#C0C0C0] flex-col">
               {[
                 "Privacy Policy",

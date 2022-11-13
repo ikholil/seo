@@ -8,11 +8,11 @@ const Blog = () => {
       <div className="max-w-[1296px] mx-auto pt-[65px] md:pt-[115px] pb-16 md:pb-[277px]">
         <div className="flex justify-center">
           <div className="max-w-[640px] text-center">
-            <h5 className="text-2xl font-semibold text-[#FF5349]">Blog</h5>
-            <h2 className="text-4xl md:text-[57px] font-bold leading-tight text-[#222] mt-4 md:mt-[20px] mb-2">
+            <h5 className="heading-5 text-[#FF5349]">Blog</h5>
+            <h2 className="heading-2 mt-4 md:mt-[20px] mb-2">
               Our Latest <span className="text-[#FF5349]">Articles</span>
             </h2>
-            <p className="text-lg mb-10 md:mb-[60px] text-[#222]">
+            <p className="paragraph-default mb-10 md:mb-[60px]">
               Lorem ipsum dolor sit amet.
             </p>
           </div>
@@ -34,10 +34,10 @@ const Blog = () => {
                 <p className="text-[#222] mt-1 gap-1 flex items-center">
                   {blog.author} •{blog.date}
                 </p>
-                <h5 className="font-semibold text-[#222] text-2xl mt-1 mb-[22px]">
+                <h5 className="heading-5 text-[#222] mt-1 mb-[22px]">
                   {blog.title}
                 </h5>
-                <p className="text-[#222] text-lg mb-[20px]">
+                <p className="paragraph-default mb-[20px]">
                   {blog.text.substring(0, 100)}
                 </p>
                 <Link href={`/blog/${blog.id}`}>

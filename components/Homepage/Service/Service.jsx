@@ -7,13 +7,13 @@ const Service = () => {
       <div className="max-w-[1296px] mx-auto pt-[65px] pb-[65px] md:pb-[85px] md:pt-[115px]">
         <div className="flex justify-center">
           <div className="max-w-[640px]  text-center mx-3 lg:mx-0">
-            <h5 className="text-2xl font-semibold text-[#FF5349]">
+            <h5 className="heading-5 text-[#FF5349]">
               Digital Marketing
             </h5>
-            <h2 className="text-4xl md:text-[57px] font-bold leading-tight text-[#222] mt-[18px] mb-2">
+            <h2 className="heading-2 mt-[18px] mb-2">
               Service We Provide
             </h2>
-            <p className="text-lg mb-6 md:mb-[55px] text-[#222]">
+            <p className="paragraph-default mb-6 md:mb-[55px]">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Convallis
               mattis dui eget vestibulum id et. It’s about ranking
             </p>

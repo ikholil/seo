@@ -7,11 +7,11 @@ const Marketing = () => {
         <div className="max-w-[1296px] mx-auto py-12 md:pt-[107px] md:pb-[80px]">
           <div className="flex flex-col md:flex-row mx-3 xl:mx-0">
             <div className="md:w-1/2 mx-3 xl:mx-0 mt-5 md:mt-0 mb-10 md:mb-0">
-              <h2 className="text-4xl md:text-[57px] font-bold leading-tight text-[#222] mb-6">
+              <h2 className="heading-2 mb-6">
                 <span className="text-[#FF5349]">Marketing </span> <br />
                 Strategy
               </h2>
-              <p className="text-base md:text-lg  text-[#444]">
+              <p className="paragraph-default  text-[#444]">
                 Sit turpis vulputate lobortis facilisis dui. Fermentum pulvinar
                 imperdiet ultrices augue et eget. Vestibulum eu feugiat in
                 accumsan integer lectus viverra ut tincidunt. consectetur

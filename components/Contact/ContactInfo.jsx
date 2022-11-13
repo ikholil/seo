@@ -1,4 +1,4 @@
-import { AiOutlinePhone } from "react-icons/ai";
+import { GrPhone } from "react-icons/gr";
 import { HiOutlineMail } from "react-icons/hi";
 import { SlLocationPin } from "react-icons/sl";
 
@@ -14,7 +14,7 @@ const ContactInfo = () => {
           loading="lazy"
         ></iframe>
       </div>
-      <div className="text-[#222] max-h-[469px] mx-3 md:mx-0 flex flex-col border-[#444444] md:border-l-[1px] md:w-1/2 my-5 md:my-[60px] sm:pl-5 xl:pl-[120px] xl:py-[60px] gap-3 md:gap-6 lg:gap-10 pb-[50px] lg:pb-[250px] xl:pb-[350px]">
+      <div className="text-[#222] max-h-[469px] mx-3 md:mx-0 flex flex-col border-[#444444] md:border-l-[1px] md:w-1/2 my-5 md:my-[60px] sm:pl-5 xl:pl-[120px] xl:py-[60px] gap-3 md:gap-6 lg:gap-[30px] pb-[50px] lg:pb-[250px] xl:pb-[350px]">
         <div className="flex lg:gap-8 gap-3 items-center ">
           <HiOutlineMail className="shrink-0" size={35} />
           <a
@@ -25,7 +25,7 @@ const ContactInfo = () => {
           </a>
         </div>
         <div className="flex lg:gap-8 gap-3">
-          <AiOutlinePhone className="shrink-0" size={35} />
+          <GrPhone className="shrink-0" size={35} />
           <a
             href="tel:+1658361253"
             className="text-lg   lg:text-[32px] font-semibold"
@@ -35,7 +35,7 @@ const ContactInfo = () => {
         </div>
         <address className="flex lg:gap-8 gap-3 not-italic">
           <SlLocationPin className="shrink-0" size={35} />
-          <p className="text-lg -md:text-2xl ">
+          <p className="text-2xl -md:text-2xl ">
             Ms Alice Smith Apartment 1c 213 <br /> Derrick Street Boston, MA
             02130 USA
           </p>

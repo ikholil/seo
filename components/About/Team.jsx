@@ -8,11 +8,11 @@ const Team = () => {
       <div className="max-w-[1296px] mx-auto pt-[65px] md:pt-[115px] pb-[70px] md:pb-[120px]">
         <div className="flex justify-center">
           <div className="max-w-[700px]  text-center mx-3 mb-28 md:mb-[136px] lg:mx-0">
-            <h5 className="text-2xl font-semibold text-[#FF5349]">Team</h5>
-            <h2 className="text-4xl md:text-[57px] font-bold leading-tight text-[#222] mt-2 mb-6">
+            <h5 className="heading-5 text-[#FF5349]">Team</h5>
+            <h2 className="heading-2 text-[#222] mt-2 mb-6">
               Meet Our Expert <span className="text-[#FF5349]">Team</span>
             </h2>
-            <p className="text-base md:text-lg  text-[#222]">
+            <p className="paragraph-default text-[#222]">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra
               at eu tortor eget nam scelerisque ut tincidunt.
             </p>
@@ -33,10 +33,10 @@ const Team = () => {
                   alt="team"
                 />
               </div>
-              <h5 className="text-2xl font-semibold mb-2 mt-4">
-                {member.name}
+              <h5 className="heading-5 mb-2 mt-4">
+                {member.name}  
               </h5>
-              <p className="text-lg mb-6 md:mb-9">{member.title}</p>
+              <p className="paragraph-default mb-6 md:mb-9">{member.title}</p>
               <div className="mb-10 md:mb-[60px]">
                 <Social classes="text-[#3D3D3D]" size="35" />
               </div>

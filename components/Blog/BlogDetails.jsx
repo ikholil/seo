@@ -9,8 +9,8 @@ const BlogDetails = () => {
 
   return (
     <section className="bg-white">
-      <div className="max-w-[1296px] mx-auto grid grid-cols-12">
-        <div className="mt-[30px] md:mt-[120px] md:mb-[251px] mx-3 lg:mx-0 col-span-12 md:col-span-9">
+      <div className="max-w-[1296px] xl:mx-auto grid grid-cols-12 gap-3 mx-3">
+        <div className="mt-7 sm:mt-[60px] lg:mt-[120px] lg:mb-[275px]  col-span-12 lg:col-span-9">
           <Image
             src={blog?.images[0]}
             className="rounded-md "
@@ -21,19 +21,22 @@ const BlogDetails = () => {
           <p className="mt-[20px] text-[#444] mb-3">
             {blog?.author} • {blog?.date}
           </p>
-          <h2 className="text-[#242424] leading-tight mb-6 text-4xl md:text-[57px] font-bold">
+          <h2 className="text-[#242424]  mb-6 heading-2">
             {blog?.title}
           </h2>
-          <div className="md:w-10/12 text-[#444] text-lg text-justify">
-            <p className="mb-[40px]">
+          <div className="xl:w-10/12 text-[#444] paragraph-default text-justify">
+            <p className="mb-7 md:mb-[40px]">
               {blog?.text.split(".").slice(0, 2).join("")}
             </p>
-            <div className="border-l-2 mb-[40px] border-[#F75D54]">
-              <p className="text-lg md:text-2xl font-semibold text-[#222] px-[25px]">
+            <div className="border-l-2 mb-[40px] border-[#FF5349]">
+              <p className="text-lg md:text-2xl leading-tight md:leading-[31px] font-semibold text-[#222] px-[25px]">
                 {blog?.quote?.text}
               </p>
+              <p className="text-lg text-[#444] px-[25px] font-medium mt-3">
+                - {blog?.quote?.designation}
+              </p>
             </div>
-            <p className="mb-[55px]">
+            <p className="mb-9 md:mb-[55px]">
               {blog?.text.split(".").slice(2, 4).join("")}
             </p>
             <Image
@@ -43,15 +46,15 @@ const BlogDetails = () => {
               width={896}
               alt="blog img"
             />
-            <p className="mb-[44px] mt-4">
+            <p className="mb-5 md:mb-[44px] lg:mb-0 mt-4">
               {blog?.text.split(".").slice(4).join("")}
             </p>
           </div>
         </div>
-        <div className="col-span-12 mx-3 lg:mx-0  md:col-span-3 mt-[30px] md:mt-[120px]">
-          <div className="flex justify-between mb-[55px] w-[306px] bg-[#F5F5F5] px-5 py-3 rounded-md">
+        <div className="col-span-12 mx-3 lg:mx-0  lg:col-span-3 mt-4 lg:mt-[120px]">
+          <div className="flex justify-between mb-7 xl:mb-[55px] xl:w-[306px] bg-[#F5F5F5] px-2 py-1 xl:px-5 xl:py-3 rounded-md">
             <input
-              className="focus:outline-none text-black bg-[#F5F5F5]"
+              className="focus:outline-none w-full text-black bg-[#F5F5F5]"
               type="text"
               placeholder="Search..."
             />
@@ -59,13 +62,13 @@ const BlogDetails = () => {
               <FiSearch size={30} className=" text-white" />
             </div>
           </div>
-          <div className="flex flex-col gap-5 mb-5">
-            <h2 className="text-2xl mb-[10px] text-[#242424] font-semibold">
-              Recent Post
-            </h2>
+          <h5 className="heading-5 mb-5 lg:mb-8 text-[#242424] ">
+            Recent Post
+          </h5>
+          <div className="flex flex-col gap-3 md:gap-[18px] md:mb-5">
             {blogs.slice(3).map((blog) => (
-              <div className="flex gap-6" key={blog?.id}>
-                <div className="w-52 h-32 ">
+              <div className="flex gap-3 md:gap-5" key={blog?.id}>
+                <div className="xl:w-52 xl:h-32 ">
                   <Image
                     className="rounded shadow-lg"
                     width={150}
@@ -74,12 +77,14 @@ const BlogDetails = () => {
                     alt="image"
                   />
                 </div>
-                <h2 className="text-lg text-[#222]">{blog?.title}</h2>
+                <p className="paragraph-default text-[#222]">{blog?.title}</p>
               </div>
             ))}
-            <h2 className="text-2xl mt-5 mb-[10px] text-[#242424] font-semibold">
+          </div>
+          <div className="mb-16">
+            <h5 className="heading-5 mt-5 md:mt-10 mb-[10px] text-[#242424]">
               Post Category
-            </h2>
+            </h5>
             <ul>
               {["Marketing", "SEO", "SMM", "Business"].map((category) => (
                 <li

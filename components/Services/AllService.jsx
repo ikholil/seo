@@ -19,8 +19,8 @@ const AllService = () => {
               alt="service img"
             />
             <div className="px-5 md:px-[30px] pt-4 pb-9">
-              <h5 className="text-2xl font-semibold mb-4 md:mb-[23px]">{title}</h5>
-              <p className="mb-7 md:mb-10">{desc}</p>
+              <h5 className="heading-5 mb-4 md:mb-[23px]">{title}</h5>
+              <p className="mb-7 md:mb-10 text-lg">{desc}</p>
               <Link href={url}>
               <a className="hover:text-white duration-300 border-black border-[1px] hover:border-[#FF5349] text-lg px-5 hover:shadow-lg hover:shadow-[#ff524987] py-2 rounded hover:bg-[#FF5744]">
                 View details

@@ -6,14 +6,14 @@ const Solution = () => {
       <div className="max-w-[1296px] mx-auto pt-[60px] pb-[70px] md:pt-[112px] md:pb-[120px] ">
         <div className="flex justify-center mx-2 lg:mx-0 mb-10 md:mb-[60px]">
           <div className="max-w-3xl text-center">
-            <h5 className="text-2xl font-semibold text-[#FF5349]">
+            <h5 className="heading-5 text-[#FF5349]">
               Marketing Solution
             </h5>
-            <h2 className="text-4xl mx-2 lg:mx-0 md:text-[57px] font-bold leading-tight text-[#222] mt-[13px] mb-2 md:mb-[20px]">
+            <h2 className="heading-2 mx-2 lg:mx-0 mt-[13px] mb-2 md:mb-[20px]">
               We Solve Better{" "}
               <span className="text-[#FF5349]">Digital Marketing </span>Solution
             </h2>
-            <p className="text-lg  text-[#222]">
+            <p className="paragraph-default">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Convallis{" "}
               <br />
               mattis dui eget vestibulum id et. It’s about ranking

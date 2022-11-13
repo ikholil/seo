@@ -9,10 +9,10 @@ const MarketingProcess = () => {
             <h3 className="text-2xl mb-3 font-semibold text-[#FF5349]">
               Process
             </h3>
-            <h2 className="text-4xl md:text-[57px] font-bold leading-tight text-[#222] mb-5">
+            <h2 className="heading-2 mb-5">
               Marketing Process
             </h2>
-            <p className="text-base md:text-lg  text-[#222]">
+            <p className="paragraph-default">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit sed
               mattis pulvinar gravida parturient nunc.
             </p>

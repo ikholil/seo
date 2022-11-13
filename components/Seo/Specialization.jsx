@@ -5,10 +5,10 @@ const Specialization = () => {
       <div className="max-w-[1296px] mx-auto pt-16 pb-[70px] md:pt-[125px] md:pb-[120px]">
         <div className="flex justify-center mx-2 md:mx-0">
           <div className="text-center max-w">
-            <h2 className="font-bold text-3xl md:text-[57px] text-[#222] mb-6 md:mb-[40px]">
+            <h2 className="heading-2 mb-6 md:mb-[40px]">
               Areas of Specialization
             </h2>
-            <p className="max-w-[590px] text-lg text-[#222] mb-8 md:mb-[53px]">
+            <p className="max-w-[590px] paragraph-default mb-8 md:mb-[53px]">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facilisis
               in commodo a mi sed.
             </p>
@@ -30,8 +30,8 @@ const Specialization = () => {
               >
                 {icon}
               </span>
-              <h5 className="text-2xl font-semibold mt-6 mb-2">{title}</h5>
-              <p className="text-base md:text-lg">{desc}</p>
+              <h5 className="heading-5 mt-6 mb-2">{title}</h5>
+              <p className="paragraph-default">{desc}</p>
             </div>
           ))}
         </div>

@@ -111,7 +111,7 @@ const Header = () => {
         </div>
         <div className="hidden lg:flex items-center gap-5">
           <a
-            className="text-lg font-semibold text-[#222222]"
+            className="paragraph-default font-semibold"
             href="tel:+1(212)2437969"
           >
             +1 (212) 243-7969

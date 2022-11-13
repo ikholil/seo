@@ -7,13 +7,13 @@ const ContactForm = () => {
 
         <div className="  max-w-[1296px] flex justify-center items-center flex-col text-center mx-3 md:mx-auto h-full z-10 relative">
           <div className="max-w-4xl flex flex-col justify-center">
-            <h5 className="text-[#FF5349] text-2xl font-semibold mt-[65px] md:mt-[115px]">
+            <h5 className="text-[#FF5349] heading-5 mt-[65px] md:mt-[115px]">
               Contact us
             </h5>
-            <h2 className="text-center text-[#222] leading-tight text-4xl pt-2 md:text-[57px] font-bold mb-6">
+            <h2 className="text-center text-[#222] heading-2 pt-2  mb-6">
               Start Growing Your Business Today
             </h2>
-            <p className="text-[#444] text-lg md:px-40  text-center mb-8 md:mb-14">
+            <p className="text-[#444] paragraph-default md:px-40  text-center mb-8 md:mb-14">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra
               at eu tortor eget nam scelerisque ut tincidunt.
             </p>
