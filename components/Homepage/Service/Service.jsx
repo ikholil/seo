@@ -44,7 +44,7 @@ const Service = () => {
           </div>
         </div>
         {/* Service no 2 */}
-        <div className="flex flex-col-reverse lg:flex-row md:gap-10 items-center ">
+        <div className="flex flex-col-reverse lg:flex-row md:gap-10 items-center mt-10 lg:mt-0">
           <div className="flex-1 mx-3 lg:or xl:mx-0">
             <Image
               src="/images/service/smm.png"

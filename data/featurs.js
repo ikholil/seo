@@ -7,7 +7,7 @@ export const features = [
     {
         id: 1, 
         icon: icon1,
-        bg:'/images/grow/icon-bg1.png',
+        bg:'/images/grow/bg.png',
         title:'Link Building',
         desc:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Convallis mattis dui eget vestibulum id et. It’s about ranking'
     },

@@ -41,7 +41,7 @@ body {
     @apply text-[32px] md:text-[43px] leading-[42px] md:leading-[56px] font-bold;
   }
   .heading-4 {
-    @apply text-[24px] md:text-[32px] leading-[34px] md:leading-[42px] font-semibold text-white;
+    @apply text-[18px] md:text-[32px] leading-[34px] md:leading-[42px] font-semibold text-white;
   }
   .heading-5 {
     @apply text-[18px] sm:text-[24px] leading-[23px] sm:leading-[31px] font-semibold;

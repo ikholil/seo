@@ -2,7 +2,7 @@ import Image from "next/image";
 import { HiArrowNarrowRight, HiOutlineMail } from "react-icons/hi";
 import { FiPhone } from "react-icons/fi";
 import { SlLocationPin } from "react-icons/sl";
-import Social from "../Others/Social";
+import Social from "../others/Social";
 import Link from "next/link";
 const Footer = () => {
   return (
@@ -40,19 +40,19 @@ const Footer = () => {
               />
             </div>
             <div className="flex gap-3 md:gap-5">
-              <HiOutlineMail className="shrink-0" size={30} />
+              <HiOutlineMail className="shrink-0 text-2xl md:text-4xl" />
               <a href="mailto:contact.pio@gmail.com" className="paragraph-default text-white">
                 contact.pio@gmail.com
               </a>
             </div>
             <div className="flex gap-3 md:gap-5">
-              <FiPhone className="shrink-0" size={30} />
+              <FiPhone className="shrink-0 text-2xl md:text-4xl" />
               <a href="tel:+1658361253" className="paragraph-default text-white">
                 +1 658 361 253
               </a>
             </div>
             <address className="flex gap-3 md:gap-5 not-italic">
-              <SlLocationPin className="shrink-0" size={30} />
+              <SlLocationPin className="shrink-0 text-2xl md:text-4xl" />
               <p className="paragraph-default text-white max-w-[264px]">
                 Ms Alice Smith Apartment 1c 213 Derrick Street Boston, MA 02130
                 USA

@@ -1,5 +1,5 @@
 
-import Layout from '../components/layout/Layout'
+import Layout from '../components/Layout'
 import '../styles/globals.css'
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";

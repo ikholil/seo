@@ -14,9 +14,9 @@ const ContactInfo = () => {
           loading="lazy"
         ></iframe>
       </div>
-      <div className="text-[#222] max-h-[469px] mx-3 md:mx-0 flex flex-col border-[#444444] md:border-l-[1px] md:w-1/2 my-5 md:my-[60px] sm:pl-5 xl:pl-[120px] xl:py-[60px] gap-3 md:gap-6 lg:gap-[30px] pb-[50px] lg:pb-[250px] xl:pb-[350px]">
+      <div className="text-[#222] max-h-[469px] mx-3 md:mx-0 flex flex-col border-[#444444] md:border-l-[1px] md:w-1/2 my-5 md:my-[60px] sm:pl-5 xl:pl-[120px] xl:py-[60px] gap-3 md:gap-6 lg:gap-[30px] mb-[50px] lg:mb-[250px] xl:mb-[350px]">
         <div className="flex lg:gap-8 gap-3 items-center ">
-          <HiOutlineMail className="shrink-0" size={35} />
+          <HiOutlineMail className="shrink-0 text-2xl md:text-4xl" />
           <a
             href="mailto:contact.pio@gmail.com"
             className="heading-4 text-[#222]"
@@ -25,7 +25,7 @@ const ContactInfo = () => {
           </a>
         </div>
         <div className="flex lg:gap-8 gap-3">
-          <GrPhone className="shrink-0" size={35} />
+          <GrPhone className="shrink-0 text-2xl md:text-4xl" />
           <a
             href="tel:+1658361253"
             className="heading-4 text-[#222]"
@@ -34,7 +34,7 @@ const ContactInfo = () => {
           </a>
         </div>
         <address className="flex lg:gap-8 gap-3 not-italic">
-          <SlLocationPin className="shrink-0" size={35} />
+          <SlLocationPin className="shrink-0 text-2xl md:text-4xl" />
           <p className="paragraph-large">
             Ms Alice Smith Apartment 1c 213 <br /> Derrick Street Boston, MA
             02130 USA

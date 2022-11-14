@@ -53,7 +53,7 @@ const AllBlog = () => {
         <div className="flex justify-center text-[#222] duration-300 gap-5 mt-10 md:mt-[60px]">
           {["1", "2", ">"].map((item) => (
             <Link href="#" key={item}>
-              <a className="px-3 py-1 hover:bg-[#FF5349] paragraph-large duration-300 hover:text-white w-8 flex justify-center bg-[#D3D3D3]">
+              <a className=" hover:bg-[#FF5349] paragraph-large duration-300 hover:text-white w-12 h-12 items-center flex justify-center bg-[#D3D3D3]">
                 {item}
               </a>
             </Link>
