@@ -1,5 +1,4 @@
 import Head from "next/head";
-import Image from "next/image";
 import Banner from '../components/Homepage/Banner/Banner'
 import GrowTraffic from '../components/Homepage/GrowTraffic/GrowTraffic'
 import Solution from '../components/Homepage/Solution/Solution'

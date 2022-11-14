@@ -1,6 +1,6 @@
-import About from "../../components/about/About";
-import Banner from "../../components/about/Banner";
-import Team from "../../components/about/Team";
+import About from "../../components/About/About";
+import Banner from "../../components/About/Banner";
+import Team from "../../components/About/Team";
 import Clients from "../../components/about/ClientsLove";
 import Testimonial from "../../components/homepage/testimonial/Testimonial";
 
