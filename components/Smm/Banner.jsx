@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
+import Link from "next/link";
 import FbMarketing from '../../public/images/smm/banner-bg.png'
 const Banner = () => {
   return (
@@ -13,7 +14,7 @@ const Banner = () => {
          <h1 className="text-white font-bold text-5xl md:text-[76px] mb-2 md:mb-4">
             SMM
           </h1>
-          <p className="text-lg text-white">Home → Service → SMM </p>
+          <p className="text-lg text-white"><Link href="/"><a>Home</a></Link> → Service → SMM </p>
          </div>
          <div className="hidden lg:block">
             <Image src={FbMarketing} alt="banner img" />

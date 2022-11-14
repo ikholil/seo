@@ -52,7 +52,7 @@ const BlogDetails = () => {
           </div>
         </div>
         <div className="col-span-12 mx-3 lg:mx-0  lg:col-span-3 mt-4 lg:mt-[120px]">
-          <div className="flex justify-between mb-7 xl:mb-[55px] xl:w-[306px] bg-[#F5F5F5] px-2 py-1 xl:px-5 xl:py-3 rounded-md">
+          <div className="flex justify-between mb-7 xl:mb-[55px] w-[260px] xl:w-[306px] bg-[#F5F5F5] px-2 py-1 xl:px-5 xl:py-3 rounded-md">
             <input
               className="focus:outline-none w-full text-black bg-[#F5F5F5]"
               type="text"

@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Link from "next/link";
 const Banner = () => {
   return (
     <div className="pt-[60px] bg-white lg:pt-[100px]">
@@ -10,7 +11,7 @@ const Banner = () => {
           <h1 className="text-white font-bold text-5xl md:text-[76px] mb-3">
             Our Services
           </h1>
-          <p className="text-lg text-white">Home → Service</p>
+          <p className="text-lg text-white"><Link href="/"><a>Home</a></Link> → Service</p>
         </div>
       </section>
     </div>

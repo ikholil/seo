@@ -116,10 +116,10 @@ const ContactForm = () => {
                   </span>
                   <div className="flex justify-center mt-8 md:mt-[50px]  mb-[70px] md:mb-[120px]">
                     <button type="submit"
-                      className={`px-6 relative z-10 py-3 cursor-pointer  rounded-[5px] shadow-lg shadow-[#ff6f2c65] hover:shadow-none group overflow-hidden text-lg bg-[#FF6E2C] text-white inline-block font-semibold`}
+                      className={`px-6 relative z-10 py-3 cursor-pointer rounded-[5px] shadow-[#ff6f2c65] hover:shadow-none group overflow-hidden text-lg bg-[#FF6E2C] text-white inline-block font-semibold`}
                     >
                       <span className="absolute top-0 left-0 flex w-full h-0 mb-0 transition-all duration-500 ease-out transform translate-y-0 bg-white group-hover:h-full opacity-90"></span>
-                      <span className="relative group-hover:text-[#222] duration-500">
+                      <span className="relative group-hover:text-[#222] paragraph-default text-white duration-500">
                         Send Message
                       </span>
                     </button>

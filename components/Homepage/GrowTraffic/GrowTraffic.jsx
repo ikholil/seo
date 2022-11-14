@@ -39,7 +39,7 @@ const GrowTraffic = () => {
           <AnimatedLink
             link="/service"
             name="Browse More"
-            classes="font-semibold"
+            classes="paragraph-default"
           />
         </div>
       </div>

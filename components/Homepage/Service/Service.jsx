@@ -32,7 +32,7 @@ const Service = () => {
               cost.
             </p>
 
-            <AnimatedLink link="/seo" name="Read More" />
+            <AnimatedLink link="/seo" name="Read More" classes="figure-caption" />
           </div>
           <div className="flex-1 2xl:-mr-36 mx-3 xl:mx-0 pt-10 md:pt-0">
             <Image
@@ -65,7 +65,7 @@ const Service = () => {
               reliable monitoring.
             </p>
 
-            <AnimatedLink link="/smm" name="Read More" />
+            <AnimatedLink link="/smm" name="Read More" classes="figure-caption" />
           </div>
         </div>
       </div>

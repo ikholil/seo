@@ -30,7 +30,7 @@ const Banner = () => {
             <AnimatedLink
               link="/service"
               name="Get Started Now"
-              classes="font-semibold"
+              classes="paragraph-default"
             />
           </motion.div>
           <motion.div

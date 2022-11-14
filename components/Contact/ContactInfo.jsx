@@ -19,7 +19,7 @@ const ContactInfo = () => {
           <HiOutlineMail className="shrink-0" size={35} />
           <a
             href="mailto:contact.pio@gmail.com"
-            className="text-lg lg:text-[32px] font-semibold"
+            className="heading-4 text-[#222]"
           >
             contact.pio@gmail.com
           </a>
@@ -28,14 +28,14 @@ const ContactInfo = () => {
           <GrPhone className="shrink-0" size={35} />
           <a
             href="tel:+1658361253"
-            className="text-lg   lg:text-[32px] font-semibold"
+            className="heading-4 text-[#222]"
           >
             +1 658 361 253
           </a>
         </div>
         <address className="flex lg:gap-8 gap-3 not-italic">
           <SlLocationPin className="shrink-0" size={35} />
-          <p className="text-2xl -md:text-2xl ">
+          <p className="paragraph-large">
             Ms Alice Smith Apartment 1c 213 <br /> Derrick Street Boston, MA
             02130 USA
           </p>

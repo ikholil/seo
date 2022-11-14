@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Link from "next/link";
 const Banner = () => {
   return (
     <div className="pt-[60px] lg:pt-[100px] bg-white  relative">
@@ -11,7 +12,7 @@ const Banner = () => {
           <h1 className="text-white font-bold text-4xl md:text-[76px] mb-2 md:mb-4">
             404 Error
           </h1>
-          <p className="text-lg text-white">Home → 404 Error</p>
+          <p className="text-lg text-white"><Link href="/"><a>Home</a></Link> → 404 Error</p>
         </div>
       </div>
     </div>
