@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { team } from "../../data/team";
-import Social from "../others/Social";
+import Social from "../Others/Social";
 
 const Team = () => {
   return (
