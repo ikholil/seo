@@ -32,13 +32,13 @@ const Pricing = () => {
                   id == 1 && "bg-[#1A4DBE]"
                 } ${id == 2 && "bg-[#FF5349]"} ${id == 3 && "bg-[#1A4DBE]"} `}
               >
-                <h5 className="text-white heading-5 -mb-[6px]">
+                <h5 className="text-white heading-5 ">
                   {title}
                 </h5>
                 <h3
                   className={`${id == 1 && "text-[#FF9300]"} ${
                     id == 3 && "text-[#FF9300]"
-                  } text-[43px] font-bold ${id == 2 && "text-white"}`}
+                  } heading-3 ${id == 2 && "text-white"}`}
                 >
                   ${price}{" "}
                   <span className="text-white text-base font-normal">
@@ -50,7 +50,7 @@ const Pricing = () => {
                 <ul>
                   {features.map((item, i) => (
                     <li
-                      className="flex gap-5 border-b text-lg text-[#222] py-2 md:py-4 items-center"
+                      className="flex gap-5 border-b paragraph-default text-[#222] py-2 md:py-4 items-center"
                       key={i}
                     >
                       <CgCheckO color="#FF9300" /> {item}
@@ -59,7 +59,7 @@ const Pricing = () => {
                 </ul>
                 <div className="flex justify-center pt-7 md:pt-[40px] pb-2">
                   <button
-                    className={`px-8 py-3 border text-[#222] rounded-md border-black hover:bg-[#FF5A42] hover:text-white hover:border-[#FF5A42] hover:shadow-lg hover:shadow-[#ff5b425e] duration-300`}
+                    className={`px-8 figure-caption py-3 border text-[#222] rounded-md border-black hover:bg-[#FF5A42] hover:text-white hover:border-[#FF5A42] hover:shadow-lg hover:shadow-[#ff5b425e] duration-300`}
                   >
                     Select Plan
                   </button>

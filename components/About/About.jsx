@@ -15,7 +15,7 @@ const About = () => {
             />
           </div>
           <div className="w-full lg:w-1/2 text-[#222] ">
-            <h2 className="leading-tight font-bold text-3xl md:text-[57px] mb-2">
+            <h2 className="heading-2 mb-2">
               We Provide Best <span className="text-[#FF5349] ">Digital </span>{" "}
               Marketing Service{" "}
             </h2>
@@ -48,7 +48,7 @@ const About = () => {
               >
                 <Image src={icon} height={70} width={70} alt="icon" />
               </div>
-              <h4 className="mt-4 md:mt-[30px] mb-3 md:mb-5 font-semibold text-2xl md:text-[32px]">{title}</h4>
+              <h4 className="mt-4 md:mt-[30px] mb-3 md:mb-5 heading-4 text-[#444]">{title}</h4>
               <p className="paragraph-default">{desc}</p>
             </div>
           ))}

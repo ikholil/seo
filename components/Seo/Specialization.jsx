@@ -31,7 +31,7 @@ const Specialization = () => {
                 {icon}
               </span>
               <h5 className="heading-5 mt-6 mb-2">{title}</h5>
-              <p className="paragraph-default">{desc}</p>
+              <p className="paragraph-default hover:text-white">{desc}</p>
             </div>
           ))}
         </div>

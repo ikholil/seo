@@ -8,9 +8,9 @@ const AllBlog = () => {
       <div className="max-w-[1296px] mx-auto pt-9 md:pt-[82px] pb-[70px] lg:pb-[280px]">
         <div className="mx-3 xl:mx-0">
           <div className="xl:max-w-[640px] text-center xl:text-start mx-3 lg:mx-0 ">
-            <h2 className="heading-2 text-[#222] my-[25px]">
+            <h1 className="heading-1 text-[#222] my-[25px]">
               Blog Post
-            </h2>
+            </h1>
             <p className="paragraph-default mb-9 md:mb-[55px] md:mx-20 xl:mx-0">
               With our integrated CRM, project management, collaboration and
               invoicing capabilities, you can manage your business in one secure
@@ -34,16 +34,16 @@ const AllBlog = () => {
                     alt="blog img"
                   />
                   <div className="md:px-[15px] pb-1 md:pb-2 pt-1">
-                    <p className="text-[#222] gap-1 flex items-center">
+                    <p className="text-[#222] figure-caption gap-1 flex items-center">
                       {blog.author} •{blog.date}
                     </p>
-                    <h5 className="heading-5 text-[#222]  mt-2 md:mt-4 mb-3">
+                    <h5 className="heading-5 text-[#222]  mt-2 md:mt-5 mb-3">
                       {blog.title}
                     </h5>
-                    <p className="text-[#222] text-base md:text-lg mb-3 md:mb-5">
+                    <p className="text-[#222] paragraph-default mb-3 md:mb-5">
                       {blog.text.substring(0, 100)}
                     </p>
-                    <a className="text-[#FF5349] text-base md:text-lg">Read More</a>
+                    <a className="text-[#FF5349] paragraph-default">Read More</a>
                   </div>
                 </div>
               </Link>
@@ -53,7 +53,7 @@ const AllBlog = () => {
         <div className="flex justify-center text-[#222] duration-300 gap-5 mt-10 md:mt-[60px]">
           {["1", "2", ">"].map((item) => (
             <Link href="#" key={item}>
-              <a className="px-3 py-1 hover:bg-[#FF5349] duration-300 hover:text-white w-8 flex justify-center bg-[#D3D3D3]">
+              <a className="px-3 py-1 hover:bg-[#FF5349] paragraph-large duration-300 hover:text-white w-8 flex justify-center bg-[#D3D3D3]">
                 {item}
               </a>
             </Link>

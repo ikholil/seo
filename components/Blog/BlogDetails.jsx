@@ -88,7 +88,7 @@ const BlogDetails = () => {
             <ul>
               {["Marketing", "SEO", "SMM", "Business"].map((category) => (
                 <li
-                  className="flex text-[#444] gap-2 items-center text-lg mb-1"
+                  className="flex text-[#444] gap-2 items-center paragraph-default mb-1"
                   key={category}
                 >
                   <HiOutlineChevronRight color="#FF5349" /> {category}

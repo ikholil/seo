@@ -69,7 +69,7 @@ const ContactForm = () => {
                     value={values.name}
                     type="text"
                     placeholder="Full Name"
-                    className="p-3 md:p-5  w-full bg-white text-[#5a5a5a] rounded-md  mb-1 focus:outline-none"
+                    className="p-3 md:p-5 figure-caption w-full bg-white text-[#5a5a5a] rounded-md mb-1 focus:outline-none"
                   />
                   <span className="text-red-500 text-sm">
                     {" "}
@@ -82,7 +82,7 @@ const ContactForm = () => {
                     value={values.email}
                     type="email"
                     placeholder="Email"
-                    className="p-3 md:p-5  w-full bg-white text-[#5a5a5a] rounded-md mt-3 mb-1 focus:outline-none"
+                    className="p-3 md:p-5 figure-caption w-full bg-white text-[#5a5a5a] rounded-md mt-3 mb-1 focus:outline-none"
                   />
                   <span className="text-red-500 text-sm">
                     {" "}
@@ -95,7 +95,7 @@ const ContactForm = () => {
                     value={values.website}
                     type="text"
                     placeholder="Website"
-                    className="p-3 md:p-5  w-full bg-white text-[#5a5a5a] rounded-md mt-3 mb-1 focus:outline-none"
+                    className="p-3 md:p-5 figure-caption w-full bg-white text-[#5a5a5a] rounded-md mt-3 mb-1 focus:outline-none"
                   />
                   <span className="text-red-500 text-sm">
                     {" "}
@@ -108,7 +108,7 @@ const ContactForm = () => {
                     value={values.message}
                     rows="8"
                     placeholder="Type a Message"
-                    className="mt-3 p-3 md:p-5  w-full bg-white text-[#5a5a5a] rounded-md focus:outline-none"
+                    className="mt-3 p-3 md:p-5 figure-caption w-full bg-white text-[#5a5a5a] rounded-md focus:outline-none"
                   />
                   <span className="text-red-500 text-sm">
                     {" "}

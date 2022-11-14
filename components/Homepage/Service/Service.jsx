@@ -21,10 +21,10 @@ const Service = () => {
         </div>
         <div className="flex flex-col lg:flex-row md:gap-10 items-center md:mb-3">
           <div className="flex-1  mx-3 xl:mx-0 ">
-            <h4 className="text-2xl max-w-md leading-tight md:text-[32px] font-semibold mb-4 md:mb-[20px] text-[#222]">
+            <h4 className="heading-4 max-w-md mb-4 md:mb-[20px] text-[#222]">
               Search Engine Optimization (SEO)
             </h4>
-            <p className="text-base md:text-lg text-[#222] mb-7 md:mb-9">
+            <p className="paragraph-default text-[#222] mb-7 md:mb-9">
               At Session Media we build technically sound and creative SEO
               strategies which lift your brand to dominate the organic search
               results for the most relevant and profitable terms.For you, that
@@ -54,10 +54,10 @@ const Service = () => {
             />
           </div>
           <div className="flex-1 mx-3 xl:mx-0  ">
-            <h4 className="text-2xl md:text-[32px] font-semibold mb-[20px] md:mb-7 text-[#222]">
+            <h4 className="heading-4 mb-[20px] text-[#222]">
               Social Media <br /> Marketing (SMM)
             </h4>
-            <p className="text-base md:text-lg text-[#222] mb-7 md:mb-9">
+            <p className="paragraph-defualt text-[#222] mb-7 md:mb-9">
               Passionate about data and acquisition, we offer campaigns on
               social networks. May i the most take When we start a project, we
               set up the tracking of your ads in order to give you all the KPIs

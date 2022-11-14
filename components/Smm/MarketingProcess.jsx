@@ -6,7 +6,7 @@ const MarketingProcess = () => {
       <div className="max-w-[1296px] mx-auto pb-[70px] md:pb-[120px]">
         <div className="flex justify-center">
           <div className="max-w-[640px] pt-14 md:pt-[115px] text-center mx-3 mb-10 md:mb-[57px] lg:mx-0">
-            <h3 className="text-2xl mb-3 font-semibold text-[#FF5349]">
+            <h3 className="heading-5 mb-3 text-[#FF5349]">
               Process
             </h3>
             <h2 className="heading-2 mb-5">
@@ -26,7 +26,7 @@ const MarketingProcess = () => {
                   id == 4 && "bg-[#7879F1]"
                 } ${id == 5 && "bg-[#F178B6]"}`}
               ></span>
-              <h4 className="text-lg md:text-2xl text-[#222]">{title}</h4>
+              <h4 className="paragraph-large text-[#222]">{title}</h4>
             </div>
           ))}
         </div>
@@ -36,7 +36,7 @@ const MarketingProcess = () => {
               className={`px-5 py-3 md:px-6 relative z-10 md:py-4 cursor-pointer  rounded-[5px] shadow-lg shadow-[#ff6f2c65] hover:shadow-none group overflow-hidden bg-[#FF6E2C] text-white inline-block `}
             >
               <span className="absolute top-0 left-0 flex w-full h-0 mb-0 transition-all duration-500 ease-out transform translate-y-0 bg-white group-hover:h-full opacity-90"></span>
-              <span className="relative group-hover:text-[#222] duration-500">
+              <span className="relative group-hover:text-[#222] paragraph-default text-white font-semibold duration-500">
                 Get Started Now
               </span>
             </a>

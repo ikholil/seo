@@ -67,7 +67,7 @@ const Header = () => {
               >
                 <Link href={url}>
                   <a
-                    className="block  text-lg text-x py-2 pr-4 md:pl-3  rounded md:bg-transparent hover:text-primary  md:p-0 "
+                    className="block heading-6 py-2 pr-4 md:pl-3 rounded md:bg-transparent hover:text-primary md:p-0 "
                     aria-current="page"
                   >
                     {title}
@@ -80,7 +80,7 @@ const Header = () => {
               onClick={() => setDropdown(!dropdown)}
               className="dropdown-button cursor-pointer py-2 md:py-4 lg:py-[35px]"
             >
-              <a className=" flex  items-center gap-2 relative text-lg text-x  pr-4 md:pl-3  rounded md:hover:bg-transparent md:border-0 hover:text-primary md:p-0 ">
+              <a className=" flex heading-6 items-center gap-2 relative pr-4 md:pl-3 rounded md:hover:bg-transparent md:border-0 hover:text-primary md:p-0 ">
                 PAGES <BsChevronDown />{" "}
               </a>
               <div className="relative">

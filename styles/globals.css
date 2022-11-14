@@ -37,6 +37,9 @@ body {
   .heading-2 {
     @apply text-[32px] md:text-[57px] leading-[42px] md:leading-[74px] font-bold text-[#222];
   }
+  .heading-3 {
+    @apply text-[32px] md:text-[43px] leading-[42px] md:leading-[56px] font-bold;
+  }
   .heading-4 {
     @apply text-[24px] md:text-[32px] leading-[34px] md:leading-[42px] font-semibold text-white;
   }

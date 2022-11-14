@@ -8,10 +8,10 @@ const GrowTraffic = () => {
   return (
     <section className="bg-white  relative">
       <div className="lg:-translate-y-1/2 px-1 max-w-[1077px] mx-auto">
-        <div className="flex gap-5 mx-2 xl:mx-0 md:gap-0 flex-wrap  bg-white justify-around  md:my-0 rounded-none md:rounded-lg shadow-lg pt-[26px] pb-10  ">
+        <div className="flex gap-5 mx-2 xl:mx-0 md:gap-0 flex-wrap px-3 bg-white justify-around  md:my-0 rounded-none md:rounded-lg shadow-lg pt-8 pb-9">
           {bannerStates.map((item, index) => (
             <div className="flex flex-col items-center" key={item.title}>
-              <h4 className="text-[#FF5349]  font-semibold text-[32px]">
+              <h4 className="text-[#FF5349] heading-4 mb-1">
                 <CountUp end={item.number} />
                 {index == 0 && <span className="text-[#FF5349]">+</span>}
               </h4>
@@ -54,7 +54,7 @@ const GrowTraffic = () => {
             key={feature.id}
           >
             <Image src={feature.icon} height={88} width={88} alt="icon" />
-            <h4 className="text-[#222] font-bold text-[32px] mt-2 md:mt-[14px] mb-[10px]">
+            <h4 className="text-[#222] heading-4 mt-2 md:mt-[14px] mb-[10px]">
               {feature.title}
             </h4>
             <p className="paragraph-default relative z-10">{feature.desc}</p>

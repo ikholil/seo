@@ -9,10 +9,10 @@ const Footer = () => {
     <footer className="bg-[url('/images/footer/bg-shape.png')] relative bg-no-repeat bg-right-bottom bg-[#07112D]">
       <div className="max-w-[1296px] mx-auto pt-[30px] lg:pt-0">
         <div className="bg-[#1A4DBE] rounded-[10px] py-6 px-3 mx-2 xl:mx-0  mt-[40px] lg:mt-0 lg:-translate-y-1/2 md:p-[30px] lg:p-[60px] md:bg-[url('/images/footer/bg.png')] bg-no-repeat bg-right">
-          <h3 className="text-white text-3xl font-bold md:text-[43px] mb-4 lg:mb-[33px]">
+          <h3 className="text-white heading-3 mb-4 lg:mb-6">
             Start Growing Your Business{" "}
           </h3>
-          <p className="text-base text-white mb-4 lg:mb-[40px]">
+          <p className="figure-caption text-white mb-4 lg:mb-[40px]">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nibh
             eleifend malesuada quisque lectus.
           </p>
@@ -108,7 +108,7 @@ const Footer = () => {
         </div>
 
         <div className="flex flex-col md:flex-row gap-5 justify-between items-center py-5 mx-3">
-          <p className="text-[#B4B4B4]">
+          <p className="text-[#B4B4B4] figure-caption">
             © 2022 Veltio Inc. All Rights Reserved.
           </p>
           <div>

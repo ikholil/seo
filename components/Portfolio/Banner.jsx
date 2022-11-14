@@ -8,10 +8,10 @@ const Banner = () => {
       </Head>
       <section className="bg-[#1A4DBE]">
         <div className="py-16  lg:py-[138px] z-10 relative max-w-[1296px] mx-3 xl:mx-auto md:bg-[url('/images/error/banner.png')] bg-no-repeat bg-right-bottom bg-contain">
-          <h1 className="text-white font-bold text-5xl md:text-[76px] mb-2 md:mb-4">
+          <h1 className="text-white heading-1 mb-2 md:mb-4">
             Portfolio
           </h1>
-          <p className="text-lg text-white">
+          <p className="paragraph-default text-white">
             <Link href="/">
               <a>Home </a>
             </Link>{" "}

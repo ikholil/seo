@@ -9,7 +9,7 @@ const Blog = () => {
         <div className="flex justify-center">
           <div className="max-w-[640px] text-center">
             <h5 className="heading-5 text-[#FF5349]">Blog</h5>
-            <h2 className="heading-2 mt-4 md:mt-[20px] mb-2">
+            <h2 className="heading-2 mx-2 lg:mx-0 mt-4 md:mt-[20px] mb-2">
               Our Latest <span className="text-[#FF5349]">Articles</span>
             </h2>
             <p className="paragraph-default mb-10 md:mb-[60px]">
@@ -31,7 +31,7 @@ const Blog = () => {
                 className="zoom"
               />
               <div className="p-[15px]">
-                <p className="text-[#222] mt-1 gap-1 flex items-center">
+                <p className="text-[#222] figure-caption mt-1 gap-1 flex items-center">
                   {blog.author} •{blog.date}
                 </p>
                 <h5 className="heading-5 text-[#222] mt-1 mb-[22px]">
@@ -41,7 +41,7 @@ const Blog = () => {
                   {blog.text.substring(0, 100)}
                 </p>
                 <Link href={`/blog/${blog.id}`}>
-                  <a className="text-[#1A4DBE] text-lg">Read More</a>
+                  <a className="text-[#1A4DBE] paragraph-default">Read More</a>
                 </Link>
               </div>
             </div>

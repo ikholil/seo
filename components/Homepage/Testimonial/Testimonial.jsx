@@ -20,10 +20,10 @@ const Testimonial = () => {
             <h5 className="heading-5 text-[#FF5349]">
               Testimonial
             </h5>
-            <h2 className="heading-2 mb-6 mt-[14px]">
+            <h2 className="heading-2 mb-5 mt-[14px]">
               What our <span className="text-[#FF5349]">{"Client's"}</span> Say
             </h2>
-            <p className="text-base md:text-lg mb-9 md:mb-[55px] text-[#222]">
+            <p className="paragraph-default mb-9 md:mb-[55px] text-[#222]">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra
               at eu tortor eget nam scelerisque ut tincidunt.
             </p>
@@ -51,7 +51,7 @@ const Testimonial = () => {
                   <p className="paragraph-default mb-2">
                     {item.designation}
                   </p>
-                  <p className="text-base md:text-lg ">{item.review}</p>
+                  <p className="paragraph-default">{item.review}</p>
                   <div className="flex gap-1 justify-center mt-5">
                     <IoIosStar color="#FFCA22" size={30} />
                     <IoIosStar color="#FFCA22" size={30} />

@@ -6,7 +6,7 @@ const Banner = () => {
   return (
     <header className="relative bg-[#FFFDFA] ">
       <div className="xl:bg-[url('/images/banner/bg.png')] bg-no-repeat bg-right-top">
-        <div className="max-w-[1296px] mx-auto pt-32 xl:-mb-[73px] lg:pt-[215px] flex">
+        <div className="max-w-[1296px] mx-auto pt-32 xl:-mb-[55px] lg:pt-[215px] flex">
           <motion.div
             initial={{ scale: 0.8 }}
             animate={{ scale: 1 }}
@@ -14,10 +14,10 @@ const Banner = () => {
             className="mx-3 xl:mx-0 mb-16 md:mb-20"
           >
             <div className="max-w-[694px]">
-              <h3 className="text-2xl md:text-[32px] font-semibold text-[#FF5349] mb-2 md:mb-4">
+              <h3 className="heading-4 text-[#FF5349] mb-2">
                 Digital Marketing
               </h3>
-              <h1 className="heading-1 md:mb-1 text-[#222]">
+              <h1 className="heading-1 text-[#222]">
                 Grow Your Business With{" "}
                 <span className="text-[#FF5349]">Us.</span>{" "}
               </h1>
