@@ -10,7 +10,13 @@ body {
   overflow-x: hidden !important;
   font-family: "Poppins", sans-serif;
 }
-
+/* Global Variables */
+:root {
+  /* color  */
+  --color-primary: #FF5349;
+  --color-text: #121212;
+  --color-dark: #010B24;
+}
 @layer components {
  /* @TODO: Typography */
  .paragraph-default {

@@ -8,7 +8,7 @@ const Marketing = () => {
           <div className="flex flex-col md:flex-row mx-3 xl:mx-0">
             <div className="md:w-1/2 mx-3 xl:mx-0 mt-5 md:mt-0 mb-10 md:mb-0">
               <h2 className="heading-2 mb-6">
-                <span className="text-[#FF5349]">Marketing </span> <br />
+                <span className="text-[var(--color-primary)]">Marketing </span> <br />
                 Strategy
               </h2>
               <p className="paragraph-default  text-[#444]">

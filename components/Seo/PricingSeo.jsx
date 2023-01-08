@@ -8,9 +8,9 @@ const PricingSeo = () => {
       <div className="max-w-[1296px] mx-auto pt-[65px] md:pt-[116px] pb-[70px] lg:pb-[297px]">
         <div className="flex justify-center">
           <div className="max-w-[640px] text-center">
-            <h5 className="heading-5 text-[#FF5349]">Price</h5>
+            <h5 className="heading-5 text-[var(--color-primary)]">Price</h5>
             <h2 className="heading-2 mx-3 lg:mx-0  my-2">
-              <span className="text-[#FF5349]">Choose</span> Your Plan
+              <span className="text-[var(--color-primary)]">Choose</span> Your Plan
             </h2>
             <p className="mx-3 lg:mx-0 paragraph-default mb-8 md:mb-14 md:first-letter:mb-[57px]">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra
@@ -30,7 +30,7 @@ const PricingSeo = () => {
               <div
                 className={` px-[30px] pt-[23px]  pb-4 rounded-t-lg ${
                   id == 1 && "bg-[#1A4DBE]"
-                } ${id == 2 && "bg-[#FF5349]"} ${id == 3 && "bg-[#1A4DBE]"} `}
+                } ${id == 2 && "bg-[var(--color-primary)]"} ${id == 3 && "bg-[#1A4DBE]"} `}
               >
                 <h5 className="text-white heading-5">
                   {title}

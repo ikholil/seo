@@ -14,12 +14,12 @@ const Banner = () => {
             className="mx-3 xl:mx-0 mb-16 md:mb-20"
           >
             <div className="max-w-[694px]">
-              <h3 className="heading-4 text-[#FF5349] mb-2">
+              <h3 className="heading-4 text-[var(--color-primary)] mb-2">
                 Digital Marketing
               </h3>
               <h1 className="heading-1 text-[#222]">
                 Grow Your Business With{" "}
-                <span className="text-[#FF5349]">Us.</span>{" "}
+                <span className="text-[var(--color-primary)]">Us.</span>{" "}
               </h1>
               <p className="paragraph-large text-[#222222] mb-6 md:mb-8">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.

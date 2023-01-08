@@ -8,9 +8,9 @@ const Team = () => {
       <div className="max-w-[1296px] mx-auto pt-[65px] md:pt-[115px] pb-[70px] md:pb-[120px]">
         <div className="flex justify-center">
           <div className="max-w-[700px]  text-center mx-3 mb-28 md:mb-[136px] lg:mx-0">
-            <h5 className="heading-5 text-[#FF5349]">Team</h5>
+            <h5 className="heading-5 text-[var(--color-primary)]">Team</h5>
             <h2 className="heading-2 text-[#222] mt-2 mb-6">
-              Meet Our Expert <span className="text-[#FF5349]">Team</span>
+              Meet Our Expert <span className="text-[var(--color-primary)]">Team</span>
             </h2>
             <p className="paragraph-default text-[#222]">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra
@@ -24,7 +24,7 @@ const Team = () => {
               className="w-[280px] mx-auto md:mx-2 lg:mx-0 flex flex-col justify-center md:w-[306px] shadow-xl text-[#222] text-center md:px-14 bg-white rounded-lg"
               key={member.id}
             >
-              <div className="-mt-20 mx-auto w-48 h-48 duration-500 hover:rounded-full border-4 rounded-full border-transparent hover:border-4 hover:border-[#FF5349]">
+              <div className="-mt-20 mx-auto w-48 h-48 duration-500 hover:rounded-full border-4 rounded-full border-transparent hover:border-4 hover:border-[var(--color-primary)]">
                 <Image
                   className="rounded-full "
                   src={member.img}

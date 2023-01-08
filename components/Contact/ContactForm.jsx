@@ -7,7 +7,7 @@ const ContactForm = () => {
 
         <div className="  max-w-[1296px] flex justify-center items-center flex-col text-center mx-3 md:mx-auto h-full z-10 relative">
           <div className="max-w-4xl flex flex-col justify-center">
-            <h5 className="text-[#FF5349] heading-5 mt-[65px] md:mt-[115px]">
+            <h5 className="text-[var(--color-primary)] heading-5 mt-[65px] md:mt-[115px]">
               Contact us
             </h5>
             <h2 className="text-center text-[#222] heading-2 pt-2  mb-6">

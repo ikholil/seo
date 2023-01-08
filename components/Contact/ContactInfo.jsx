@@ -18,10 +18,10 @@ const ContactInfo = () => {
         <div className="flex lg:gap-8 gap-3 items-center ">
           <HiOutlineMail className="shrink-0 text-2xl md:text-4xl" />
           <a
-            href="mailto:contact.pio@gmail.com"
+            href="mailto:example@mail.com"
             className="heading-4 text-[#222]"
           >
-            contact.pio@gmail.com
+            example@mail.com
           </a>
         </div>
         <div className="flex lg:gap-8 gap-3">

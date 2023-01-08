@@ -1,5 +1,7 @@
 import Image from "next/image";
 import Slider from "react-slick";
+import {motion} from 'framer-motion'
+
 const clients = [
   "/images/clients/1.png",
   "/images/clients/2.png",
@@ -50,17 +52,17 @@ const Clients = () => {
     <section className="bg-[#F9F9F9]">
       <div className="max-w-[1296px] mx-auto pt-16 md:pt-[115px] pb-[70px] md:pb-[111px]">
         <div className="flex mx-2 xl:mx-0 justify-center">
-          <div className="max-w-[640px] text-center">
-            <h5 className="heading-5 text-[#FF5349]">
+          <motion.div initial={{translateY:'20px', opacity:0}} whileInView={{translateY:0, opacity:1}} transition={{duration: .5}} className="max-w-[640px] text-center">
+            <h5 className="heading-5 text-[var(--color-primary)]">
               clients’s love
             </h5>
             <h2 className="heading-2 mb-3 mt-2 md:mt-[13px]">
-              Our Trusted <span className="text-[#FF5349]">{"Client's"}</span>
+              Our Trusted <span className="text-[var(--color-primary)]">{"Client's"}</span>
             </h2>
             <p className="paragraph-default mb-9 md:mb-[57px]">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             </p>
-          </div>
+          </motion.div>
         </div>
 
         <div>

@@ -8,7 +8,7 @@ const Seo = () => {
           <div className="col-span-12 mx-3 xl:mx-0  lg:col-span-5">
             <h2 className=" mb-4 md:mb-6 heading-2">
               Search Engine 
-              <span className="text-[#FF5349]"> Optimization</span>
+              <span className="text-[var(--color-primary)]"> Optimization</span>
             </h2>
             <p className="paragraph-default mb-4  text-[#444]">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Imperdiet

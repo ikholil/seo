@@ -28,7 +28,7 @@ const BlogDetails = () => {
             <p className="mb-7 md:mb-[40px]">
               {blog?.text.split(".").slice(0, 2).join("")}
             </p>
-            <div className="border-l-2 mb-[40px] border-[#FF5349]">
+            <div className="border-l-2 mb-[40px] border-[var(--color-primary)]">
               <p className="text-lg md:text-2xl leading-tight md:leading-[31px] font-semibold text-[#222] px-[25px]">
                 {blog?.quote?.text}
               </p>
@@ -58,7 +58,7 @@ const BlogDetails = () => {
               type="text"
               placeholder="Search..."
             />
-            <div className="bg-[#FF5349] p-2 shadow-lg shadow-[#ff52496c] rounded-lg">
+            <div className="bg-[var(--color-primary)] p-2 shadow-lg shadow-[#ff52496c] rounded-lg">
               <FiSearch size={30} className=" text-white" />
             </div>
           </div>

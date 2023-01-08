@@ -16,7 +16,7 @@ const About = () => {
           </div>
           <div className="w-full lg:w-1/2 text-[#222] ">
             <h2 className="heading-2 mb-2">
-              We Provide Best <span className="text-[#FF5349] ">Digital </span>{" "}
+              We Provide Best <span className="text-[var(--color-primary)] ">Digital </span>{" "}
               Marketing Service{" "}
             </h2>
             <p className="paragraph-default mb-4">

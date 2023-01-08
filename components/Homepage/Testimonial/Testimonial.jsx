@@ -2,6 +2,8 @@ import Image from "next/image";
 import { IoIosStar } from "react-icons/io";
 import Slider from "react-slick";
 import { testimonials } from "../../../data/testimonials";
+import {motion} from 'framer-motion'
+
 const Testimonial = () => {
   const settings = {
     dots: false,
@@ -16,18 +18,18 @@ const Testimonial = () => {
     <section className="bg-[url('/images/testimonial/bg.png')] bg-white bg-left-bottom bg-no-repeat">
       <div className="max-w-[1296px] mx-auto pt-[65px] md:pt-[115px] pb-[70px] md:pb-[120px]">
         <div className="flex justify-center mx-2 lg:mx-0">
-          <div className="max-w-[640px] text-center">
-            <h5 className="heading-5 text-[#FF5349]">
+          <motion.div initial={{translateY:'20px', opacity:0}} whileInView={{translateY:0, opacity:1}} transition={{duration: .5}} className="max-w-[640px] text-center">
+            <h5 className="heading-5 text-[var(--color-primary)]">
               Testimonial
             </h5>
             <h2 className="heading-2 mb-5 mt-[14px]">
-              What our <span className="text-[#FF5349]">{"Client's"}</span> Say
+              What our <span className="text-[var(--color-primary)]">{"Client's"}</span> Say
             </h2>
             <p className="paragraph-default mb-9 md:mb-[55px] text-[#222]">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra
               at eu tortor eget nam scelerisque ut tincidunt.
             </p>
-          </div>
+          </motion.div>
         </div>
         <div className="flex justify-center">
           <div className="mx-2 lg:mx-0 w-[290px] bg-white sm:w-[550px] lg:w-[850px] shadow-[0px_4px_24px_rgba(188,188,188,0.25)] rounded-xl">

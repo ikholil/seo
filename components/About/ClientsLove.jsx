@@ -53,11 +53,11 @@ const Clients = () => {
       <div className="max-w-[1296px] mx-auto pb-[70px] lg:pb-[270px] pt-[70px] md:pt-[115px]">
         <div className="flex justify-center">
           <div className="max-w-[640px] text-center mx-2 lg:mx-0">
-            <h5 className="heading-5 text-[#FF5349]">
+            <h5 className="heading-5 text-[var(--color-primary)]">
               {"clients’s love"}
             </h5>
             <h2 className="heading-2 text-[#222] mt-2 mb:mt-4 mb-3">
-              Our Trusted <span className="text-[#FF5349]">{"Client's"}</span>
+              Our Trusted <span className="text-[var(--color-primary)]">{"Client's"}</span>
             </h2>
             <p className="paragraph-default mb-7 md:mb-10 text-[#222]">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.

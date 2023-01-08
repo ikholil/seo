@@ -1,13 +1,14 @@
 import Image from "next/image";
 import AnimatedLink from "../../Others/AnimatedLink";
+import {motion} from 'framer-motion'
 
 const Service = () => {
   return (
     <section className="bg-white">
       <div className="max-w-[1296px] mx-auto pt-[65px] pb-[65px] md:pb-[85px] md:pt-[115px]">
         <div className="flex justify-center">
-          <div className="max-w-[640px]  text-center mx-3 lg:mx-0">
-            <h5 className="heading-5 text-[#FF5349]">
+          <motion.div initial={{translateY:'20px', opacity:0}} whileInView={{translateY:0, opacity:1}} transition={{duration: .5}} className="max-w-[640px]  text-center mx-3 lg:mx-0">
+            <h5 className="heading-5 text-[var(--color-primary)]">
               Digital Marketing
             </h5>
             <h2 className="heading-2 mt-[18px] mb-2">
@@ -17,10 +18,10 @@ const Service = () => {
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Convallis
               mattis dui eget vestibulum id et. It’s about ranking
             </p>
-          </div>
+          </motion.div>
         </div>
         <div className="flex flex-col lg:flex-row md:gap-10 items-center md:mb-3">
-          <div className="flex-1  mx-3 xl:mx-0 ">
+          <motion.div initial={{translateY:'20px', opacity:0}} whileInView={{translateY:0, opacity:1}} transition={{duration: .5}} className="flex-1  mx-3 xl:mx-0 ">
             <h4 className="heading-4 max-w-md mb-4 md:mb-[20px] text-[#222]">
               Search Engine Optimization (SEO)
             </h4>
@@ -33,7 +34,7 @@ const Service = () => {
             </p>
 
             <AnimatedLink link="/seo" name="Read More" classes="figure-caption" />
-          </div>
+          </motion.div>
           <div className="flex-1 2xl:-mr-36 mx-3 xl:mx-0 pt-10 md:pt-0">
             <Image
               src="/images/service/seo.png"
@@ -53,7 +54,7 @@ const Service = () => {
               alt="solution bg image"
             />
           </div>
-          <div className="flex-1 mx-3 xl:mx-0  ">
+          <motion.div initial={{translateY:'20px', opacity:0}} whileInView={{translateY:0, opacity:1}} transition={{duration: .5}} className="flex-1 mx-3 xl:mx-0  ">
             <h4 className="heading-4 mb-[20px] text-[#222]">
               Social Media <br /> Marketing (SMM)
             </h4>
@@ -66,7 +67,7 @@ const Service = () => {
             </p>
 
             <AnimatedLink link="/smm" name="Read More" classes="figure-caption" />
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>

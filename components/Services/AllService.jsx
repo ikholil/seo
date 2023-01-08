@@ -22,7 +22,7 @@ const AllService = () => {
               <h5 className="heading-5 mb-4 md:mb-[23px]">{title}</h5>
               <p className="mb-7 md:mb-10 paragraph-default">{desc}</p>
               <Link href={url}>
-              <a className="hover:text-white duration-300 border-black border-[1px] hover:border-[#FF5349] paragraph-default px-5 hover:shadow-lg hover:shadow-[#ff524987] py-2 rounded hover:bg-[#FF5744]">
+              <a className="hover:text-white duration-300 border-black border-[1px] hover:border-[var(--color-primary)] paragraph-default px-5 hover:shadow-lg hover:shadow-[#ff524987] py-2 rounded hover:bg-[#FF5744]">
                 View details
               </a>
               </Link>

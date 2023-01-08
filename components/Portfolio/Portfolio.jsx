@@ -8,11 +8,11 @@ const Portfolio = () => {
       <div className="max-w-[1296px] mx-auto">
         <div className="text-center w-full flex justify-center">
           <div className="max-w-4xl flex flex-col justify-center">
-            <h5 className="text-[#FF5349] heading-5 pt-[67px] md:pt-[115px]">
+            <h5 className="text-[var(--color-primary)] heading-5 pt-[67px] md:pt-[115px]">
               Portfolio
             </h5>
             <h2 className="text-center heading-2 pt-[10px]  mb-2">
-              Showcase Our <span className="text-[#FF5349]">Works</span>
+              Showcase Our <span className="text-[var(--color-primary)]">Works</span>
             </h2>
             <p className="text-[#444] mx-2 md:mx-0 paragraph-default md:px-40  text-center mb-8 md:mb-[60px]">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra

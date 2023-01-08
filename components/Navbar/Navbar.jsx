@@ -60,8 +60,8 @@ const Header = () => {
             ].map(([url, title]) => (
               <li
                 className={`lg:py-[35px] ${
-                  router.pathname == url && "text-[#FF5349]"
-                } hover:text-[#FF5349] duration-200`}
+                  router.pathname == url && "text-[var(--color-primary)]"
+                } hover:text-[var(--color-primary)] duration-200`}
                 key={title}
                 onClick={() => setOpen(false)}
               >
@@ -118,7 +118,7 @@ const Header = () => {
           </a>
           <button
             onClick={() => setSearchModal(!searchModal)}
-            className="bg-[#FF5349] duration-300 p-2 hover:shadow-xl hover:shadow-[#ff52496c] rounded-lg"
+            className="bg-[var(--color-primary)] duration-300 p-2 hover:shadow-xl hover:shadow-[#ff52496c] rounded-lg"
           >
             <FiSearch size={30} className=" text-white" />
           </button>
@@ -128,7 +128,7 @@ const Header = () => {
           type="button"
           className="items-center pr-2 md:pr-0 text-sm text-gray-500 rounded-lg md:hidden  "
         >
-          <HiMenu className="text-[#FF5349]" size={40} />
+          <HiMenu className="text-[var(--color-primary)]" size={40} />
         </button>
         {/* Modal for search */}
         {searchModal && (
@@ -153,7 +153,7 @@ const Header = () => {
               />
 
               <button
-                className="bg-[#FF5349] px-6 py-3 rounded-md text-white hover:shadow-xl hover:shadow-[#ff52496c] duration-300"
+                className="bg-[var(--color-primary)] px-6 py-3 rounded-md text-white hover:shadow-xl hover:shadow-[#ff52496c] duration-300"
                 type="submit"
               >
                 Search

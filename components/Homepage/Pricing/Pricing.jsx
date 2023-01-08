@@ -1,22 +1,23 @@
 import { priceplan } from "../../../data/priceplan";
 import { CgCheckO } from "react-icons/cg";
 import Image from "next/image";
-priceplan;
+import {motion} from 'framer-motion'
+
 const Pricing = () => {
   return (
     <section className="bg-[url('/images/pricing/map-bg.png')] bg-white bg-bottom bg-no-repeat h-full">
       <div className="max-w-[1296px] mx-auto pt-16 md:pt-[115px] pb-[70px] md:pb-[120px]">
         <div className="flex justify-center mx-2 xl:mx-0">
-          <div className="max-w-[640px] text-center">
-            <h5 className="heading-5 text-[#FF5349]">Price</h5>
+          <motion.div initial={{translateY:'20px', opacity:0}} whileInView={{translateY:0, opacity:1}} transition={{duration: .5}} className="max-w-[640px] text-center">
+            <h5 className="heading-5 text-[var(--color-primary)]">Price</h5>
             <h2 className="heading-2 my-2">
-              <span className="text-[#FF5349]">Choose</span> Your Plan
+              <span className="text-[var(--color-primary)]">Choose</span> Your Plan
             </h2>
             <p className="paragraph-default mb-10 md:mb-[57px]">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra
               at eu tortor eget nam scelerisque ut tincidunt.
             </p>
-          </div>
+          </motion.div>
         </div>
         <div className="flex justify-center flex-col flex-wrap md:flex-row gap-6">
           {priceplan.map(({ id, title, price, bg, features }) => (
@@ -30,7 +31,7 @@ const Pricing = () => {
               <div
                 className={` px-[30px] pt-[23px]  pb-4 rounded-t-lg ${
                   id == 1 && "bg-[#1A4DBE]"
-                } ${id == 2 && "bg-[#FF5349]"} ${id == 3 && "bg-[#1A4DBE]"} `}
+                } ${id == 2 && "bg-[var(--color-primary)]"} ${id == 3 && "bg-[#1A4DBE]"} `}
               >
                 <h5 className="text-white heading-5 ">
                   {title}

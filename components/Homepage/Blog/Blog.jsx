@@ -1,21 +1,22 @@
 import Image from "next/image";
 import Link from "next/link";
 import { blogs } from "../../../data/blog";
+import {motion} from 'framer-motion'
 
 const Blog = () => {
   return (
     <section className="bg-[#F9F9F9] bg-[url('/images/blog/bg.png')] bg-contain bg-no-repeat bg-right-bottom">
       <div className="max-w-[1296px] mx-auto pt-[65px] md:pt-[115px] pb-16 md:pb-[277px]">
         <div className="flex justify-center">
-          <div className="max-w-[640px] text-center">
-            <h5 className="heading-5 text-[#FF5349]">Blog</h5>
+          <motion.div initial={{translateY:'20px', opacity:0}} whileInView={{translateY:0, opacity:1}} transition={{duration: .5}} className="max-w-[640px] text-center">
+            <h5 className="heading-5 text-[var(--color-primary)]">Blog</h5>
             <h2 className="heading-2 mx-2 lg:mx-0 mt-4 md:mt-[20px] mb-2">
-              Our Latest <span className="text-[#FF5349]">Articles</span>
+              Our Latest <span className="text-[var(--color-primary)]">Articles</span>
             </h2>
             <p className="paragraph-default mb-10 md:mb-[60px]">
               Lorem ipsum dolor sit amet.
             </p>
-          </div>
+          </motion.div>
         </div>
         <div className="flex mx-2 flex-col gap-5 justify-center xl:justify-between flex-wrap md:flex-row">
           {blogs.slice(0, 3).map((blog) => (

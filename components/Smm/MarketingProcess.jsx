@@ -6,7 +6,7 @@ const MarketingProcess = () => {
       <div className="max-w-[1296px] mx-auto pb-[70px] md:pb-[120px]">
         <div className="flex justify-center">
           <div className="max-w-[640px] pt-14 md:pt-[115px] text-center mx-3 mb-10 md:mb-[57px] lg:mx-0">
-            <h3 className="heading-5 mb-3 text-[#FF5349]">
+            <h3 className="heading-5 mb-3 text-[var(--color-primary)]">
               Process
             </h3>
             <h2 className="heading-2 mb-5">

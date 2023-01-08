@@ -43,7 +43,7 @@ const AllBlog = () => {
                     <p className="text-[#222] paragraph-default mb-3 md:mb-5">
                       {blog.text.substring(0, 100)}
                     </p>
-                    <a className="text-[#FF5349] paragraph-default">Read More</a>
+                    <a className="text-[var(--color-primary)] paragraph-default">Read More</a>
                   </div>
                 </div>
               </Link>
@@ -53,7 +53,7 @@ const AllBlog = () => {
         <div className="flex justify-center text-[#222] duration-300 gap-5 mt-10 md:mt-[60px]">
           {["1", "2", ">"].map((item) => (
             <Link href="#" key={item}>
-              <a className=" hover:bg-[#FF5349] paragraph-large duration-300 hover:text-white w-12 h-12 items-center flex justify-center bg-[#D3D3D3]">
+              <a className=" hover:bg-[var(--color-primary)] paragraph-large duration-300 hover:text-white w-12 h-12 items-center flex justify-center bg-[#D3D3D3]">
                 {item}
               </a>
             </Link>

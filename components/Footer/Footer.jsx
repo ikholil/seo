@@ -3,15 +3,16 @@ import { HiArrowNarrowRight, HiOutlineMail } from "react-icons/hi";
 import { FiPhone } from "react-icons/fi";
 import { SlLocationPin } from "react-icons/sl";
 import Social from "../Others/Social";
+import {motion} from 'framer-motion'
 import Link from "next/link";
 const Footer = () => {
   return (
     <footer className="bg-[url('/images/footer/bg-shape.png')] relative bg-no-repeat bg-right-bottom bg-[#07112D]">
       <div className="max-w-[1296px] mx-auto pt-[30px] lg:pt-0">
         <div className="bg-[#1A4DBE] rounded-[10px] py-6 px-3 mx-2 xl:mx-0  mt-[40px] lg:mt-0 lg:-translate-y-1/2 md:p-[30px] lg:p-[60px] md:bg-[url('/images/footer/bg.png')] bg-no-repeat bg-right">
-          <h3 className="text-white heading-3 mb-4 lg:mb-6">
+          <motion.h3 initial={{translateY:'20px', opacity:0}} whileInView={{translateY:0, opacity:1}} transition={{duration: .5}} className="text-white heading-3 mb-4 lg:mb-6">
             Start Growing Your Business{" "}
-          </h3>
+          </motion.h3>
           <p className="figure-caption text-white mb-4 lg:mb-[40px]">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nibh
             eleifend malesuada quisque lectus.
@@ -40,19 +41,19 @@ const Footer = () => {
               />
             </div>
             <div className="flex gap-3 md:gap-5">
-              <HiOutlineMail className="shrink-0 text-2xl md:text-4xl" />
-              <a href="mailto:contact.pio@gmail.com" className="paragraph-default text-white">
-                contact.pio@gmail.com
+              <HiOutlineMail className="shrink-0 text-2xl md:text-3xl" />
+              <a href="mailto:example@mail.com" className="paragraph-default text-white">
+                example@mail.com
               </a>
             </div>
             <div className="flex gap-3 md:gap-5">
-              <FiPhone className="shrink-0 text-2xl md:text-4xl" />
+              <FiPhone className="shrink-0 text-2xl md:text-3xl" />
               <a href="tel:+1658361253" className="paragraph-default text-white">
                 +1 658 361 253
               </a>
             </div>
             <address className="flex gap-3 md:gap-5 not-italic">
-              <SlLocationPin className="shrink-0 text-2xl md:text-4xl" />
+              <SlLocationPin className="shrink-0 text-2xl md:text-3xl" />
               <p className="paragraph-default text-white max-w-[264px]">
                 Ms Alice Smith Apartment 1c 213 Derrick Street Boston, MA 02130
                 USA
@@ -62,10 +63,10 @@ const Footer = () => {
           <div className="col-span-12 flex flex-col paragraph-default gap-4 md:col-span-6 lg:col-span-3">
             <h5 className="heading-5 text-white mt-2 md:mt-0">Overview</h5>
             <div className="flex gap-1 text-[#C0C0C0] flex-col">
-              {["Pricing", "Portfolio", "Blog", "Link Building", "Contact"].map(
-                (item) => (
-                  <Link href={`/${item}`} key={item}>
-                    <a className="hover:pl-1 duration-200">{item}</a>
+              { [["Pricing", "#"], ["Portfolio","portfolio"], ["Blog", "blog"], ["Link Building", "#"], ["Contact", "contact"]].map(
+                ([title, link]) => (
+                  <Link href={`/${link}`} key={link}>
+                    <a className="hover:translate-x-1 hover:text-[var(--color-primary)] duration-300">{title}</a>
                   </Link>
                 )
               )}
@@ -74,16 +75,9 @@ const Footer = () => {
           <div className="col-span-12 flex flex-col paragraph-default gap-4 md:col-span-6 lg:col-span-3">
             <h5 className="heading-5 text-white mt-2 md:mt-0">Services</h5>
             <div className=" inline-flex gap-1 text-[#C0C0C0] flex-col">
-              {[
-                "About",
-                "Social Media Marketing",
-                "SEO",
-                "Link Building",
-                "On-Page SEO",
-                "Off-Page SEO",
-              ].map((item) => (
-                <Link href={`/${item}`} key={item}>
-                  <a className="hover:pl-1 duration-200">{item}</a>
+              {[["About", "about"], ["Social Media Marketing", "smm"],["SEO", "seo"], ["On-Page SEO", "#"], ["Off-Page SEO", "#"]].map(([title, url]) => (
+                <Link href={`/${url}`} key={title}>
+                  <a className="hover:translate-x-1 hover:text-[var(--color-primary)] duration-300">{title}</a>
                 </Link>
               ))}
             </div>
@@ -92,15 +86,15 @@ const Footer = () => {
             <h5 className="heading-5 text-white mt-2 md:mt-0">Policy</h5>
             <div className="flex gap-1 text-[#C0C0C0] flex-col">
               {[
-                "Privacy Policy",
-                "Terms of Service",
-                "Code of Conduct",
-                "Medical Advice",
-                "Cancellation",
-                "Refferral Policy",
-              ].map((item) => (
-                <Link href={`/${item}`} key={item}>
-                  <a className="hover:pl-1 duration-200">{item}</a>
+                ["Privacy Policy","#"],
+                ["Terms of Service", "#"],
+                ["Code of Conduct", "#"],
+                ["Medical Advice", "#"],
+                ["Cancellation", "#"],
+                ["Refferral Policy", "#"],
+              ].map(([title,url]) => (
+                <Link href={`/${url}`} key={title}>
+                  <a className="hover:translate-x-1 hover:text-[var(--color-primary)] duration-300">{title}</a>
                 </Link>
               ))}
             </div>
