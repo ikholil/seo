@@ -38,7 +38,7 @@ const ContactForm = () => {
                 if (!values.name) {
                   errors.name = "Name is Required";
                 }
-                
+
                 if (!values.message) {
                   errors.message = "Message is Required";
                 }
@@ -62,58 +62,65 @@ const ContactForm = () => {
                 /* and other goodies */
               }) => (
                 <form onSubmit={handleSubmit}>
-                  <input
-                    name="name"
-                    onChange={handleChange}
-                    onBlur={handleBlur}
-                    value={values.name}
-                    type="text"
-                    placeholder="Full Name"
-                    className="p-3 md:p-5 figure-caption w-full bg-white text-[#5a5a5a] rounded-md mb-1 focus:outline-none"
-                  />
-                  <span className="text-red-500 text-sm">
-                    {" "}
-                    {errors.name && touched.name && errors.name}
-                  </span>
-                  <input
-                    name="email"
-                    onChange={handleChange}
-                    onBlur={handleBlur}
-                    value={values.email}
-                    type="email"
-                    placeholder="Email"
-                    className="p-3 md:p-5 figure-caption w-full bg-white text-[#5a5a5a] rounded-md mt-3 mb-1 focus:outline-none"
-                  />
-                  <span className="text-red-500 text-sm">
-                    {" "}
-                    {errors.email && touched.email && errors.email}
-                  </span>
-                  <input
-                    name="website"
-                    onChange={handleChange}
-                    onBlur={handleBlur}
-                    value={values.website}
-                    type="text"
-                    placeholder="Website"
-                    className="p-3 md:p-5 figure-caption w-full bg-white text-[#5a5a5a] rounded-md mt-3 mb-1 focus:outline-none"
-                  />
-                  <span className="text-red-500 text-sm">
-                    {" "}
-                    {errors.website && touched.website && errors.website}
-                  </span>
-                  <textarea
-                    name="message"
-                    onChange={handleChange}
-                    onBlur={handleBlur}
-                    value={values.message}
-                    rows="8"
-                    placeholder="Type a Message"
-                    className="mt-3 p-3 md:p-5 figure-caption w-full bg-white text-[#5a5a5a] rounded-md focus:outline-none"
-                  />
-                  <span className="text-red-500 text-sm">
-                    {" "}
-                    {errors.message && touched.message && errors.message}
-                  </span>
+                  <div className="flex flex-col">
+                    <input
+                      name="name"
+                      onChange={handleChange}
+                      onBlur={handleBlur}
+                      value={values.name}
+                      type="text"
+                      placeholder="Full Name"
+                      className="p-3 md:p-5 figure-caption w-full bg-white text-[#5a5a5a] rounded-md mb-1 focus:outline-none"
+                    />
+                    <span className="text-red-500 text-sm h-5">
+                      {errors.name && touched.name && errors.name}
+                    </span>
+                  </div>
+                  <div className="flex flex-col">
+                    <input
+                      name="email"
+                      onChange={handleChange}
+                      onBlur={handleBlur}
+                      value={values.email}
+                      type="email"
+                      placeholder="Email"
+                      className="p-3 md:p-5 figure-caption w-full bg-white text-[#5a5a5a] rounded-md mt-1 mb-1 focus:outline-none"
+                    />
+                    <span className="text-red-500 text-sm h-5">
+                      {" "}
+                      {errors.email && touched.email && errors.email}
+                    </span>
+                  </div>
+                  <div className="flex flex-col">
+                    <input
+                      name="website"
+                      onChange={handleChange}
+                      onBlur={handleBlur}
+                      value={values.website}
+                      type="text"
+                      placeholder="Website"
+                      className="p-3 md:p-5 figure-caption w-full bg-white text-[#5a5a5a] rounded-md mt-1 mb-1 focus:outline-none"
+                    />
+                    <span className="text-red-500 text-sm h-5">
+                      {" "}
+                      {errors.website && touched.website && errors.website}
+                    </span>
+                  </div>
+                  <div className="flex flex-col">
+                    <textarea
+                      name="message"
+                      onChange={handleChange}
+                      onBlur={handleBlur}
+                      value={values.message}
+                      rows="8"
+                      placeholder="Type a Message"
+                      className="mt-1 p-3 md:p-5 figure-caption w-full bg-white text-[#5a5a5a] rounded-md focus:outline-none"
+                    />
+                    <span className="text-red-500 text-sm h-5">
+                      {" "}
+                      {errors.message && touched.message && errors.message}
+                    </span>
+                  </div>
                   <div className="flex justify-center mt-8 md:mt-[50px]  mb-[70px] md:mb-[120px]">
                     <button type="submit"
                       className={`px-6 relative z-10 py-3 cursor-pointer rounded-[5px] shadow-[#ff6f2c65] hover:shadow-none group overflow-hidden text-lg bg-[#FF6E2C] text-white inline-block font-semibold`}

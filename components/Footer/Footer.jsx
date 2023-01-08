@@ -109,7 +109,7 @@ const Footer = () => {
 
         <div className="flex flex-col md:flex-row gap-5 justify-between items-center py-5 mx-3">
           <p className="text-[#B4B4B4] figure-caption">
-            © 2022 Veltio Inc. All Rights Reserved.
+            © 2023 Veltio Inc. All Rights Reserved.
           </p>
           <div>
             <Social classes="text-white" size={35} />
