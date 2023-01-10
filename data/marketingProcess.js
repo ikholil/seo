@@ -6,7 +6,7 @@ export const marketingProcess = [
     },
     {
         id:2,
-        color:'#FF5349',
+        color:'orange',
         title:'Target Audience'
     },
     {

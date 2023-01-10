@@ -22,7 +22,7 @@ const MarketingProcess = () => {
           {marketingProcess.map(({ id, title, color }) => (
             <div className="flex gap-3 md:gap-5 items-center " key={id}>
               <span
-                className={`w-6 h-6 md:h-10 md:w-10 rounded-full bg-[${color}] ${
+                className={`w-6 h-6 md:h-10 md:w-10 rounded-full bg-[${color}] ${id == 2 && "bg-[#FF5349]"} ${
                   id == 4 && "bg-[#7879F1]"
                 } ${id == 5 && "bg-[#F178B6]"}`}
               ></span>
