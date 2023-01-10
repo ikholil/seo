@@ -100,7 +100,6 @@ const Footer = () => {
             </div>
           </div>
         </div>
-
         <div className="flex flex-col md:flex-row gap-5 justify-between items-center py-5 mx-3">
           <p className="text-[#B4B4B4] figure-caption">
             © 2023 Seoweb Inc. All Rights Reserved.
